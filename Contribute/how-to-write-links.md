@@ -130,7 +130,7 @@ Une expérience utilisateur idéale minimise l'envoi d'utilisateurs vers d'autre
 - **Révisions d’actualisation** : Vérifiez que les informations tierces sont toujours actuelles, correctes et pertinentes, et que le lien n’a pas changé.
 - **Hors site** : Informez les utilisateurs qu’ils vont vers un autre site. Si le contexte ne l’indique pas explicitement, ajoutez une phrase pour cela, par exemple « Les conditions requises comprennent les outils pour développeurs d’Android, que vous pouvez télécharger sur le site d’Android Studio ».
 - **Étapes suivantes** : Vous pouvez ajouter un lien vers, par exemple, un blog MVP dans une section « Étapes suivantes ». Encore une fois, assurez-vous juste que les utilisateurs comprennent qu’ils vont quitter le site.
-- **Juridique ** : Nous sommes légalement couverts sous **Liens vers des sites tiers** dans les **Conditions d’utilisation** en pied de page de chaque page ms.com.
+- **Juridique**  : Nous sommes légalement couverts sous **Liens vers des sites tiers** dans les **Conditions d’utilisation** en pied de page de chaque page ms.com.
 
 ## <a name="links-to-msdn-or-technet"></a>Liens vers MSDN ou TechNet
 
