@@ -8,11 +8,11 @@ ms.date: 06/30/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 5ad2ca323b680078c2bfd2fc4cac6fb1883c411f
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: 5f7f90b69953e23833906202c739d2168b139d7e
+ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Bases de Git et GitHub pour le contenu Docs
 
@@ -20,9 +20,9 @@ ms.lasthandoff: 04/23/2018
 
 En tant que contributeur au contenu de Docs, vous interagissez avec divers outils et processus. Vous travaillez en parallèle avec d’autres contributeurs sur le même projet, peut-être exactement le même contenu, voire en même temps. Tout cela est possible avec les logiciels Git et GitHub.
 
-Git est un système de gestion de versions open source. Il facilite ce type de collaboration sur les projets avec une *gestion distribuée des versions* des fichiers qui résident dans les *dépôts*. En substance, Git permet d’intégrer des flux de travail effectués par plusieurs contributeurs au fil du temps, pour un dépôt donné.
+Git est un système de gestion de versions open source. Il facilite ce type de collaboration sur les projets avec une *gestion distribuée des versions* des fichiers qui résident dans les *dépôts*. En substance, Git permet d’intégrer des flux de travail effectués par plusieurs contributeurs au fil du temps, pour un référentiel donné.
 
-GitHub est un service d’hébergement web de dépôts Git, comme ceux utilisés pour stocker le contenu de [docs.microsoft.com](https://docs.microsoft.com). Pour un projet donné, GitHub héberge le dépôt principal, à partir duquel les contributeurs peuvent faire des copies pour leur propre travail.
+GitHub est un service d’hébergement web de référentiels Git, comme ceux utilisés pour stocker le contenu de [docs.microsoft.com](https://docs.microsoft.com). Pour un projet donné, GitHub héberge le dépôt principal, à partir duquel les contributeurs peuvent faire des copies pour leur propre travail.
 
 ## <a name="git"></a>Git
 
@@ -30,13 +30,13 @@ Si vous connaissez les systèmes de gestion de versions centralisés (comme Team
 
 Git utilise également une structure hiérarchisée pour stocker et gérer le contenu d’un projet :
 
-- *Dépôt* : il s’agit de l’unité de stockage la plus haute. Un dépôt contient une ou plusieurs branches.
+- *Dépôt* : il s’agit de l’unité de stockage la plus haute. Un référentiel contient une ou plusieurs branches.
 - *Branche* : unité de stockage qui contient les fichiers et dossiers qui composent le jeu de contenu d’un projet. Les branches servent à séparer les flux de travail (généralement appelés « versions »). Les contributions sont toujours apportées et limitées à une branche spécifique. Tous les dépôts contiennent une branche par défaut (la branche « principale ») et une ou plusieurs branches destinées à être à nouveau fusionnées avec la branche principale. La branche principale sert de version actuelle et de « seule source de vérité » pour le projet. Il s’agit du parent à partir duquel toutes les autres branches dans le dépôt sont créées.
 
 Les contributeurs interagissent avec Git pour mettre à jour et manipuler des dépôts au niveau local et au niveau de GitHub :
 
-- Localement au moyen d’outils tels que la console Git Bash, qui prend en charge les commandes Git pour la gestion des dépôts locaux et la communication avec les dépôts GitHub
-- Par l’intermédiaire de [www.github.com](https://www.github.com), qui intègre Git pour gérer le rapprochement des contributions qui reviennent vers le dépôt principal
+- Localement au moyen d’outils tels que la console Git Bash, qui prend en charge les commandes Git pour la gestion des référentiels locaux et la communication avec les référentiels GitHub
+- Par l’intermédiaire de [www.github.com](https://www.github.com), qui intègre Git pour gérer le rapprochement des contributions qui reviennent vers le référentiel principal
 
 ## <a name="github"></a>GitHub
 
@@ -51,7 +51,7 @@ Tous les flux de travail commencent et se terminent au niveau GitHub, où est st
 
 Comme évoqué précédemment, une branche de projet par défaut/principale sert de version actuelle du contenu pour le projet. Le contenu de la branche principale (et les branches à partir de celle-ci) est approximativement aligné sur l’organisation des articles dans les pages Docs correspondantes. Les sous-répertoires sont utilisés pour la séparation du contenu similaire (comme les services), du contenu multimédia (comme les fichiers image) et les fichiers « include » qui permettent la réutilisation du contenu.
 
-Vous trouverez généralement un répertoire `articles` principal à la racine du dépôt. Il contient un ensemble de sous-répertoires. Les articles des sous-répertoires sont au format Markdown, avec l’extension *.md*. Certains dépôts qui prennent en charge plusieurs services utilisent un sous-répertoire `/articles` générique, comme le dépôt [https://github.com/microsoft/Azure-Docs](https://github.com/microsoft/Azure-Docs). D’autres peuvent utiliser un nom propre au service, comme le dépôt [https://github.com/microsoft/IntuneDocs](https://github.com/microsoft/IntuneDocs), qui utilise `/IntuneDocs`.
+Vous trouverez généralement un répertoire `articles` principal à la racine du dépôt. Il contient un ensemble de sous-répertoires. Les articles des sous-répertoires sont au format Markdown, avec l’extension *.md*. Certains référentiels qui prennent en charge plusieurs services utilisent un sous-répertoire `/articles` générique, comme le référentiel [https://github.com/microsoft/Azure-Docs](https://github.com/microsoft/Azure-Docs). D’autres peuvent utiliser un nom propre au service, comme le référentiel [https://github.com/microsoft/IntuneDocs](https://github.com/microsoft/IntuneDocs), qui utilise `/IntuneDocs`.
 
 Au sein de la racine de ce répertoire, vous pouvez trouver des articles généraux qui se rapportent au service ou produit global. Généralement, vous trouverez une autre série de sous-répertoires, qui correspondent aux fonctionnalités/services ou à des scénarios courants. Par exemple, les articles Azure « machine virtuelle » se trouvent dans le sous-répertoire `/virtual-machines` et les articles Intune « comprendre et explorer » se trouvent dans le sous-répertoire `/understand-explore`.
 
@@ -76,11 +76,11 @@ Par souci pratique, le répertoire racine de chaque dépôt contient généralem
 - Des exemples **d’intégration de la vidéo** à l’aide d’un iframe.
 - Des **instructions générales sur l’utilisation des extensions docs.microsoft.com**, qui peuvent être utilisées pour des contrôles spéciaux, tels que des boutons ou des sélecteurs.
 
-## <a name="pull-requests"></a>Demandes de tirage (pull requests)
+## <a name="pull-requests"></a>Requêtes de tirage (Pull)
 
-Une *demande de tirage (pull request)* offre un moyen pratique à un contributeur de proposer un ensemble de modifications à appliquer à la branche par défaut. Les modifications (aussi appelées *validations*) sont stockées dans la branche d’un contributeur, ce qui permet à GitHub de commencer par modéliser l’impact de leur *fusion* dans la branche par défaut. Une demande de tirage sert également de mécanisme pour fournir au contributeur des commentaires lors d'un processus de génération/validation, par le réviseur des demandes de tirage, pour résoudre les éventuels problèmes ou questions avant la fusion des modifications avec la branche par défaut.
+Une *demande de tirage (pull request)* offre un moyen pratique à un contributeur de proposer un ensemble de modifications à appliquer à la branche par défaut. Les modifications (aussi appelées *validations*) sont stockées dans la branche d’un contributeur, ce qui permet à GitHub de commencer par modéliser l’impact de leur *fusion* dans la branche par défaut. Une requête de tirage sert également de mécanisme pour fournir au contributeur des commentaires lors d'un processus de génération/validation, par l'examinateur des requêtes de tirage, pour résoudre les éventuels problèmes ou questions avant la fusion des modifications avec la branche par défaut.
 
-Il existe deux méthodes de contribution par demande de tirage, selon la taille des modifications suggérées. Nous aborderons tout cela en détail plus tard, dans la section [Flux de travail de GitHub](light-workflow.md) de ce guide.
+Il existe deux méthodes de contribution par demande de tirage, selon la taille des modifications suggérées. Nous aborderons tout cela en détail plus tard, dans la section [Flux de travail de GitHub](how-to-write-workflows-major.md) de ce guide.
 
 <!---- Reference links for Docs landing pages, associated GitHub repositories, and related Forums matrix. ------------------>
 <!---- PLEASE INSERT URLS IN ASCENDING SORT ORDER, AND REMOVE LOCALE SEGMENT FROM URLS (that is, en-us) FOR LOCALIZED FORUMS! -->

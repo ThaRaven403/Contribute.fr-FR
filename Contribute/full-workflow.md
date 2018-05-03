@@ -8,11 +8,11 @@ ms.date: 08/30/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: e26b62923eed22d5b2005b1d84dc4ae240d262b1
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.openlocfilehash: a43e9a8274c430b1eeed796fc74085c2248f1c14
+ms.sourcegitcommit: de6e6b6ca641fdd5b30eb46deee9ac3a500089ef
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 04/28/2018
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>Flux de travail de contribution à GitHub pour les changements majeurs ou à long terme
 
@@ -25,9 +25,11 @@ ms.lasthandoff: 04/23/2018
 
 Ce flux de travail convient pour un contributeur qui a besoin de faire un changement majeur ou qui sera un contributeur fréquent d’un dépôt. Les contributeurs fréquents ont généralement des changements continus (à long terme) qui peuvent passer par plusieurs cycles de création/validation/préproduction ou être répartis sur plusieurs jours avant la validation et la fusion de la demande de tirage.
 
+Pour les employés de Microsoft qui travaillent sur des projets qui utilisent des dépôts publics et privés, il est également important d’effectuer ces types de contributions dans le dépôt privé. Les services de création, validation et préproduction d’OPS intégrés y sont disponibles.
+
 Voici des exemples de ce type de contribution :
 
-[!INCLUDE[contribute-major-changes-change-definition](includes/contribute-how-to-write-workflows-major-change-definition.md)]
+[!INCLUDE[contribute-how-to-write-workflows-major-change-definition](includes/contribute-how-to-write-workflows-major-change-definition.md)]
 
 ### <a name="terminology"></a>Terminologie
 
@@ -61,7 +63,6 @@ Créons maintenant une nouvelle branche de travail dans votre référentiel loca
 [!INCLUDE[contribute-how-to-write-workflows-pull-request-processing](includes/contribute-how-to-write-workflows-pull-request-processing.md)]
 
 ## <a name="next-steps"></a>Étapes suivantes
-
 Et voilà ! Vous avez apporté une contribution au contenu de docs.microsoft.com !
 
 - Pour en savoir plus sur des rubriques comme Markdown et la syntaxe des extensions Markdown, passez à la section « Bases de l’écriture ».
