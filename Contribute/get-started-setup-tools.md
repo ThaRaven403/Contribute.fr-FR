@@ -1,18 +1,18 @@
 ---
 title: Installer des outils de création de contenu
 description: Cet article vous aide à télécharger et installer les outils clients dont vous avez besoin pour Git et pour l’édition de fichiers Markdown.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
-ms.date: 01/04/2018
+author: jasonwhowell
+ms.author: jasonh
+manager: kfile
+ms.date: 04/30/2018
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 0ca942e557640db1ba36d3f5b1064656ed3dea8d
-ms.sourcegitcommit: 3ec397fab57ea582edb03a59609f62d886410ee8
+ms.openlocfilehash: 1011c3fc829202a3df134ddc80eb05b8959b7bf6
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-content-authoring-tools"></a>Installer des outils de création de contenu
 
@@ -20,21 +20,22 @@ Cet article décrit les étapes à suivre pour installer de manière interactive
 > [!div class="checklist"]
 > * Installer [Git pour Windows](https://git-scm.com/download/win)
 > * Installer [Visual Studio Code](https://code.visualstudio.com/)
+> * Installer [Docs Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)
 
 >[!IMPORTANT]
 > Si vous n’effectuez que des changements mineurs sur un article, vous n’avez *pas* besoin d’effectuer les étapes de cet article et vous pouvez passer directement au [workflow des changements rapides](index.md#quick-edits-to-existing-documents).
 >
-> Les principaux contributeurs sont encouragés à suivre ces étapes, qui permettent d’utiliser le [workflow des changements majeurs/à long terme](how-to-write-workflows-major.md). Même si vous disposez d’autorisations en écriture sur le dépôt principal, *nous vous conseillons vivement (et ce guide part de cette hypothèse) de dupliquer (fork) et de cloner le dépôt*, de façon à ce que vous ayez les autorisations en lecture/écriture nécessaires pour stocker les changements que vous proposez dans votre duplication.
+> Les principaux contributeurs sont encouragés à suivre ces étapes, qui permettent d’utiliser le [workflow de modifications majeures/à long terme](how-to-write-workflows-major.md). Même si vous disposez d’autorisations en écriture sur le référentiel principal, *nous vous conseillons vivement (et ce guide part de cette hypothèse) de dupliquer (fork) et de cloner le référentiel*, de façon à ce que vous ayez les autorisations en lecture/écriture nécessaires pour stocker les modifications que vous proposez dans votre fourche.
 
 ## <a name="install-git-client-tools-on-windows"></a>Installer les outils client Git sous Windows
 
- Installez la dernière version des [outils client Git de Software Freedom Conservancy](https://git-scm.com/download/). L’installation comprend le système de gestion de versions de Git et Git Bash, l’application en ligne de commande qui vous permet d’interagir avec votre dépôt Git local.
+ Installez la dernière version des [outils client Git de Software Freedom Conservancy](https://git-scm.com/download/). L’installation comprend le système de gestion de versions de Git et Git Bash, l’application en ligne de commande qui vous permettra d’interagir avec votre référentiel Git local.
 
 Si vous préférez une interface graphique utilisateur (GUI) à une interface de ligne de commande (CLI), consultez la [page des clients GUI disponibles sur Software Freedom Conservancy](https://git-scm.com/downloads/guis), [GitHub Desktop](https://desktop.github.com/) ou [Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx) pour afficher des options répandues.
 
 Suivez les instructions du client choisi pour l’installation et la configuration.
 
-Dans le prochain article, vous allez [Configurer un dépôt Git local](get-started-setup-local.md).
+Dans le prochain article, vous allez [Configurer un référentiel Git local](get-started-setup-local.md).
 
    Voici des liens vers des ressources Git supplémentaires : [Terminologie Git](https://help.github.com/articles/github-glossary) | [Bases de Git](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [Découvrir Git et GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/).
 
@@ -57,8 +58,18 @@ Téléchargez et installez [VS Code](https://code.visualstudio.com/). La page d�
 - [Linux](https://code.visualstudio.com/docs/setup/linux)
 
 > [!TIP]
-> Pour lancer VS Code et ouvrir le dossier actif, exécutez la commande `code .` en ligne de commande ou dans un interpréteur de commandes Bash. Si le dossier actif fait partie d’un dépôt Git local, l’intégration de GitHub apparaît automatiquement dans Visual Studio Code.
+> Pour lancer VS Code et ouvrir le dossier actif, exécutez la commande `code .` en ligne de commande ou dans un interpréteur de commandes Bash. Si le dossier actif fait partie d’un référentiel Git local, l’intégration de GitHub apparaît automatiquement dans Visual Studio Code.
+
+## <a name="docs-authoring-pack"></a>Docs Authoring Pack
+Installer Docs Authoring Pack pour Visual Studio Code. Cet ensemble d’extensions inclut une assistance de création de base pour l’écriture de Markdown et une fonctionnalité d’aperçu. Vous pouvez ainsi voir à quoi ressemble le Markdown dans le style du site docs.microsoft.com.
+
+   Visitez cette [page de place de marché](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) et sélectionnez **Installer**, ou cherchez `docsmsft.docs-authoring-pack` dans votre liste d’extensions à l’intérieur de la fenêtre VS Code. 
+
+   Pour accéder à Docs Authoring Pack, appuyez sur alt + M dans VS Code. La barre d’outils est masquée par défaut, mais peut être affichée. Modifiez les paramètres de VS Code (contrôle + virgule) et le paramètre d’ajout d’utilisateurs `"markdown.showToolbar": true` pour afficher la barre d’outils.
+
+   Pour en savoir plus, consultez la page [Docs Authoring Pack](how-to-write-docs-auth-pack.md).
+
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Vous pouvez maintenant [Configurer un dépôt Git local](get-started-setup-local.md).
+Vous pouvez maintenant [Configurer un référentiel Git local](get-started-setup-local.md).

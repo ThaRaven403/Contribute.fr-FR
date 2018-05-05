@@ -1,19 +1,18 @@
 ---
 title: Docs Authoring Pack pour VS Code
-description: Pack d’extensions VS Code visant à faciliter la création de contenu Markdown pour docs.microsoft.com.
+description: Cet article décrit le pack d’extensions VS Code visant à faciliter la création de contenu Markdown pour docs.microsoft.com.
 author: meganbradley
 ms.author: mbradley
 manager: jemash
 ms.date: 04/06/2018
-ms.article: contributor-guide
-ms.prod: n.a
-ms.service: n.a
-ms.technology: n.a
-ms.openlocfilehash: 5c857deb07e28e1f6744c895a291bf78a6acf1df
-ms.sourcegitcommit: dd1b4e915f4996ac029d2a0704ced785438d3484
+ms.prod: non-product-specific
+ms.topic: contributor-guide
+ms.custom: external-contributor-guide
+ms.openlocfilehash: d0d61db2faf88598ecd2c800fb5fbe8df8ec44f5
+ms.sourcegitcommit: 7b668124f25b8ad0442937a3ad05b19a47af5970
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Docs Authoring Pack pour VS Code
 
@@ -87,7 +86,7 @@ Les utilisateurs de l’ancienne extension (nom de code « Gauntlet ») remarque
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- [DocFX (aperçu)] : MacOS et Linux : L’aperçu DocFX ne lance pas correctement l’aperçu (l’aperçu de VS Code Markdown est choisi par défaut pour ces plateformes).
-- [DocFX (aperçu)] :Toutes les plateformes : Certaines syntaxes, notamment les liens xref (références croisées) vers les API, ne s’affichent pas correctement dans l’aperçu, laissant dans certains cas des vides dans le contenu.
-- [Signets externes] Linux : La liste des fichiers est affichée, mais aucun titre ne peut être sélectionné.
-- [Inclure] Linux : La liste des fichiers est affichée, mais aucun lien n’est ajouté après la sélection.
+- Aperçu DocFX : sur MacOS et Linux, l’aperçu DocFX ne lance pas correctement l’aperçu (l’aperçu de VS Code Markdown est choisi par défaut pour ces plateformes).
+- Aperçu DocFX :sur toutes les plateformes, certaines syntaxes, notamment les liens xref (références croisées) vers les API, ne s’affichent pas correctement dans l’aperçu, laissant dans certains cas des vides dans le contenu.
+- Signets externes : sur Linux, la liste des fichiers est affichée, mais aucun titre ne peut être sélectionné.
+- Inclut : sur Linux, la liste des fichiers est affichée, mais aucun lien n’est ajouté après la sélection.
