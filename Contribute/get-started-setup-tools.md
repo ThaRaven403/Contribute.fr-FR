@@ -1,0 +1,75 @@
+---
+title: Installer des outils de création de contenu
+description: Cet article vous aide à télécharger et installer les outils clients dont vous avez besoin pour Git et pour l’édition de fichiers Markdown.
+author: jasonwhowell
+ms.author: jasonh
+manager: kfile
+ms.date: 04/30/2018
+ms.prod: non-product-specific
+ms.topic: contributor-guide
+ms.custom: external-contributor-guide
+ms.openlocfilehash: 1011c3fc829202a3df134ddc80eb05b8959b7bf6
+ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/22/2018
+---
+# <a name="install-content-authoring-tools"></a><span data-ttu-id="228ee-103">Installer des outils de création de contenu</span><span class="sxs-lookup"><span data-stu-id="228ee-103">Install content authoring tools</span></span>
+
+<span data-ttu-id="228ee-104">Cet article décrit les étapes à suivre pour installer de manière interactive des outils clients Git et Visual Studio Code.</span><span class="sxs-lookup"><span data-stu-id="228ee-104">This article describes the steps to interactively install Git client tools and Visual Studio Code.</span></span>
+> [!div class="checklist"]
+> * <span data-ttu-id="228ee-105">Installer [Git pour Windows](https://git-scm.com/download/win)</span><span class="sxs-lookup"><span data-stu-id="228ee-105">Install [Git for Windows](https://git-scm.com/download/win)</span></span>
+> * <span data-ttu-id="228ee-106">Installer [Visual Studio Code](https://code.visualstudio.com/)</span><span class="sxs-lookup"><span data-stu-id="228ee-106">Install [Visual Studio Code](https://code.visualstudio.com/)</span></span>
+> * <span data-ttu-id="228ee-107">Installer [Docs Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)</span><span class="sxs-lookup"><span data-stu-id="228ee-107">Install [Docs Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)</span></span>
+
+>[!IMPORTANT]
+> <span data-ttu-id="228ee-108">Si vous n’effectuez que des changements mineurs sur un article, vous n’avez *pas* besoin d’effectuer les étapes de cet article et vous pouvez passer directement au [workflow des changements rapides](index.md#quick-edits-to-existing-documents).</span><span class="sxs-lookup"><span data-stu-id="228ee-108">If you're making only minor changes to an article, you *do not* need to complete the steps in this article and can continue directly to the [quick changes workflow](index.md#quick-edits-to-existing-documents).</span></span>
+>
+> <span data-ttu-id="228ee-109">Les principaux contributeurs sont encouragés à suivre ces étapes, qui permettent d’utiliser le [workflow de modifications majeures/à long terme](how-to-write-workflows-major.md).</span><span class="sxs-lookup"><span data-stu-id="228ee-109">Major contributors are encouraged to complete these steps, which enable you to use the [major/long-running changes workflow](how-to-write-workflows-major.md).</span></span> <span data-ttu-id="228ee-110">Même si vous disposez d’autorisations en écriture sur le référentiel principal, *nous vous conseillons vivement (et ce guide part de cette hypothèse) de dupliquer (fork) et de cloner le référentiel*, de façon à ce que vous ayez les autorisations en lecture/écriture nécessaires pour stocker les modifications que vous proposez dans votre fourche.</span><span class="sxs-lookup"><span data-stu-id="228ee-110">Even if you have write permissions in the main repository, *we highly recommend (and this guide assumes) that you fork and clone the repository*, so that you have read/write permissions to store your proposed changes in your fork.</span></span>
+
+## <a name="install-git-client-tools-on-windows"></a><span data-ttu-id="228ee-111">Installer les outils client Git sous Windows</span><span class="sxs-lookup"><span data-stu-id="228ee-111">Install Git client tools on Windows</span></span>
+
+ <span data-ttu-id="228ee-112">Installez la dernière version des [outils client Git de Software Freedom Conservancy](https://git-scm.com/download/).</span><span class="sxs-lookup"><span data-stu-id="228ee-112">Install the latest version of [Software Freedom Conservancy's Git client tools](https://git-scm.com/download/).</span></span> <span data-ttu-id="228ee-113">L’installation comprend le système de gestion de versions de Git et Git Bash, l’application en ligne de commande qui vous permettra d’interagir avec votre référentiel Git local.</span><span class="sxs-lookup"><span data-stu-id="228ee-113">The install includes the Git version control system and Git Bash, the command-line app that you use to interact with your local Git repository.</span></span>
+
+<span data-ttu-id="228ee-114">Si vous préférez une interface graphique utilisateur (GUI) à une interface de ligne de commande (CLI), consultez la [page des clients GUI disponibles sur Software Freedom Conservancy](https://git-scm.com/downloads/guis), [GitHub Desktop](https://desktop.github.com/) ou [Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx) pour afficher des options répandues.</span><span class="sxs-lookup"><span data-stu-id="228ee-114">If you prefer a graphical user interface (GUI) over a command-line interface (CLI), see [Software Freedom Conservancy's available GUI Clients page](https://git-scm.com/downloads/guis), [GitHub's GitHub Desktop](https://desktop.github.com/), or [Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx) for some popular options.</span></span>
+
+<span data-ttu-id="228ee-115">Suivez les instructions du client choisi pour l’installation et la configuration.</span><span class="sxs-lookup"><span data-stu-id="228ee-115">Follow the instructions for your chosen client for installation and configuration.</span></span>
+
+<span data-ttu-id="228ee-116">Dans le prochain article, vous allez [Configurer un référentiel Git local](get-started-setup-local.md).</span><span class="sxs-lookup"><span data-stu-id="228ee-116">In the next article, you will [Set up a local Git repository](get-started-setup-local.md).</span></span>
+
+   <span data-ttu-id="228ee-117">Voici des liens vers des ressources Git supplémentaires : [Terminologie Git](https://help.github.com/articles/github-glossary) | [Bases de Git](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [Découvrir Git et GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/).</span><span class="sxs-lookup"><span data-stu-id="228ee-117">Additional Git resources are available here: [Git terminology](https://help.github.com/articles/github-glossary) | [Git basics](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [Learning Git and GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/)</span></span>
+
+## <a name="understand-markdown-editors"></a><span data-ttu-id="228ee-118">Comprendre les éditeurs Markdown</span><span class="sxs-lookup"><span data-stu-id="228ee-118">Understand Markdown editors</span></span>
+
+<span data-ttu-id="228ee-119">Markdown est un langage de balisage léger à la fois facile à lire et facile à apprendre.</span><span class="sxs-lookup"><span data-stu-id="228ee-119">Markdown is a lightweight markup language that is both easy to read and easy to learn.</span></span> <span data-ttu-id="228ee-120">Ces qualités lui ont permis de s’établir rapidement comme une norme du secteur.</span><span class="sxs-lookup"><span data-stu-id="228ee-120">Therefore, it has rapidly become an industry standard.</span></span> <span data-ttu-id="228ee-121">Pour écrire des articles en Markdown, nous vous conseillons de commencer par télécharger et installer un éditeur Markdown.</span><span class="sxs-lookup"><span data-stu-id="228ee-121">To write articles in Markdown, we recommend that you first download and install a Markdown editor.</span></span>  <span data-ttu-id="228ee-122">[Visual Studio Code](https://code.visualstudio.com/) est l’outil de prédilection pour modifier des fichiers Markdown sous Microsoft.</span><span class="sxs-lookup"><span data-stu-id="228ee-122">[Visual Studio Code](https://code.visualstudio.com/) is the preferred tool for editing Markdown at Microsoft.</span></span> <span data-ttu-id="228ee-123">[Atom](https://atom.io) est un autre outil d’édition courant.</span><span class="sxs-lookup"><span data-stu-id="228ee-123">[Atom](https://atom.io) is another popular tool for editing Markdown.</span></span>
+
+<span data-ttu-id="228ee-124">Le texte Markdown est enregistré dans des fichiers portant l’extension .md.</span><span class="sxs-lookup"><span data-stu-id="228ee-124">Markdown text is saved into files with .md extension.</span></span>
+
+<span data-ttu-id="228ee-125">Vous trouverez davantage de détails sur l’écriture avec Markdown, notamment les bases de Markdown et les fonctionnalités prises en charge par les extensions Markdown personnalisées OPS, plus loin dans l’article [Guide pratique pour utiliser Markdown](how-to-write-use-markdown.md).</span><span class="sxs-lookup"><span data-stu-id="228ee-125">Additional details on how to write with Markdown, including Markdown basics and the features supported by OPS custom Markdown extensions, are covered later in the [How to use Markdown](how-to-write-use-markdown.md) article.</span></span>
+
+## <a name="visual-studio-code"></a><span data-ttu-id="228ee-126">Visual Studio Code</span><span class="sxs-lookup"><span data-stu-id="228ee-126">Visual Studio Code</span></span>
+
+<span data-ttu-id="228ee-127">[Visual Studio Code](https://code.visualstudio.com/), également connu sous le nom de VS Code, est un éditeur léger qui fonctionne sous Windows, Linux et Mac.</span><span class="sxs-lookup"><span data-stu-id="228ee-127">[Visual Studio Code](https://code.visualstudio.com/), also known as VS Code, is a lightweight editor that works on Windows, Linux, and Mac.</span></span> <span data-ttu-id="228ee-128">Il comprend l’intégration Git et la prise en charge des extensions.</span><span class="sxs-lookup"><span data-stu-id="228ee-128">It includes git integration, and support for extensions.</span></span>
+
+<span data-ttu-id="228ee-129">Téléchargez et installez [VS Code](https://code.visualstudio.com/).</span><span class="sxs-lookup"><span data-stu-id="228ee-129">Download and install [VS Code](https://code.visualstudio.com/).</span></span> <span data-ttu-id="228ee-130">La page d’accueil de VS Code devrait détecter correctement votre système d’exploitation.</span><span class="sxs-lookup"><span data-stu-id="228ee-130">The VS Code home page should detect your operating system correctly.</span></span>
+
+- [<span data-ttu-id="228ee-131">Windows</span><span class="sxs-lookup"><span data-stu-id="228ee-131">Windows</span></span>](https://code.visualstudio.com/docs/setup/windows)
+- [<span data-ttu-id="228ee-132">Mac</span><span class="sxs-lookup"><span data-stu-id="228ee-132">Mac</span></span>](https://code.visualstudio.com/docs/setup/mac)
+- [<span data-ttu-id="228ee-133">Linux</span><span class="sxs-lookup"><span data-stu-id="228ee-133">Linux</span></span>](https://code.visualstudio.com/docs/setup/linux)
+
+> [!TIP]
+> <span data-ttu-id="228ee-134">Pour lancer VS Code et ouvrir le dossier actif, exécutez la commande `code .` en ligne de commande ou dans un interpréteur de commandes Bash.</span><span class="sxs-lookup"><span data-stu-id="228ee-134">To launch VS Code and open the current folder, run the command `code .` in the command line or bash shell.</span></span> <span data-ttu-id="228ee-135">Si le dossier actif fait partie d’un référentiel Git local, l’intégration de GitHub apparaît automatiquement dans Visual Studio Code.</span><span class="sxs-lookup"><span data-stu-id="228ee-135">If the current folder is part of a local git repo, the github integration appears in Visual Studio Code automatically.</span></span>
+
+## <a name="docs-authoring-pack"></a><span data-ttu-id="228ee-136">Docs Authoring Pack</span><span class="sxs-lookup"><span data-stu-id="228ee-136">Docs Authoring Pack</span></span>
+<span data-ttu-id="228ee-137">Installer Docs Authoring Pack pour Visual Studio Code.</span><span class="sxs-lookup"><span data-stu-id="228ee-137">Install the Docs Authoring Pack for Visual Studio Code.</span></span> <span data-ttu-id="228ee-138">Cet ensemble d’extensions inclut une assistance de création de base pour l’écriture de Markdown et une fonctionnalité d’aperçu. Vous pouvez ainsi voir à quoi ressemble le Markdown dans le style du site docs.microsoft.com.</span><span class="sxs-lookup"><span data-stu-id="228ee-138">This set of extensions includes basic authoring assistance for help when writing Markdown, and a preview feature, so that you can see what the Markdown looks like in the style of the docs.microsoft.com site.</span></span>
+
+   <span data-ttu-id="228ee-139">Visitez cette [page de place de marché](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) et sélectionnez **Installer**, ou cherchez `docsmsft.docs-authoring-pack` dans votre liste d’extensions à l’intérieur de la fenêtre VS Code.</span><span class="sxs-lookup"><span data-stu-id="228ee-139">Visit this [marketplace page](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack) and select **Install**, or search for `docsmsft.docs-authoring-pack` in your extensions list in the VS Code window.</span></span> 
+
+   <span data-ttu-id="228ee-140">Pour accéder à Docs Authoring Pack, appuyez sur alt + M dans VS Code.</span><span class="sxs-lookup"><span data-stu-id="228ee-140">The Docs Authoring Pack is accessible by pressing Alt+M inside of VS Code.</span></span> <span data-ttu-id="228ee-141">La barre d’outils est masquée par défaut, mais peut être affichée.</span><span class="sxs-lookup"><span data-stu-id="228ee-141">The toolbar is hidden by default but can be shown.</span></span> <span data-ttu-id="228ee-142">Modifiez les paramètres de VS Code (contrôle + virgule) et le paramètre d’ajout d’utilisateurs `"markdown.showToolbar": true` pour afficher la barre d’outils.</span><span class="sxs-lookup"><span data-stu-id="228ee-142">Edit the VS Code settings (Control+comma) and adding user setting `"markdown.showToolbar": true` to show the toolbar.</span></span>
+
+   <span data-ttu-id="228ee-143">Pour en savoir plus, consultez la page [Docs Authoring Pack](how-to-write-docs-auth-pack.md).</span><span class="sxs-lookup"><span data-stu-id="228ee-143">For more information, see the [Docs Authoring Pack](how-to-write-docs-auth-pack.md) page.</span></span>
+
+
+## <a name="next-steps"></a><span data-ttu-id="228ee-144">Étapes suivantes</span><span class="sxs-lookup"><span data-stu-id="228ee-144">Next steps</span></span>
+
+<span data-ttu-id="228ee-145">Vous pouvez maintenant [Configurer un référentiel Git local](get-started-setup-local.md).</span><span class="sxs-lookup"><span data-stu-id="228ee-145">Now you are ready to [Set up a local Git repository](get-started-setup-local.md).</span></span>
