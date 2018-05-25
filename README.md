@@ -1,3 +1,3 @@
-## Microsoft Open Source Code de conduite
-Ce projet a adopté le [Microsoft Open Source Code de conduite](https://opensource.microsoft.com/codeofconduct/).
-Pour plus d’informations consultez le [Code de diriger Forum aux questions](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) avec les autres questions ou commentaires.
+## <a name="microsoft-open-source-code-of-conduct"></a>Code de conduite de Microsoft Open Source
+Ce projet a adopté le [Code de conduite open source de Microsoft](https://opensource.microsoft.com/codeofconduct/).
+Pour plus d’informations, consultez les [Questions fréquentes sur le code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou envoyez vos questions ou vos commentaires à [opencode@microsoft.com](mailto:opencode@microsoft.com).

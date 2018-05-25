@@ -8,17 +8,22 @@ ms.date: 07/13/2017
 ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 96d00abc052c3b23ca62201dccdbe590a927e72d
-ms.sourcegitcommit: de6e6b6ca641fdd5b30eb46deee9ac3a500089ef
+ms.openlocfilehash: 041398361aef90c44bdf3a0dad4aaa2d40a38289
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 
 Les articles docs.microsoft.com sont écrits dans un langage de balisage léger appelé [Markdown](https://daringfireball.net/projects/markdown/), à la fois facile à lire et facile à apprendre. Ces qualités lui ont permis de s’établir rapidement comme une norme du secteur.
 
-Le contenu Docs étant stocké dans GitHub, il peut utiliser un sur-ensemble de Markdown appelé [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), qui offre des fonctionnalités supplémentaires pour les besoins en formatage courants. En outre, OPS (Open Publishing Services) implémente DFM (DocFX Flavored Markdown). DFM est hautement compatible avec GFM (GitHub Flavored Markdown), qui ajoute des fonctionnalités pour activer les fonctions propres à Docs.
+Le contenu Docs étant stocké dans GitHub, il peut utiliser un sur-ensemble de Markdown appelé [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), qui offre des fonctionnalités supplémentaires pour les besoins courants de mise en forme. De plus, OPS (Open Publishing Services) implémente l’analyseur Markdown Markdig. Markdig est hautement compatible avec GFM (GitHub Flavored Markdown) et offre de nouvelles fonctions permettant d’utiliser des fonctionnalités propres à Docs.
+
+* Markdig est un processeur Markdown rapide, performant, compatible CommonMark et extensible pour .NET.
+* https://github.com/lunet-io/markdig
+* Meilleure prise en charge de la communauté
+* Meilleure prise en charge des standards
 
 ## <a name="markdown-basics"></a>Les bases de Markdown
 
@@ -35,19 +40,19 @@ Pour créer un en-tête, vous utilisez un dièse (#), comme suit :
 
 ### <a name="bold-and-italic-text"></a>Texte en gras et italique
 
-Pour formater le texte en **gras**, vous l’entourez de deux astérisques :
+Pour mettre le texte en **gras**, vous l’entourez de deux astérisques :
 
 ```markdown
     This text is **bold**.
 ```
 
-Pour formater le texte en *italique*, vous l’entourez d’un seul astérisque :
+Pour mettre le texte en *italique*, vous l’entourez d’un seul astérisque :
 
 ```markdown
     This text is *italic*.
 ```
 
-Pour formater le texte en ***gras et en italique***, vous l’entourez de trois astérisques :
+Pour mettre le texte en ***gras et en italique***, vous l’entourez de trois astérisques :
 
 ```markdown
     This is text is both ***bold and italic***.
@@ -57,7 +62,7 @@ Pour formater le texte en ***gras et en italique***, vous l’entourez de trois 
 
 #### <a name="unordered-list"></a>Liste non ordonnée
 
-Pour formater une liste à puces/non ordonnée, vous pouvez utiliser des astérisques ou des tirets. Par exemple, le code Markdown suivant :
+Pour mettre en forme une liste à puces/non ordonnée, vous pouvez utiliser des astérisques ou des tirets. Par exemple, le code Markdown suivant :
 
 ```markdown
 - List item 1
@@ -89,7 +94,7 @@ s’affichera sous la forme :
 
 #### <a name="ordered-list"></a>Liste ordonnée
 
-Pour formater une liste ordonnée/d'étapes, vous utilisez les numéros correspondants. Par exemple, le code Markdown suivant :
+Pour mettre en forme une liste ordonnée/d'étapes, vous utilisez les numéros correspondants. Par exemple, le code Markdown suivant :
 
 ```markdown
 1. First instruction
@@ -145,7 +150,7 @@ s’affichera sous la forme :
 
 Pour plus d'informations sur la création de tableaux, consultez :
 
-- La [fonctionnalité d’encapsulage de tableaux](#table-wrapping) DFM, qui peut vous aider à formater les tableaux larges
+- La [fonctionnalité de wrapping de tableaux](#table-wrapping) Markdig, qui peut vous aider à mettre en forme les tableaux larges
 - [Organisation des informations avec des tableaux](https://help.github.com/articles/organizing-information-with-tables/), de GitHub
 - L'application Web [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables)
 - [« Markdown Cheatsheet » d'Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)
@@ -161,7 +166,7 @@ La syntaxe Markdown pour un lien inline est composée d’une partie `[link text
 Pour plus d’informations sur la liaison, consultez :
 
 - Le [Guide de syntaxe Markdown](https://daringfireball.net/projects/markdown/syntax#link) pour plus de détails sur la prise en charge des liens de base avec Markdown.
-- La section [Liens](how-to-write-links.md) de ce guide pour plus de détails sur la syntaxe de liaison supplémentaire fournie par DFM.
+- La section [Liens](how-to-write-links.md) de ce guide pour plus de détails sur la syntaxe de liaison supplémentaire fournie par Markdig.
 
 ### <a name="code-snippets"></a>Extraits de code
 
@@ -170,7 +175,7 @@ Markdown prend en charge le placement d’extraits de code à la fois inline dan
 - [Prise en charge native des blocs de code par Markdown](https://daringfireball.net/projects/markdown/syntax#precode)
 - [Prise en charge du cloisonnement de code et du surlignage de la syntaxe par GFM](https://help.github.com/articles/creating-and-highlighting-code-blocks/)
 
-Les blocs de code cloisonnés sont un moyen facile de permettre le surlignage de la syntaxe de vos extraits de code. Le format général des blocs de code cloisonnés est la suivante :
+Les blocs de code cloisonnés sont un moyen facile de permettre le surlignage de la syntaxe de vos extraits de code. Le format général des blocs de code cloisonnés est le suivant :
 
     ```alias
     ...
@@ -272,9 +277,9 @@ CREATE TABLE T1 (
 ## <a name="ops-custom-markdown-extensions"></a>Extensions Markdown personnalisées OPS
 
 > [!NOTE]
-> OPS (Open Publishing Services) implémente DFM (DocFX Flavored Markdown), qui est hautement compatible avec GFM (GitHub Flavored Markdown). DFM ajoute des fonctionnalités supplémentaires via des extensions Markdown. À ce titre, des articles sélectionnés du Guide de création OPS complet sont inclus dans ce guide pour référence. (Par exemple, consultez « Extensions Markdown et DFM » et « Extraits de code » dans la table des matières.)
+> OPS (Open Publishing Services) implémente un analyseur Markdig pour Markdown, qui est hautement compatible avec GFM (GitHub Flavored Markdown). Markdig ajoute des fonctionnalités via des extensions Markdown. À ce titre, des articles sélectionnés du Guide de création OPS complet sont inclus dans ce guide pour référence. (Par exemple, consultez « Extensions Markdown et Markdig » et « Extraits de code » dans la table des matières.)
 
-Les articles Docs utilisent GFM pour la majeure partie de la mise en forme des articles, comme les paragraphes, les liens, les listes et les en-têtes. Pour une mise en forme plus riche, les articles peuvent utiliser des fonctionnalités de DFM comme :
+Les articles Docs utilisent GFM pour la majeure partie de la mise en forme des articles, comme les paragraphes, les liens, les listes et les en-têtes. Pour une mise en forme plus riche, les articles peuvent utiliser des fonctionnalités Markdig comme :
 
 - Des blocs de notes
 - Des includes
@@ -282,7 +287,7 @@ Les articles Docs utilisent GFM pour la majeure partie de la mise en forme des a
 - Des vidéos intégrées
 - Des exemples/extraits de code
 
-Pour obtenir la liste complète, consultez « Extensions Markdown et DFM » et « Extraits de code » dans la table des matières.
+Pour obtenir la liste complète, consultez « Extensions Markdown et Markdig » et « Extraits de code » dans la table des matières.
 
 ### <a name="note-blocks"></a>Blocs de notes
 
@@ -297,7 +302,7 @@ En général, les blocs de notes doivent être utilisés avec parcimonie, car il
 
 ### <a name="includes"></a>Includes
 
-Quand vous avez du texte ou des fichiers image réutilisables devant être inclus dans des fichiers d’article, vous pouvez utiliser une référence vers le fichier « include » via la fonctionnalité d’inclusion de fichier de DFM. Cette fonctionnalité demande à OPS d’inclure le fichier dans votre fichier d’article lors de sa génération, ce qui en fait une partie de votre article publié. Trois types d’includes sont disponibles pour vous aider à réutiliser du contenu :
+Quand vous avez du texte ou des fichiers image réutilisables qui doivent être inclus dans des fichiers d’article, vous pouvez utiliser une référence vers le fichier « include » via la fonctionnalité d’inclusion de fichier de Markdig. Cette fonctionnalité demande à OPS d’inclure le fichier dans votre fichier d’article lors de sa génération, ce qui en fait une partie de votre article publié. Trois types d’includes sont disponibles pour vous aider à réutiliser du contenu :
 
 - Inline : pour réutiliser un extrait de texte commun au sein d’une autre phrase.
 - Bloc : pour réutiliser un fichier Markdown entier en tant que bloc, imbriqué dans une section d’un article.
@@ -309,7 +314,7 @@ Voici les conditions requises et éléments à prendre en compte pour les includ
 
 - Utilisez les includes lorsque vous souhaitez que le même texte s'affiche dans plusieurs articles.
 - Utilisez des includes de blocs pour les quantités significatives de contenu : un paragraphe ou deux, une procédure partagée ou une section partagée. Ne l'utilisez pas pour des éléments plus petits qu'une phrase.
-- Les includes ne s’afficheront pas dans la vue de votre article rendu par GitHub, car ils reposent sur des extensions DFM. Ils ne sont rendus qu’après publication.
+- Les includes ne s’afficheront pas dans la vue de votre article rendu par GitHub, car ils reposent sur des extensions Markdig. Ils ne sont rendus qu’après publication.
 - Vérifiez que tout le texte dans un include est écrit par phrases complètes ne dépendant pas du texte précédent ni suivant dans l’article qui référence l’include. Ignorer cette instruction crée une chaîne intraduisible dans l'article, ce qui nuit à l'expérience localisée.
 - N'imbriquez pas d'includes dans d'autres includes. Les groupes ne sont pas pris en charge.
 - Placez les fichiers multimédias dans un dossier multimédia propre au sous-répertoire d’includes, par exemple le dossier `<repo>`/includes/media. Le répertoire multimédia ne doit pas contenir d'images à sa racine. Si l’include ne contient pas d’images, il n’est pas nécessaire d’utiliser un répertoire multimédia correspondant.
@@ -318,13 +323,13 @@ Voici les conditions requises et éléments à prendre en compte pour les includ
 
 ### <a name="selectors"></a>Des sélecteurs
 
-Utilisez des sélecteurs dans les articles techniques lorsque vous créez plusieurs versions d'un même article, pour répondre aux différences d'implémentation à travers les technologies et plateformes. Cela s'applique particulièrement au contenu pour plateformes mobiles pour développeurs. Il existe actuellement deux types différents de sélecteurs dans DFM, un sélecteur unique et un multi-sélecteur.
+Utilisez des sélecteurs dans les articles techniques lorsque vous créez plusieurs versions d'un même article, pour répondre aux différences d'implémentation à travers les technologies et plateformes. Cela s'applique particulièrement au contenu pour plateformes mobiles pour développeurs. Il existe actuellement deux types différents de sélecteurs dans Markdig, un sélecteur unique et un multi-sélecteur.
 
 Le même Markdown de sélecteur allant dans chaque article de la sélection, nous vous recommandons de placer le sélecteur pour votre article dans un include. Vous pouvez ensuite référencer ce dernier dans tous vos articles qui utilisent le même sélecteur.
 
 ### <a name="code-snippets"></a>Extraits de code
 
-DMF prend en charge l’inclusion avancée de code dans un article, via son extension d’extraits de code. Elle fournit un rendu avancé qui se base sur les fonctionnalités de GFM comme la sélection du langage de programmation et la coloration de la syntaxe, plus des fonctionnalités intéressantes comme :
+Markdig prend en charge l’inclusion avancée de code dans un article, via son extension d’extraits de code. Elle fournit un rendu avancé qui se base sur les fonctionnalités de GFM comme la sélection du langage de programmation et la coloration de la syntaxe, plus des fonctionnalités intéressantes comme :
 
 - l’inclusion d’exemples/extraits de code centralisés depuis un dépôt externe ;
 - une interface à onglets pour présenter différentes versions des exemples de code dans différents langages.
