@@ -12,13 +12,14 @@ ms.openlocfilehash: 041398361aef90c44bdf3a0dad4aaa2d40a38289
 ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34469943"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 
 Les articles docs.microsoft.com sont écrits dans un langage de balisage léger appelé [Markdown](https://daringfireball.net/projects/markdown/), à la fois facile à lire et facile à apprendre. Ces qualités lui ont permis de s’établir rapidement comme une norme du secteur.
 
-Le contenu Docs étant stocké dans GitHub, il peut utiliser un sur-ensemble de Markdown appelé [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), qui offre des fonctionnalités supplémentaires pour les besoins courants de mise en forme. De plus, OPS (Open Publishing Services) implémente l’analyseur Markdown Markdig. Markdig est hautement compatible avec GFM (GitHub Flavored Markdown) et offre de nouvelles fonctions permettant d’utiliser des fonctionnalités propres à Docs.
+Le contenu Docs étant stocké dans GitHub, il peut utiliser un sur-ensemble de Markdown appelé [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), qui offre des fonctionnalités supplémentaires pour les besoins en formatage courants. De plus, OPS (Open Publishing Services) implémente l’analyseur Markdown Markdig. Markdig est hautement compatible avec GFM (GitHub Flavored Markdown) et offre de nouvelles fonctions permettant d’utiliser des fonctionnalités propres à Docs.
 
 * Markdig est un processeur Markdown rapide, performant, compatible CommonMark et extensible pour .NET.
 * https://github.com/lunet-io/markdig
@@ -40,19 +41,19 @@ Pour créer un en-tête, vous utilisez un dièse (#), comme suit :
 
 ### <a name="bold-and-italic-text"></a>Texte en gras et italique
 
-Pour mettre le texte en **gras**, vous l’entourez de deux astérisques :
+Pour formater le texte en **gras**, vous l’entourez de deux astérisques :
 
 ```markdown
     This text is **bold**.
 ```
 
-Pour mettre le texte en *italique*, vous l’entourez d’un seul astérisque :
+Pour formater le texte en *italique*, vous l’entourez d’un seul astérisque :
 
 ```markdown
     This text is *italic*.
 ```
 
-Pour mettre le texte en ***gras et en italique***, vous l’entourez de trois astérisques :
+Pour formater le texte en ***gras et en italique***, vous l’entourez de trois astérisques :
 
 ```markdown
     This is text is both ***bold and italic***.
@@ -62,7 +63,7 @@ Pour mettre le texte en ***gras et en italique***, vous l’entourez de trois as
 
 #### <a name="unordered-list"></a>Liste non ordonnée
 
-Pour mettre en forme une liste à puces/non ordonnée, vous pouvez utiliser des astérisques ou des tirets. Par exemple, le code Markdown suivant :
+Pour formater une liste à puces/non ordonnée, vous pouvez utiliser des astérisques ou des tirets. Par exemple, le code Markdown suivant :
 
 ```markdown
 - List item 1
@@ -94,7 +95,7 @@ s’affichera sous la forme :
 
 #### <a name="ordered-list"></a>Liste ordonnée
 
-Pour mettre en forme une liste ordonnée/d'étapes, vous utilisez les numéros correspondants. Par exemple, le code Markdown suivant :
+Pour formater une liste ordonnée/d'étapes, vous utilisez les numéros correspondants. Par exemple, le code Markdown suivant :
 
 ```markdown
 1. First instruction
@@ -175,7 +176,7 @@ Markdown prend en charge le placement d’extraits de code à la fois inline dan
 - [Prise en charge native des blocs de code par Markdown](https://daringfireball.net/projects/markdown/syntax#precode)
 - [Prise en charge du cloisonnement de code et du surlignage de la syntaxe par GFM](https://help.github.com/articles/creating-and-highlighting-code-blocks/)
 
-Les blocs de code cloisonnés sont un moyen facile de permettre le surlignage de la syntaxe de vos extraits de code. Le format général des blocs de code cloisonnés est le suivant :
+Les blocs de code cloisonnés sont un moyen facile de permettre le surlignage de la syntaxe de vos extraits de code. Le format général des blocs de code cloisonnés est la suivante :
 
     ```alias
     ...
@@ -281,7 +282,7 @@ CREATE TABLE T1 (
 
 Les articles Docs utilisent GFM pour la majeure partie de la mise en forme des articles, comme les paragraphes, les liens, les listes et les en-têtes. Pour une mise en forme plus riche, les articles peuvent utiliser des fonctionnalités Markdig comme :
 
-- Des blocs de notes
+- Blocs de notes
 - Des includes
 - Des sélecteurs
 - Des vidéos intégrées
