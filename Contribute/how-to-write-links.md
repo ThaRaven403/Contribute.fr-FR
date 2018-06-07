@@ -9,10 +9,11 @@ ms.prod: non-product-specific
 ms.topic: contributor-guide
 ms.custom: external-contributor-guide
 ms.openlocfilehash: 1699e57ac6a4dc4c5a1ef099ea183b3cbc6307cd
-ms.sourcegitcommit: e046e7aad8ed22bffe5380d63a9d40f0baeecc57
+ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34469529"
 ---
 # <a name="using-links-in-documentation"></a>Utilisation de liens dans la documentation
 Cet article décrit comment utiliser des liens hypertexte à partir de pages hébergées sur docs.microsoft.com. Vous pouvez facilement ajouter des liens dans la syntaxe Markdown en tenant compte de quelques conventions. Les liens pointent vers du contenu situé dans la même page, dans d’autres pages voisines ou sur des sites et des URL externes.
