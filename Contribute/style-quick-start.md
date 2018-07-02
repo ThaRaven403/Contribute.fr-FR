@@ -1,19 +1,13 @@
 ---
 title: Guide de style Docs - Démarrage rapide
 description: Cet article est un guide concis pour les questions de style. Il contient seulement l’essentiel pour bien démarrer avec docs.microsoft.com.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 07/25/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 74f78b72f61cfebddb0cb03b73a3a806f4fe4a10
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469391"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239600"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Démarrage rapide pour le style et le ton Docs
 
@@ -56,5 +50,6 @@ Nos articles techniques sont traduits en plusieurs langues, et certains sont mod
 ## <a name="localized-documentation"></a>Documentation localisée
 
 - Si vous contribuez à la documentation localisée, consultez le [Portail linguistique Microsoft](https://www.microsoft.com/Language/Default.aspx).
-- Pour obtenir des instructions relatives à la localisation, des informations sur le style et l’utilisation de la langue dans les publications techniques, ainsi que des renseignements sur les formats de données propres à chaque marché, téléchargez le [guide de style](https://www.microsoft.com/Language/StyleGuides.aspx) dans votre langue.
-- Pour la terminologie localisée de Microsoft, recherchez la [terminologie approuvée propre à chaque produit](https://www.microsoft.com/Language/Search.aspx) ou téléchargez la [collection terminologique de Microsoft](https://www.microsoft.com/Language/Terminology.aspx) dans votre langue.
+- Pour obtenir des instructions relatives à la localisation, des informations sur le style et l’utilisation de la langue dans les publications techniques, ainsi que des renseignements sur les formats de données propres à chaque marché, téléchargez le [guide de style](https://www.microsoft.com/Language/StyleGuides) dans votre langue.
+- Pour la terminologie localisée de Microsoft, recherchez la [terminologie approuvée propre à chaque produit](https://www.microsoft.com/Language/Default.aspx) ou téléchargez la [collection terminologique de Microsoft](https://www.microsoft.com/Language/Terminology.aspx) dans votre langue.
+- Vous pouvez en savoir plus dans la [section de localisation](https://docs.microsoft.com/style-guide/global-communications/) du guide de style Microsoft.

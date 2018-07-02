@@ -1,19 +1,13 @@
 ---
 title: Guide pratique pour utiliser des liens dans la documentation
 description: Cet article vous aide à créer des liens vers du contenu situé sur docs.microsoft.com.
-author: bryanla
-ms.author: bryanla
-manager: mbaldwin
 ms.date: 06/29/2017
-ms.prod: non-product-specific
-ms.topic: contributor-guide
-ms.custom: external-contributor-guide
-ms.openlocfilehash: 1699e57ac6a4dc4c5a1ef099ea183b3cbc6307cd
-ms.sourcegitcommit: 782b689882cce3ce07f5613763322989f2d0d63f
+ms.openlocfilehash: a66e2fb4febf1947afe01919b96b1c10873cf57d
+ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/05/2018
-ms.locfileid: "34469529"
+ms.lasthandoff: 06/19/2018
+ms.locfileid: "36239723"
 ---
 # <a name="using-links-in-documentation"></a>Utilisation de liens dans la documentation
 Cet article décrit comment utiliser des liens hypertexte à partir de pages hébergées sur docs.microsoft.com. Vous pouvez facilement ajouter des liens dans la syntaxe Markdown en tenant compte de quelques conventions. Les liens pointent vers du contenu situé dans la même page, dans d’autres pages voisines ou sur des sites et des URL externes.
@@ -63,7 +57,10 @@ Pour créer un lien inline d’un article technique Docs à un autre dans le mê
   `[link text](../directory/article-name.md)`
 
 - Un lien d’un article à un autre dans différents docsets (même s’ils sont dans le même dépôt) : `[link text](./directory/article-name)`
-  
+
+> [!IMPORTANT]
+> Aucun des exemples ci-dessus n’utilise de `~/` dans le lien. Si vous créez un lien vers un chemin à la racine du dépôt, commencez avec une `/`. L’ajout d’un `~/` produit des liens non valides quand vous accédez aux dépôts sources sur GitHub. En commençant par une `/`, le problème est résolu.
+
 ## <a name="links-to-anchors"></a>Liens vers ancres
 
 Vous n’avez pas besoin de créer des ancres. Elles sont automatiquement générées au moment de la publication pour tous les en-têtes H2. Il vous suffit de créer des liens vers les sections H2.
