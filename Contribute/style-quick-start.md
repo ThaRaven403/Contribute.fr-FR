@@ -2,22 +2,22 @@
 title: Guide de style Docs - Démarrage rapide
 description: Cet article est un guide concis pour les questions de style. Il contient seulement l’essentiel pour bien démarrer avec docs.microsoft.com.
 ms.date: 07/25/2017
-ms.openlocfilehash: 34cd0dc1760f2a569f8bfec782f04b2691a74470
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239600"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40243020"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Démarrage rapide pour le style et le ton Docs
 
-Ce guide de démarrage rapide vous prendra peu de temps, mais vous donnera une bonne idée de la façon d’appliquer les concepts de style les plus importants pour Docs lors de la rédaction d’articles pour docs.microsoft.com. Ces lignes directrices s’appliquent que vous créiez une nouvelle documentation ou en mettiez à jour une existante.
+Ce démarrage rapide est un guide bref sur l’écriture de contenu technique pour une publication sur docs.microsoft.com. Ces lignes directrices s’appliquent que vous créiez une nouvelle documentation ou en mettiez à jour une existante.
 
-Au strict minimum, veuillez :
+Meilleures pratiques :
 
 - Vérifier l’orthographe et la grammaire de vos articles, même si vous devez les copier/coller dans Word pour ce faire.
 - Employer un ton informel et amical, comme si vous parliez à une autre personne face à face.
-- Utiliser des phrases simples. Elles sont plus faciles à comprendre et à traduire par les traducteurs humains et automatiques.
+- Utiliser des phrases simples. Des phrases simples à lire permettent au lecteur d’utiliser rapidement les conseils que vous partagez.
 
 ## <a name="use-the-microsoft-voice-principles"></a>Utilisation des principes de ton de Microsoft
 

@@ -5,18 +5,18 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 00631485f1f4eed9e0de2f6df98d973a819dfe4d
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238917"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251456"
 ---
 # <a name="install-content-authoring-tools"></a>Installer des outils de création de contenu
 
 Cet article décrit les étapes à suivre pour installer de manière interactive des outils clients Git et Visual Studio Code.
 > [!div class="checklist"]
-> * Installer [Git pour Windows](https://git-scm.com/download/win)
+> * Installer [Git](https://git-scm.com/)
 > * Installer [Visual Studio Code](https://code.visualstudio.com/)
 > * Installer [Docs Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)
 
@@ -25,9 +25,13 @@ Cet article décrit les étapes à suivre pour installer de manière interactive
 >
 > Les principaux contributeurs sont encouragés à suivre ces étapes, qui permettent d’utiliser le [workflow de modifications majeures/à long terme](how-to-write-workflows-major.md). Même si vous disposez d’autorisations en écriture sur le référentiel principal, *nous vous conseillons vivement (et ce guide part de cette hypothèse) de dupliquer (fork) et de cloner le référentiel*, de façon à ce que vous ayez les autorisations en lecture/écriture nécessaires pour stocker les modifications que vous proposez dans votre fourche.
 
-## <a name="install-git-client-tools-on-windows"></a>Installer les outils client Git sous Windows
+## <a name="install-git-client-tools"></a>Installer les outils client Git 
 
- Installez la dernière version des [outils client Git de Software Freedom Conservancy](https://git-scm.com/download/). L’installation comprend le système de gestion de versions de Git et Git Bash, l’application en ligne de commande qui vous permettra d’interagir avec votre référentiel Git local.
+ Installez la dernière version des [outils client Git de Software Freedom Conservancy](https://git-scm.com/download/) pour votre plateforme. 
+
+* [Git pour Windows](https://git-scm.com/download/win). Cette installation comprend le système de gestion de versions de Git et Git Bash, l’application en ligne de commande qui vous permettra d’interagir avec votre référentiel Git local.
+* Git pour Mac est fourni dans le cadre des Outils en ligne de commande Xcode. Exécutez simplement `git` depuis la ligne de commande. Vous serez invité à installer les outils en ligne de commande si nécessaire. Vous pouvez aussi télécharger [Git pour Mac](https://git-scm.com/download/mac) à partir de Software Freedom Conservancy.
+* [Git pour Linux et Unix](https://git-scm.com/download/linux)
 
 Si vous préférez une interface graphique utilisateur (GUI) à une interface de ligne de commande (CLI), consultez la [page des clients GUI disponibles sur Software Freedom Conservancy](https://git-scm.com/downloads/guis), [GitHub Desktop](https://desktop.github.com/) ou [Visual Studio Code](https://www.visualstudio.com/products/code-vs.aspx) pour afficher des options répandues.
 

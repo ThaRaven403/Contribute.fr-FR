@@ -5,18 +5,18 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: a0c52fea8f3a57cdfe89c2cd7a24ef7b511ada7c
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
+ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239766"
+ms.lasthandoff: 08/10/2018
+ms.locfileid: "40251439"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Guide du contributeur Microsoft Docs - Vue d’ensemble
 
 Bienvenue dans le guide du contributeur [docs.microsoft.com](https://docs.microsoft.com) (Docs) !
 
-Beaucoup de nos ensembles de documentation sont open source et hébergés sur GitHub. Ce modèle est de plus en plus souvent adopté par les équipes. Même les ensembles de documents qui sont pas entièrement open source ont des référentiels publics où vous êtes invité à faire des demandes de tirage (pull requests). Ceci rationalise et améliore la communication entre les ingénieurs produits, les équipes de contenu et nos clients. Le travail en open source offre de nombreux avantages :
+Beaucoup de nos ensembles de documentation sont open source et hébergés sur GitHub. Ce modèle est de plus en plus souvent adopté par les équipes Microsoft. Même les ensembles de documents qui sont pas entièrement open source ont des référentiels publics où vous êtes invité à faire des demandes de tirage (pull requests). Ceci rationalise et améliore la communication entre les ingénieurs produits, les équipes de contenu et nos clients. Le travail en open source offre de nombreux avantages :
 
 - Un plan du référentiel open source pour savoir quels sont les documents les plus demandés.
 - Une revue du référentiel open source pour publier le contenu le plus utile lors de notre première mise en production.
