@@ -6,14 +6,14 @@ author: syntaxc4
 manager: erifkin
 ms.date: 07/24/2018
 ms.author: cfowler
-zone_pivot_groups: keyvault-languages, keyvault-platforms
+zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8b758274203748bb6e04c03dec5de38fb77947b4
-ms.sourcegitcommit: b0105f322f91bb4dbde47f6da35b3c12271d5b03
+ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/29/2018
-ms.locfileid: "43239502"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308821"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>Démarrage rapide : définir et récupérer un secret depuis Azure Key Vault à l’aide d’Azure Key Vault
 
@@ -29,24 +29,17 @@ Ce démarrage rapide vous montre comment stocker un secret dans Key Vault et le 
 
 Avant de procéder, assurez-vous d’être familiarisé avec les [concepts de base](https://docs.microsoft.com/azure/key-vault/key-vault-whatis#basic-concepts).
 
->[!NOTE]
-Pour comprendre pourquoi le tutoriel ci-dessous est la meilleure pratique, il est nécessaire de comprendre certains concepts. Key Vault est un référentiel central pour stocker les secrets par programmation. Mais pour cela, les applications / utilisateurs doivent d’abord s’authentifier sur Key Vault, et donc présenter un secret. Pour suivre les meilleures pratiques de sécurité, ce premier secret doit faire l’objet d’une rotation périodique. Mais avec [Managed Service Identity](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview), les applications qui s’exécutent dans Azure bénéficient d’une identité administrée automatiquement par Azure. Cela permet de résoudre le **problème d’introduction de secrets** où les utilisateurs / applications peuvent suivre les meilleures pratiques et n’ont pas à se soucier de la rotation du premier secret
+> [!NOTE]
+> Pour comprendre pourquoi le tutoriel ci-dessous est la meilleure pratique, il est nécessaire de comprendre certains concepts. Key Vault est un référentiel central pour stocker les secrets par programmation. Mais pour cela, les applications / utilisateurs doivent d’abord s’authentifier sur Key Vault, et donc présenter un secret. Pour suivre les meilleures pratiques de sécurité, ce premier secret doit faire l’objet d’une rotation périodique. Mais avec [Managed Service Identity](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview), les applications qui s’exécutent dans Azure bénéficient d’une identité administrée automatiquement par Azure. Cela permet de résoudre le **problème d’introduction de secrets** où les utilisateurs / applications peuvent suivre les meilleures pratiques et n’ont pas à se soucier de la rotation du premier secret
 
 ## <a name="prerequisites"></a>Composants requis
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end
-
-::: zone pivot="dotnet, windows"
+* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
 * [Visual Studio 2017 version 15.7.3 ou version ultérieure](https://www.microsoft.com/net/download/windows) avec les charges de travail suivantes :
   * Développement web et ASP.NET
   * Développement multiplateforme .NET Core
 * [SDK .NET Core 2.1 ou version ultérieure](https://www.microsoft.com/net/download/windows) :::zone-end
-
-::: zone pivot="dotnet, mac"
-* Consultez [les nouveautés de Visual Studio pour Mac](https://visualstudio.microsoft.com/vs/mac/).
-:::zone-end
-
 * Git ([télécharger](https://git-scm.com/downloads)).
 * Un abonnement Azure. Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) avant de commencer.
 * [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) version 2.0.4 ou ultérieure. Disponible pour Windows, Mac et Linux.
@@ -168,10 +161,10 @@ Voici les quelques étapes que nous devons faire
     ```bash
     git remote add azure <url>
     ```
+    
 ::: zone-end
 
 ::: zone pivot="dotnet"
-
 ## <a name="open-and-edit-the-solution"></a>Ouvrir et modifier la solution
 
 Modifiez le fichier program.cs pour exécuter l’exemple avec le nom de votre coffre de clés spécifique :
@@ -197,7 +190,6 @@ Publiez cette application dans Azure pour l’afficher en direct en tant qu’ap
 5. Sélectionnez **Créer**.
 
 >[!VIDEO https://sec.ch9.ms/ch9/e93d/a6ac417f-2e63-4125-a37a-8f34bf0fe93d/KeyVault_high.mp4]
-
 ::: zone-end
 
 ## <a name="enable-managed-service-identities"></a>Activer les identités de service administrées
@@ -242,7 +234,9 @@ git push azure master
 ```
 
 Lorsque c’est fait et que vous parcourez https://<app_name>.azurewebsites.net, vous pouvez voir la valeur du secret.
-Assurez-vous d’avoir remplacé le nom <YourKeyVaultName> par le nom de votre coffre ::: zone-end
+Assurez-vous d’avoir remplacé le nom <YourKeyVaultName> par le nom de votre coffre
+
+::: zone-end
 
 ::: zone pivot="dotnet" Maintenant lorsque vous exécutez l’application, vous devriez voir la valeur de votre secret récupérée.
 ::: zone-end
