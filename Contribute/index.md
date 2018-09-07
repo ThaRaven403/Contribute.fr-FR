@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 6206f61a69c14575a726da9ce64ad0b765c7aa87
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 94fad6f4b2faeefff687eb57cd2de8a0fb5bbbf3
+ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251439"
+ms.lasthandoff: 08/30/2018
+ms.locfileid: "43308890"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Guide du contributeur Microsoft Docs - Vue d’ensemble
 
@@ -31,7 +31,7 @@ L’expérience utilisateur sur [docs.microsoft.com](https://docs.microsoft.com)
 
 ## <a name="quick-edits-to-existing-documents"></a>Modifications rapides de documents existants
 
-Les modifications rapides permettent de rationaliser le processus de signalement et de correction de petites erreurs et omissions dans des documents. Malgré tous les efforts, nos documents publiés peuvent contenir de petites fautes de grammaire et d’orthographe. Même si vous pouvez signaler des problèmes et nous faire part d’erreurs, il est plus rapide et plus facile de créer une demande de tirage (pull request) pour résoudre un problème. Presque tous les articles sont dotés d’un bouton de modification comme celui de la figure suivante. En cliquant sur le bouton **Modification**, vous accédez au fichier source sur GitHub.
+Les modifications rapides permettent de rationaliser le processus de signalement et de correction de petites erreurs et omissions dans des documents. Malgré tous les efforts, nos documents publiés peuvent contenir de petites fautes de grammaire et d’orthographe. Même si vous pouvez signaler des problèmes et nous faire part d’erreurs, il est plus rapide et plus facile de créer une demande de tirage (pull request) pour résoudre un problème. Presque tous les articles sont dotés d’un bouton de modification comme celui de la figure suivante. En cliquant sur le bouton **Modification** (ou terme localisé équivalent), vous accédez au fichier source sur GitHub.
 
 ![Emplacement du lien de modification](./media/index/edit-article.png)
 
@@ -46,6 +46,12 @@ Une fois vos modifications effectuées, faites défiler vers le bas de la page. 
 
 ![votre proposition de modification](./media/index/submit-pull-request.png)
 
+À présent que vous avez proposé votre modification, vous devez demander aux propriétaires du référentiel de « tirer (pull) » vos modifications dans leur référentiel. Pour cela, vous utilisez une « requête de tirage (pull) ». Lorsque vous avez cliqué sur **Proposer une modification du fichier** dans la figure ci-dessus, vous devriez avoir été dirigé vers une nouvelle page qui ressemble à la figure suivante :
+
+![créer une requête de tirage](media/index/create-pull-request.png)
+
+Cliquez sur **Créer une requête de tirage (pull)**, entrez un titre (et une description si vous le voulez) pour la requête de tirage (pull), puis cliquez à nouveau sur **Créer une requête de tirage (pull)**.
+
 Et voilà ! Les membres de l’équipe de contenu réviseront et fusionneront votre demande de tirage (PR). Vous recevrez peut-être des commentaires avec des demandes des modification si vous avez effectué des modifications majeures.
 
 L’interface utilisateur de modification GitHub est fonction de vos autorisations dans le référentiel. Les images précédentes sont concernent les contributeurs qui n’ont pas d’autorisations d’écriture pour le référentiel cible. GitHub crée automatiquement une duplication (fork) du référentiel cible dans votre compte. Si vous bénéficiez d’un accès en écriture au référentiel cible, GitHub y crée une nouvelle branche. Le nom de la branche a la structure **\<GitHubId\>-patch-n**, avec votre identifiant GitHub et un identificateur numérique pour la branche du correctif.
@@ -53,6 +59,12 @@ L’interface utilisateur de modification GitHub est fonction de vos autorisatio
 Nous utilisons des demandes de tirage (PR) pour toutes les modifications, même pour les contributeurs bénéficiant d’un accès en écriture. La branche `master` de la plupart des référentiels étant protégée, les mises à jour doivent êtres envoyées sous forme de demandes de tirage (PR).
 
 L’expérience de modification dans le navigateur est la mieux adaptée à des modifications mineures ou peu fréquentes. Si vous effectuez des contributions importantes, ou que vous utilisez des fonctionnalités avancées de Git (comme la gestion des branches ou la résolution des conflits de fusion avancés), vous devez [dupliquer le référentiel et travailler localement](how-to-write-workflows-major.md).
+
+> [!NOTE]
+> Si cette option est activée, vous pouvez modifier un article dans **n’importe quelle langue** et, selon le type de modification, voici ce qui se produit :
+> 1. toute modification linguistique approuvée permet aussi d’améliorer notre moteur de traduction automatique
+> 2. toute modification qui change de manière significative le contenu de l’article sera gérée en interne pour envoyer une modification du même article en anglais, afin qu’elle soit traduite dans toutes les langues, si elle est approuvée.
+> Donc, vos suggestions d’améliorations n’auront pas seulement un effet positif sur les articles dans votre langue, mais dans toutes les langues disponibles.
 
 ## <a name="review-open-prs"></a>Réviser des demandes de tirage (PR) ouvertes
 
