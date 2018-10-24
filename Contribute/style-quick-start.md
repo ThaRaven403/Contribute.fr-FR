@@ -2,12 +2,12 @@
 title: Guide de style Docs - Démarrage rapide
 description: Cet article est un guide concis pour les questions de style. Il contient seulement l’essentiel pour bien démarrer avec docs.microsoft.com.
 ms.date: 07/25/2017
-ms.openlocfilehash: 3a91669ba9ad6711bcc436952d1d6cb311b9d4f6
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
+ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40243020"
+ms.lasthandoff: 10/11/2018
+ms.locfileid: "49084396"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Démarrage rapide pour le style et le ton Docs
 
@@ -15,7 +15,7 @@ Ce démarrage rapide est un guide bref sur l’écriture de contenu technique po
 
 Meilleures pratiques :
 
-- Vérifier l’orthographe et la grammaire de vos articles, même si vous devez les copier/coller dans Word pour ce faire.
+- Vérifier l’orthographe et la grammaire de vos articles, même si, pour ce faire, vous devez les copier/coller dans Microsoft Word.
 - Employer un ton informel et amical, comme si vous parliez à une autre personne face à face.
 - Utiliser des phrases simples. Des phrases simples à lire permettent au lecteur d’utiliser rapidement les conseils que vous partagez.
 
@@ -45,11 +45,11 @@ Nos articles techniques sont traduits en plusieurs langues, et certains sont mod
 - Pour les étapes qui comprennent des extraits de code, mettez les informations supplémentaires au sujet de l'étape dans le code sous forme de commentaires. Cela réduit la quantité de texte que les utilisateurs doivent lire. Les informations essentielles sont copiées dans le projet de code pour leur rappeler ce que le code fait quand ils s’y rapportent plus tard.
 - Ne mettez que la première lettre en majuscule pour tous les titres.
 - Utilisez « se connecter » plutôt qu’« ouvrir une session ».
-- Incluez les mots « suivant » ou « comme suit » dans chaque phrase qui précède un extrait de code ou une liste.
+- Pour obtenir plus d’instructions, consultez le [Guide de style d’écriture Microsoft](https://docs.microsoft.com/style-guide/welcome).
 
 ## <a name="localized-documentation"></a>Documentation localisée
 
 - Si vous contribuez à la documentation localisée, consultez le [Portail linguistique Microsoft](https://www.microsoft.com/Language/Default.aspx).
 - Pour obtenir des instructions relatives à la localisation, des informations sur le style et l’utilisation de la langue dans les publications techniques, ainsi que des renseignements sur les formats de données propres à chaque marché, téléchargez le [guide de style](https://www.microsoft.com/Language/StyleGuides) dans votre langue.
 - Pour la terminologie localisée de Microsoft, recherchez la [terminologie approuvée propre à chaque produit](https://www.microsoft.com/Language/Default.aspx) ou téléchargez la [collection terminologique de Microsoft](https://www.microsoft.com/Language/Terminology.aspx) dans votre langue.
-- Vous pouvez en savoir plus dans la [section de localisation](https://docs.microsoft.com/style-guide/global-communications/) du guide de style Microsoft.
+- Pour en savoir plus sur la localisation, consultez « Communications globales » dans le [Guide de style d’écriture Microsoft](https://docs.microsoft.com/style-guide/global-communications).
