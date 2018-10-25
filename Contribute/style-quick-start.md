@@ -2,12 +2,12 @@
 title: Guide de style Docs - Démarrage rapide
 description: Cet article est un guide concis pour les questions de style. Il contient seulement l’essentiel pour bien démarrer avec docs.microsoft.com.
 ms.date: 07/25/2017
-ms.openlocfilehash: 861181c7bfa22881fdd11327d19b2d7d517775c8
-ms.sourcegitcommit: 6f1997864c000a9cd25fb9171a8f8fdb8b5b5ece
+ms.openlocfilehash: f5c32d3fb71ef3513c68b9c506c823997bfe4d8f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/11/2018
-ms.locfileid: "49084396"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805579"
 ---
 # <a name="docs-style-and-voice-quick-start"></a>Démarrage rapide pour le style et le ton Docs
 
@@ -51,5 +51,5 @@ Nos articles techniques sont traduits en plusieurs langues, et certains sont mod
 
 - Si vous contribuez à la documentation localisée, consultez le [Portail linguistique Microsoft](https://www.microsoft.com/Language/Default.aspx).
 - Pour obtenir des instructions relatives à la localisation, des informations sur le style et l’utilisation de la langue dans les publications techniques, ainsi que des renseignements sur les formats de données propres à chaque marché, téléchargez le [guide de style](https://www.microsoft.com/Language/StyleGuides) dans votre langue.
-- Pour la terminologie localisée de Microsoft, recherchez la [terminologie approuvée propre à chaque produit](https://www.microsoft.com/Language/Default.aspx) ou téléchargez la [collection terminologique de Microsoft](https://www.microsoft.com/Language/Terminology.aspx) dans votre langue.
+- Pour la terminologie localisée de Microsoft, recherchez la [terminologie approuvée propre à chaque produit](https://www.microsoft.com/Language/Default.aspx) ou téléchargez la [collection terminologique de Microsoft](https://www.microsoft.com/language/Terminology) dans votre langue.
 - Pour en savoir plus sur la localisation, consultez « Communications globales » dans le [Guide de style d’écriture Microsoft](https://docs.microsoft.com/style-guide/global-communications).
