@@ -2,18 +2,18 @@
 title: Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 description: Cet article fournit des informations de base et de référence sur le langage Markdown utilisé pour écrire des articles docs.microsoft.com.
 ms.date: 07/13/2017
-ms.openlocfilehash: dca1ccba2ae4ebd08b6039f5d780e7a7ac92e79f
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238963"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805722"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 
-Les articles docs.microsoft.com sont écrits dans un langage de balisage léger appelé [Markdown](https://daringfireball.net/projects/markdown/), à la fois facile à lire et facile à apprendre. Ces qualités lui ont permis de s’établir rapidement comme une norme du secteur.
+Les articles [docs.microsoft.com](http://docs.microsoft.com) sont écrits dans un langage de balisage léger appelé [Markdown](https://daringfireball.net/projects/markdown/), à la fois facile à lire et facile à apprendre. Ces qualités lui ont permis de s’établir rapidement comme une norme du secteur.
 
-Le contenu Docs étant stocké dans GitHub, il peut utiliser un sur-ensemble de Markdown appelé [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), qui offre des fonctionnalités supplémentaires pour les besoins en formatage courants. De plus, OPS (Open Publishing Services) implémente l’analyseur Markdown Markdig. Markdig est hautement compatible avec GFM (GitHub Flavored Markdown) et offre de nouvelles fonctions permettant d’utiliser des fonctionnalités propres à Docs.
+Le contenu Docs étant stocké dans GitHub, il peut utiliser un sur-ensemble de Markdown appelé [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), qui offre des fonctionnalités supplémentaires pour les besoins de mise en forme courants. De plus, OPS (Open Publishing Services) implémente l’analyseur Markdown Markdig. Markdig est hautement compatible avec GFM et offre de nouvelles fonctions permettant d’utiliser des fonctionnalités propres à Docs.
 
 * Markdig est un processeur Markdown rapide, performant, compatible CommonMark et extensible pour .NET.
 * https://github.com/lunet-io/markdig
@@ -27,10 +27,10 @@ Le contenu Docs étant stocké dans GitHub, il peut utiliser un sur-ensemble de 
 Pour créer un en-tête, vous utilisez un dièse (#), comme suit :
 
 ```markdown
-    # This is heading 1
-    ## This is heading 2
-    ### This is heading 3
-    #### This is heading 4
+# This is heading 1
+## This is heading 2
+### This is heading 3
+#### This is heading 4
 ```
 
 ### <a name="bold-and-italic-text"></a>Texte en gras et italique
@@ -38,19 +38,19 @@ Pour créer un en-tête, vous utilisez un dièse (#), comme suit :
 Pour formater le texte en **gras**, vous l’entourez de deux astérisques :
 
 ```markdown
-    This text is **bold**.
+This text is **bold**.
 ```
 
 Pour formater le texte en *italique*, vous l’entourez d’un seul astérisque :
 
 ```markdown
-    This text is *italic*.
+This text is *italic*.
 ```
 
 Pour formater le texte en ***gras et en italique***, vous l’entourez de trois astérisques :
 
 ```markdown
-    This is text is both ***bold and italic***.
+This is text is both ***bold and italic***.
 ```
 
 ### <a name="lists"></a>Listes
@@ -107,16 +107,16 @@ Pour imbriquer une liste dans une autre, indentez les éléments de liste enfant
 
 ```markdown
 1. First instruction
-    1. Sub-instruction
-    2. Sub-instruction
+   1. Sub-instruction
+   2. Sub-instruction
 2. Second instruction
 ```
 
 s’affichera sous la forme :
 
 1. Première instruction
-    1. Sous-instruction
-    2. Sous-instruction
+   1. Sous-instruction
+   2. Sous-instruction
 2. Deuxième instruction
 
 ### <a name="tables"></a>les tableaux
@@ -145,12 +145,12 @@ s’affichera sous la forme :
 
 Pour plus d'informations sur la création de tableaux, consultez :
 
-- La [fonctionnalité de wrapping de tableaux](#table-wrapping) Markdig, qui peut vous aider à mettre en forme les tableaux larges
-- [Organisation des informations avec des tableaux](https://help.github.com/articles/organizing-information-with-tables/), de GitHub
-- L'application Web [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables)
-- [« Markdown Cheatsheet » d'Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables)
-- [« Markdown Extra » de Michel Fortin](https://michelf.ca/projects/php-markdown/extra/#table)
-- [Convertir les tableaux HTML en Markdown](https://jmalarcon.github.io/markdowntables/)
+- La [fonctionnalité de wrapping de tableaux](#table-wrapping) Markdig, qui peut vous aider à mettre en forme les tableaux larges.
+- [Organisation des informations avec des tableaux](https://help.github.com/articles/organizing-information-with-tables/), de GitHub.
+- L’application web [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables).
+- [« Markdown Cheatsheet » d’Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables).
+- [« Markdown Extra » de Michel Fortin](https://michelf.ca/projects/php-markdown/extra/#table).
+- [Convertir les tableaux HTML en Markdown](https://jmalarcon.github.io/markdowntables/).
 
 ### <a name="links"></a>Liens
 
@@ -212,6 +212,7 @@ Ces langages prennent en charge les noms conviviaux, et pour la plupart d’entr
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
+|R|r|
 |Ruby|ruby|
 |SQL|sql|
 |Swift|swift|
@@ -336,18 +337,19 @@ Markdig prend en charge l’inclusion avancée de code dans un article, via son 
 Le texte de remplacement qui contient des traits de soulignement ne s’affiche pas correctement. Par exemple, au lieu d’utiliser ceci :
 
 ```markdown
-![ADextension_2FA_Configure_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 Placez les traits de soulignement dans une séquence d’échappement comme ceci :
 
 ```markdown
-![ADextension\_2FA\_Configure\_Step4] (./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
+![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 ### <a name="apostrophes-and-quotation-marks"></a>Apostrophes et guillemets
 
-Si vous copiez de Word dans un éditeur Markdown, le texte peut contenir des apostrophes ou guillemets courbes. Vous devez les encoder ou les changer en apostrophes/guillemets de base. Sinon, vous verrez des choses semblables à ceci une fois le fichier publié : Itâ€™s
+Si vous copiez de Word dans un éditeur Markdown, le texte peut contenir des apostrophes ou guillemets courbes. Vous devez les encoder ou les changer en apostrophes/guillemets de base.
+Sinon, vous verrez des choses semblables à ceci une fois le fichier publié : Itâ€™s
 
 Voici les encodages pour les versions courbes de ces signes de ponctuation :
 
@@ -358,14 +360,15 @@ Voici les encodages pour les versions courbes de ces signes de ponctuation :
 
 ### <a name="angle-brackets"></a>Crochets pointus
 
-Si vous utilisez des crochets pointus dans le texte (et non le code) de votre fichier, par exemple pour signaler un espace réservé, vous devez manuellement encoder les crochets pointus. Sinon, Markdown considère qu’il s’agit d’une balise HTML.
+Il est courant d’utiliser des crochets pointus pour indiquer un espace réservé. Quand vous effectuez cette opération dans un texte (pas dans du code), vous devez encoder les crochets pointus. Sinon, Markdown considère qu’il s’agit d’une balise HTML.
 
 Par exemple, encodez `<script name>` en `&lt;script name&gt;`
 
-## <a name="see-also"></a>Voir aussi
+## <a name="see-also"></a>Voir aussi :
 
 ### <a name="markdown-resources"></a>Ressources Markdown
 
 - [Introduction à Markdown](https://daringfireball.net/projects/markdown/syntax)
 - [Fiche récapitulative de Markdown pour Docs](./media/documents/markdown-cheatsheet.pdf?raw=true)
 - [Les bases du Markdown GitHub](https://help.github.com/articles/markdown-basics/)
+- [Guide de Markdown](https://www.markdownguide.org/)

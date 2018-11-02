@@ -1,20 +1,19 @@
 ---
-title: Docs Authoring Pack pour VS Code
-description: Cet article décrit le pack d’extensions VS Code visant à faciliter la création de contenu Markdown pour docs.microsoft.com.
+title: Docs Authoring Pack pour Visual Studio Code
+description: Cet article décrit le pack d’extensions Visual Studio Code visant à faciliter la création de contenu Markdown pour docs.microsoft.com.
 author: meganbradley
 ms.author: mbradley
-manager: jemash
-ms.date: 04/06/2018
-ms.openlocfilehash: b9fedce0a73c5c4212ffd0893c745fab56677c8c
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.date: 10/22/2018
+ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308913"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805651"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Docs Authoring Pack pour VS Code
 
-Docs Authoring Pack est une collection d’extensions VS Code visant à faciliter la création de contenu Markdown pour docs.microsoft.com. [Disponible dans le VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack), le pack contient les extensions suivantes :
+Le Docs Authoring Pack est une collection d’extensions Visual Studio Code visant à faciliter la création de contenu Markdown pour docs.microsoft.com. [Disponible dans le VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack), le pack contient les extensions suivantes :
 
 - [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) : créé par David Anson, ce linter populaire vérifie que le contenu Markdown respecte les bonnes pratiques.
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) : outil de vérification orthographique entièrement hors ligne de Street Side Software.
@@ -42,9 +41,9 @@ Pour accéder au menu Docs Markdown, tapez `ALT+M`. Vous pouvez cliquer sur la f
 |Liste numérotée|Insère une nouvelle liste numérotée.<br><br> Si plusieurs lignes sont sélectionnées, chaque ligne constitue un élément de liste. Notez que les listes numérotées apparaissent toutes dans Markdown avec des 1. Toutefois, elles s’affichent sur docs.microsoft.com avec des numéros séquentiels ou, pour les listes imbriquées, des lettres. Pour créer une liste numérotée imbriquée, appuyez sur Tab dans la liste parente.|
 |Liste à puces|Insère une nouvelle liste à puces.|
 |Table        |Insère une structure de table Markdown.<br><br>Après avoir sélectionné la commande table, spécifiez le nombre de colonnes et de lignes au format colonnes:lignes. Par exemple : 3:4. Dans un souci de lisibilité, notez que le nombre maximum de colonnes que vous pouvez spécifier avec cette extension est de 5.|
-|Lien vers un fichier dans le référentiel|Insère un lien relatif à un autre fichier dans le référentiel actuel. Après avoir sélectionné cette option, tapez du texte dans la fenêtre de commande pour filtrer les fichiers par nom, puis sélectionnez le fichier souhaité. Si vous aviez précédemment sélectionné du texte, il devient le texte du lien. Sinon, le titre H1 du fichier cible est utilisé comme texte du lien.|
+|Lien vers un fichier dans le dépôt|Insère un lien relatif à un autre fichier dans le dépôt actuel. Après avoir sélectionné cette option, tapez du texte dans la fenêtre de commande pour filtrer les fichiers par nom, puis sélectionnez le fichier souhaité. Si vous aviez précédemment sélectionné du texte, il devient le texte du lien. Sinon, le titre H1 du fichier cible est utilisé comme texte du lien.|
 |Lien vers une page web    |Insère un lien vers une page web. Une fois cette option sélectionnée, collez ou tapez l’URI dans la fenêtre de commande. `https://` est obligatoire. Si vous aviez précédemment sélectionné du texte, il devient le texte du lien. Sinon, l’URI sera utilisé comme texte du lien.|
-|Lien vers un titre     |Assure le lien vers un signet dans le fichier actuel ou un autre fichier du référentiel.<br>`Bookmark in this file` : choisissez un élément dans une liste de titres du fichier actif pour insérer un signet correctement mis en forme.<br>`Bookmark in another file` : commencez par filtrer les fichiers par nom et sélectionnez le fichier vers lequel doit pointer le lien, puis choisissez le titre approprié dans le fichier sélectionné.|
+|Lien vers un titre     |Assure le lien vers un signet dans le fichier actuel ou un autre fichier du dépôt.<br>`Bookmark in this file` : choisissez un élément dans une liste de titres du fichier actif pour insérer un signet correctement mis en forme.<br>`Bookmark in another file` : commencez par filtrer les fichiers par nom et sélectionnez le fichier vers lequel doit pointer le lien, puis choisissez le titre approprié dans le fichier sélectionné.|
 |Image        |Tapez le texte de remplacement (obligatoire à des fins d’accessibilité) et sélectionnez-le, puis appelez cette commande pour filtrer la liste des fichiers image pris en charge dans le dépôt et sélectionnez celui que vous voulez. Si aucun texte de remplacement n’est sélectionné quand vous appelez cette commande, vous êtes invité à le faire avant de pouvoir choisir un fichier image.|
 |Inclure      |Recherchez un fichier à incorporer au fichier actif.|
 |Extrait      |Recherchez un extrait de code dans le dépôt à incorporer au fichier actif.|
@@ -88,7 +87,7 @@ Les utilisateurs de la préversion de l’extension remarqueront que la barre d�
 
 ## <a name="how-to-use-docs-templates"></a>Utilisation des modèles Docs
 
-L’extension Docs Article Templates permet à ceux qui écrivent en VS Code d’extraire un modèle Markdown à partir d’un magasin centralisé et de l’appliquer à un fichier. Les modèles peuvent permettre de s’assurer que les métadonnées requises sont incluses dans les articles, que les normes relatives au contenu sont respectées, etc. Les modèles sont gérés en tant que fichiers Markdown dans un référentiel GitHub public.
+L’extension Docs Article Templates permet à ceux qui écrivent en VS Code d’extraire un modèle Markdown à partir d’un magasin centralisé et de l’appliquer à un fichier. Les modèles peuvent permettre de s’assurer que les métadonnées requises sont incluses dans les articles, que les normes relatives au contenu sont respectées, etc. Les modèles sont gérés en tant que fichiers Markdown dans un dépôt GitHub public.
 
 ### <a name="to-apply-a-template-in-vs-code"></a>Pour appliquer un modèle dans VS Code
 
@@ -103,7 +102,7 @@ L’extension Templates prend en charge trois champs de métadonnées dynamiques
 |----------|---------------|
 |author    |Votre ID GitHub, si spécifié dans le fichier des paramètres VS Code.|
 |ms.author |Votre alias Microsoft, si spécifié dans le fichier des paramètres VS Code. Si vous n’êtes pas un employé de Microsoft, ne renseignez pas ce champ.|
-|ms.date   |La date actuelle au format pris en charge par Docs, MM/JJ/AAAA. Notez que la date n’est pas automatiquement mise à jour si vous modifiez le fichier ultérieurement. Vous devez la mettre à jour manuellement pour indiquer la date de l’article.|
+|ms.date   |La date actuelle au format pris en charge par Docs, MM/JJ/AAAA. Notez que la date n’est pas automatiquement mise à jour si vous mettez à jour le fichier par la suite. Vous devez manuellement mettre à jour la valeur ms.date pour indiquer la date de publication la plus récente sur le site docs.microsoft.com.|
 
 ### <a name="to-set-author-github-id-andor-msauthor-microsoft-alias"></a>Pour définir author (ID GitHub) et/ou ms.author (alias Microsoft)
 

@@ -8,20 +8,20 @@ ms.date: 07/24/2018
 ms.author: cfowler
 zone_pivot_groups: keyvault-languages
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 27ebd3e348fc231d8b82e6c17f282bd9ca4afb9f
-ms.sourcegitcommit: 5e508a7ad2991632a38f302e4769b36e3bf37eb2
+ms.openlocfilehash: 497631fe46ac4e2c9c495a609547753a84d662bf
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/30/2018
-ms.locfileid: "43308821"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805737"
 ---
 # <a name="quickstart-set-and-retrieve-a-secret-from-azure-key-vault"></a>Démarrage rapide : définir et récupérer un secret depuis Azure Key Vault à l’aide d’Azure Key Vault
 
-Ce démarrage rapide vous montre comment stocker un secret dans Key Vault et le récupérer à l’aide d’une application web. Pour afficher la valeur du secret, vous devrez exécuter cette procédure sur Azure. Le démarrage rapide utilise des identités de service administrées (MSI) et Node.js
+Ce démarrage rapide vous montre comment stocker un secret dans Key Vault et le récupérer à l’aide d’une application web. Pour afficher la valeur du secret, vous devrez exécuter cette procédure sur Azure. Le guide de démarrage rapide utilise des identités de service administrées (MSI) et Node.js.
 
 > [!div class="checklist"]
 > * Création d’un coffre de clés.
-> * Stockage d’un secret dans Key Vault.
+> * Stockage d’un secret dans le coffre de clés.
 > * Récupération d’un secret à partir de Key Vault.
 > * Création d’une application web Azure.
 > * [Activation d’identités de service administrées (MSI)](https://docs.microsoft.com/azure/active-directory/managed-service-identity/overview).
@@ -35,11 +35,14 @@ Avant de procéder, assurez-vous d’être familiarisé avec les [concepts de ba
 ## <a name="prerequisites"></a>Composants requis
 
 ::: zone pivot="nodejs"
-* [Node JS](https://nodejs.org/en/) ::: zone-end ::: zone pivot="dotnet"
+* [Node JS](https://nodejs.org/en/)
+::: zone-end
+::: zone pivot="dotnet"
 * [Visual Studio 2017 version 15.7.3 ou version ultérieure](https://www.microsoft.com/net/download/windows) avec les charges de travail suivantes :
   * Développement web et ASP.NET
   * Développement multiplateforme .NET Core
-* [SDK .NET Core 2.1 ou version ultérieure](https://www.microsoft.com/net/download/windows) :::zone-end
+* [SDK .NET Core 2.1 ou version ultérieure](https://www.microsoft.com/net/download/windows)
+::: zone-end
 * Git ([télécharger](https://git-scm.com/downloads)).
 * Un abonnement Azure. Si vous n’avez pas d’abonnement Azure, créez un [compte gratuit](https://azure.microsoft.com/free/?WT.mc_id=A261C142F) avant de commencer.
 * [Azure CLI](https://docs.microsoft.com/cli/azure/install-azure-cli?view=azure-cli-latest) version 2.0.4 ou ultérieure. Disponible pour Windows, Mac et Linux.
@@ -110,7 +113,10 @@ git clone https://github.com/Azure-Samples/key-vault-node-quickstart.git
 
 ## <a name="install-dependencies"></a>Installer des dépendances
 
-Ici, nous installons les dépendances. Exécutez les commandes suivantes cd key-vault-node-quickstart npm install
+Ici, nous installons les dépendances. Exécutez les commandes suivantes :
+
+    cd key-vault-node-quickstart
+    npm install
 
 Ce projet a utilisé 2 modules de nœud :
 
@@ -119,14 +125,14 @@ Ce projet a utilisé 2 modules de nœud :
 
 ## <a name="publish-the-web-application-to-azure"></a>Publier l’application web dans Azure
 
-Voici les quelques étapes que nous devons faire
+Voici les quelques étapes que nous devons suivre pour publier l’application sur Azure.
 
 * La 1ère étape consiste à créer un plan [Azure App Service](https://azure.microsoft.com/services/app-service/). Vous pouvez stocker plusieurs applications web dans ce plan.
 
     ```azurecli
     az appservice plan create --name myAppServicePlan --resource-group myResourceGroup
     ```
-* Nous créons maintenant une application web. Dans l’exemple suivant, remplacez <app_name> par un nom d’application unique (les caractères autorisés sont a-z, 0-9 et -). Le runtime est défini sur NODE|6.9. Pour afficher tous les runtimes pris en charge, exécutez az webapp list-runtimes
+* Nous créons maintenant une application web. Dans l’exemple suivant, remplacez <app_name> par un nom d’application unique (les caractères autorisés sont a-z, 0-9 et -). Le runtime est défini sur NODE|6.9. Pour voir tous les runtimes, exécutez `az webapp list-runtimes`.
 
     ```azurecli
     az webapp create --resource-group myResourceGroup --plan myAppServicePlan --name <app_name> --runtime "NODE|6.9" --deployment-local-git
@@ -156,7 +162,7 @@ Voici les quelques étapes que nous devons faire
     La commande ci-dessus crée également une application prenant en charge Git qui vous permet de déployer vers Azure à partir de votre git local. 
     Le git local est configuré avec l’URL de « https://<username>@<app_name>.scm.azurewebsites.net/<app_name>.git »
 
-* Créer un utilisateur de déploiement Une fois la commande précédente terminée, vous pouvez ajouter un Azure à distance à votre référentiel Git local. Remplacez <url> par l’URL du Git distant de la section Activer Git pour votre application.
+* Créer un utilisateur de déploiement Une fois la commande précédente terminée, vous pouvez ajouter un Azure à distance à votre dépôt Git local. Remplacez <url> par l’URL du Git distant de la section Activer Git pour votre application.
 
     ```bash
     git remote add azure <url>
@@ -238,7 +244,8 @@ Assurez-vous d’avoir remplacé le nom <YourKeyVaultName> par le nom de votre c
 
 ::: zone-end
 
-::: zone pivot="dotnet" Maintenant lorsque vous exécutez l’application, vous devriez voir la valeur de votre secret récupérée.
+::: zone pivot="dotnet"
+Maintenant, quand vous exécutez l’application, vous devriez voir la valeur du secret récupérée.
 ::: zone-end
 
 ## <a name="next-steps"></a>Étapes suivantes
@@ -247,10 +254,12 @@ Assurez-vous d’avoir remplacé le nom <YourKeyVaultName> par le nom de votre c
 * [Page d'accueil d’Azure Key Vault](https://azure.microsoft.com/services/key-vault/)
 * [Documentation d’Azure Key Vault](https://docs.microsoft.com/azure/key-vault/)
 * [SDK Azure pour Node](https://docs.microsoft.com/javascript/api/overview/azure/key-vault)
-* [Informations de référence sur l’API REST Azure](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Informations de référence sur l’API REST Azure](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end
 
 ::: zone pivot="dotnet"
 * [Page d'accueil d’Azure Key Vault](https://azure.microsoft.com/services/key-vault/)
 * [Documentation d’Azure Key Vault](https://docs.microsoft.com/azure/key-vault/)
 * [SDK Azure pour .NET](https://github.com/Azure/azure-sdk-for-net)
-* [Informations de référence sur l’API REST Azure](https://docs.microsoft.com/rest/api/keyvault/) ::: zone-end
+* [Informations de référence sur l’API REST Azure](https://docs.microsoft.com/rest/api/keyvault/)
+::: zone-end

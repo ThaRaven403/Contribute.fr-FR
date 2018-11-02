@@ -3,25 +3,24 @@ title: Configurer le dépôt Git localement
 description: Cet article vous aider à créer un dépôt Git local et à contribuer à la documentation. Il explique notamment le processus de clonage et de duplication (fork).
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 01/18/2018
-ms.openlocfilehash: 2ad0de552d481e2460ca0f56570181e33d0a6608
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36238986"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805674"
 ---
-# <a name="set-up-git-repository-locally-for-documentation"></a>Configurer un référentiel Git localement pour la documentation
+# <a name="set-up-git-repository-locally-for-documentation"></a>Configurer un dépôt Git localement pour la documentation
 
-Cet article décrit les étapes à suivre pour configurer un référentiel Git sur un ordinateur local, dans l’intention de contribuer à la documentation de Microsoft. Les contributeurs peuvent utiliser un référentiel cloné localement pour ajouter de nouveaux articles, apporter des modifications importantes à des articles existants ou modifier des illustrations.
+Cet article décrit les étapes à suivre pour configurer un dépôt Git sur un ordinateur local, dans l’intention de contribuer à la documentation de Microsoft. Les contributeurs peuvent utiliser un dépôt cloné localement pour ajouter de nouveaux articles, apporter des modifications importantes à des articles existants ou modifier des illustrations.
 
 Effectuez une fois pour toutes ces activités de configuration afin de commencer à contribuer :
 > [!div class="checklist"]
-> * Identifiez un référentiel adéquat.
-> * Dupliquez (fork) le référentiel sur votre compte GitHub.
+> * Identifiez un dépôt adéquat.
+> * Dupliquez (fork) le dépôt sur votre compte GitHub.
 > * Choisissez un dossier local pour les fichiers clonés.
-> * Clonez le référentiel sur votre ordinateur local.
+> * Clonez le dépôt sur votre ordinateur local.
 > * Configurez la valeur à distance en amont.
 
 > [!IMPORTANT]
@@ -30,7 +29,7 @@ Effectuez une fois pour toutes ces activités de configuration afin de commencer
 
 ## <a name="overview"></a>Vue d'ensemble
 
-Pour contribuer au site de documentation de Microsoft, vous pouvez créer et modifier des fichiers Markdown localement en clonant le dépôt de documentation correspondant. Microsoft vous impose de dupliquer (fork) le référentiel adéquat dans votre propre compte GitHub, de façon à ce que vous y disposiez des autorisations de lecture/écriture nécessaires pour stocker les modifications que vous proposez. Vous utiliserez ensuite des demandes de tirage (pull requests) pour fusionner les modifications dans le référentiel central partagé en lecture seule.
+Pour contribuer au site de documentation de Microsoft, vous pouvez créer et modifier des fichiers Markdown localement en clonant le dépôt de documentation correspondant. Microsoft vous impose de dupliquer (fork) le dépôt adéquat dans votre propre compte GitHub, de façon à ce que vous y disposiez des autorisations de lecture/écriture nécessaires pour stocker les modifications que vous proposez. Vous utiliserez ensuite des demandes de tirage (pull requests) pour fusionner les modifications dans le dépôt central partagé en lecture seule.
 
 ![Triangle GitHub](./media/git-and-github-initial-setup.png)
 
@@ -38,29 +37,29 @@ Si vous découvrez GitHub, regardez la vidéo ci-dessous pour un aperçu concept
 
 >[!VIDEO https://channel9.msdn.com/Blogs/CoolMoose/Git-Repository-Setup/player]
 
-## <a name="determine-the-repository"></a>Déterminer le référentiel
+## <a name="determine-the-repository"></a>Déterminer le dépôt
 
-La documentation hébergée sur [docs.microsoft.com](https://docs.microsoft.com) réside dans plusieurs référentiels différents à l’adresse [github.com](https://www.github.com).
+La documentation hébergée sur [docs.microsoft.com](https://docs.microsoft.com) réside dans plusieurs dépôt différents sur [github.com](https://www.github.com).
 
-1. Si vous ne savez pas exactement quel référentiel utiliser, accédez à l’article sur docs.microsoft.com avec votre navigateur web. Sélectionnez le lien **Modifier** (icône en forme de crayon) en haut à droite de l’article.
+1. Si vous ne savez pas exactement quel dépôt utiliser, accédez à l’article sur docs.microsoft.com avec votre navigateur web. Sélectionnez le lien **Modifier** (icône en forme de crayon) en haut à droite de l’article.
 
-   ![Cliquez sur Modifier pour déterminer l’emplacement du fichier et du référentiel.](media/index/edit-article.png)
+   ![Cliquez sur Modifier pour déterminer l’emplacement du fichier et du dépôt.](media/index/edit-article.png)
 
-2. Ce lien vous conduit à l’emplacement github.com du fichier Markdown correspondant dans le dépôt approprié. Notez l’URL pour afficher le nom du référentiel.
+2. Ce lien vous conduit à l’emplacement github.com du fichier Markdown correspondant dans le dépôt approprié. Notez l’URL pour afficher le nom du dépôt.
 
-   ![Notez l’URL pour déterminer l’emplacement du référentiel.](media/public-repo.png)
+   ![Notez l’URL pour déterminer l’emplacement du dépôt.](media/public-repo.png)
 
-   Par exemple, ces référentiels courants sont ouverts aux contributions publiques :
+   Par exemple, ces dépôts courants sont ouverts aux contributions publiques :
    - Documentation Azure [https://github.com/MicrosoftDocs/azure-docs](https://github.com/MicrosoftDocs/azure-docs)
    - Documentation SQL Server [https://github.com/MicrosoftDocs/sql-docs](https://github.com/MicrosoftDocs/sql-docs)
    - Documentation Visual Studio [https://github.com/MicrosoftDocs/visualstudio-docs](https://github.com/MicrosoftDocs/visualstudio-docs)
    - Documentation .NET [https://github.com/dotnet/docs](https://github.com/dotnet/docs)
-   - [Documentation du SDK Azure pour .NEThttps://github.com/azure/azure-docs-sdk-dotnet](https://github.com/azure/azure-docs-sdk-dotnet)
+   - [Documentation du SDK Azure pour .NET https://github.com/azure/azure-docs-sdk-dotnet](https://github.com/azure/azure-docs-sdk-dotnet)
 
-## <a name="fork-the-repository"></a>Dupliquer (fork) le référentiel
+## <a name="fork-the-repository"></a>Dupliquer (fork) le dépôt
 À l’aide du dépôt approprié, créez une duplication (fork) du dépôt dans votre propre compte GitHub à l’aide du site web GitHub.
 
-Une duplication personnelle est nécessaire, car tous les dépôts de documentation principaux fournissent un accès en lecture seule, ce qui signifie que vous ne pouvez pas changer directement le contenu des dépôts. Pour effectuer des changements, vous devez envoyer une [demande de tirage](git-github-fundamentals.md#pull-requests) (pull request) au dépôt principal. Pour faciliter ce processus, vous avez d’abord besoin de votre propre copie du dépôt auquel vous avez accès en écriture. Une *duplication* GitHub sert à cela.
+Une duplication personnelle est requise dans la mesure où tous les dépôts de la documentation principale fournissent un accès en lecture seule. Pour effectuer des changements, vous devez envoyer une [demande de tirage](git-github-fundamentals.md#pull-requests) (pull request) au dépôt principal. Pour faciliter ce processus, vous avez d’abord besoin de votre propre copie du dépôt auquel vous avez accès en écriture. Une *duplication* GitHub sert à cela.
 
 1. Naviguez vers la page GitHub du dépôt principal et cliquez sur le bouton **Fork** (Duplication) dans la partie supérieure droite.
 
