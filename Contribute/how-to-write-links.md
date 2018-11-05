@@ -2,12 +2,12 @@
 title: Guide pratique pour utiliser des liens dans la documentation
 description: Cet article vous aide à créer des liens vers du contenu situé sur docs.microsoft.com.
 ms.date: 06/29/2017
-ms.openlocfilehash: 92c23f2b91c67d7a1695c5f1e5dcdc80a8517f6e
-ms.sourcegitcommit: 37cd16636d7dcfc5222ef5a5d60e4ff30f74485c
+ms.openlocfilehash: 1820ed9af561964d7afe0b29827ee43526c72489
+ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/02/2018
-ms.locfileid: "48030930"
+ms.lasthandoff: 10/23/2018
+ms.locfileid: "49805766"
 ---
 # <a name="using-links-in-documentation"></a>Utilisation de liens dans la documentation
 Cet article décrit comment utiliser des liens hypertexte à partir de pages hébergées sur docs.microsoft.com. Vous pouvez facilement ajouter des liens dans la syntaxe Markdown en tenant compte de quelques conventions. Les liens pointent vers du contenu situé dans la même page, dans d’autres pages voisines ou sur des sites et des URL externes.
@@ -158,7 +158,7 @@ La portion &lt;moniker-name&gt; est facultative. Si elle est omise, vous êtes d
 Quand vous utilisez ces URL, vous êtes redirigé vers la dernière version du contenu. De cette façon, vous n’avez pas besoin de spécifier de version moniker. Vous n’avez pas non plus de liens vers du contenu conceptuel à mettre à jour quand la version change.
 
 Pour créer le lien approprié, trouvez la page vers laquelle vous voulez établir un lien dans votre navigateur et copiez l’URL.
-Ensuite, supprimez « https://docs.microsoft.com » et les informations sur les paramètres régionaux.
+Ensuite, supprimez `https://docs.microsoft.com` et les informations sur les paramètres régionaux.
 
 Quand vous créez un lien depuis une table des matières, vous devez utiliser l’URL complète sans les informations de paramètres régionaux.
 
