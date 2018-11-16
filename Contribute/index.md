@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: 921c63c2748149543bfc73e4b38278a2ed74ac56
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: dab2de80654fb55382b2ca7c9f78df36df9971dc
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805789"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609358"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Guide du contributeur Microsoft Docs - Vue d’ensemble
 
@@ -27,30 +27,32 @@ L’expérience utilisateur sur [docs.microsoft.com](https://docs.microsoft.com)
 > [!IMPORTANT]
 > Tous les référentiels qui publient sur docs.microsoft.com ont adopté soit le [Code de conduite de Microsoft Open Source](https://opensource.microsoft.com/codeofconduct/), soit le [Code de conduite de .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Pour plus d’informations, consultez les [questions fréquentes (FAQ) sur le code de conduite](https://opensource.microsoft.com/codeofconduct/faq/). Vous pouvez aussi envoyer vos questions ou vos commentaires à [opencode@microsoft.com](mailto:opencode@microsoft.com) ou à [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org).<br>
 >
-> Les corrections mineures ou les clarifications pour la documentation, ainsi que les exemples de code dans les référentiels publics, sont couverts par les [Conditions d’utilisation du site web docs.microsoft.com](https://docs.microsoft.com/legal/termsofuse). Les nouveautés ou modifications significatives génèrent un commentaire dans la demande de tirage (pull request) qui vous invite à signer un contrat de licence de contribution en ligne si vous n’êtes pas un employé de Microsoft. Vous devrez remplir le formulaire en ligne pour que nous puissions examiner ou accepter votre demande de tirage.
+> Les corrections mineures ou les clarifications pour la documentation, ainsi que les exemples de code dans les référentiels publics, sont couverts par les [Conditions d’utilisation du site web docs.microsoft.com](https://docs.microsoft.com/legal/termsofuse). Les nouveautés ou modifications significatives génèrent un commentaire dans la demande de tirage (pull request) qui vous invite à signer un contrat de licence de contribution en ligne si vous n’êtes pas un employé de Microsoft. Vous devrez remplir le formulaire en ligne pour que nous puissions examiner ou accepter votre demande de tirage (pull request).
 
 ## <a name="quick-edits-to-existing-documents"></a>Modifications rapides de documents existants
 
-Les modifications rapides permettent de rationaliser le processus de signalement et de correction de petites erreurs et omissions dans des documents. Malgré tous les efforts, nos documents publiés peuvent contenir de petites fautes de grammaire et d’orthographe. Même si vous pouvez signaler des problèmes et nous faire part d’erreurs, il est plus rapide et plus facile de créer une demande de tirage pour résoudre un problème. Presque tous les articles sont dotés d’un bouton de modification comme celui de la figure suivante. En cliquant sur le bouton **Modification** (ou terme localisé équivalent), vous accédez au fichier source sur GitHub.
+Les modifications rapides permettent de rationaliser le processus de signalement et de correction de petites erreurs et omissions dans des documents. Malgré tous les efforts, nos documents publiés peuvent contenir de petites fautes de grammaire et d’orthographe. Même si vous pouvez signaler des problèmes et nous faire part d’erreurs, il est plus rapide et plus facile de créer une demande de tirage (pull request) pour résoudre un problème. Presque tous les articles sont dotés d’un bouton de modification comme celui de la figure suivante. En cliquant sur le bouton **Modification** (ou terme localisé équivalent), vous accédez au fichier source sur GitHub.
 
 ![Emplacement du lien de modification](./media/index/edit-article.png)
 
 Cliquez ensuite sur l’icône représentant un crayon affichée sur la figure suivante pour modifier l’article.
 
-> [!NOTE]
-> Si l’icône représentant un crayon est grisée, vous devez vous connecter à votre compte GitHub ou créer un compte. Effectuez vos modifications dans l’éditeur web. Vous pouvez cliquer sur l’onglet **Aperçu des modifications** pour vérifier la mise en forme de votre modification.
-
 ![Emplacement de l’icône de crayon](./media/index/editicon.png)
+
+> [!NOTE]
+> Si l’icône représentant un crayon est grisée, vous devez vous connecter à votre compte GitHub ou créer un compte.
+
+Effectuez vos modifications dans l’éditeur web. Vous pouvez cliquer sur l’onglet **Aperçu des modifications** pour vérifier la mise en forme de votre modification.
 
 Une fois vos modifications effectuées, faites défiler vers le bas de la page. Entrez un titre et une description pour votre demande de tirage (PR) et cliquez sur **Proposer une modification du fichier** comme indiqué sur la figure suivante :
 
 ![votre proposition de modification](./media/index/submit-pull-request.png)
 
-À présent que vous avez proposé votre modification, vous devez demander aux propriétaires du référentiel de « tirer (pull) » vos modifications dans leur référentiel. Pour cela, vous utilisez une « demande de tirage » (pull request). Lorsque vous avez cliqué sur **Proposer une modification du fichier** dans la figure ci-dessus, vous devriez avoir été dirigé vers une nouvelle page qui ressemble à la figure suivante :
+À présent que vous avez proposé votre modification, vous devez demander aux propriétaires du référentiel de « tirer (pull) » vos modifications dans leur référentiel. Pour cela, vous utilisez une « requête de tirage (pull) ». Lorsque vous avez cliqué sur **Proposer une modification du fichier** dans la figure ci-dessus, vous devriez avoir été dirigé vers une nouvelle page qui ressemble à la figure suivante :
 
-![créer une demande de tirage](media/index/create-pull-request.png)
+![créer une requête de tirage](media/index/create-pull-request.png)
 
-Cliquez sur **Create pull request**, entrez un titre (et une description si vous le voulez) pour la demande de tirage, puis cliquez à nouveau sur **Create pull request**.
+Cliquez sur **Créer une requête de tirage (pull)**, entrez un titre (et une description si vous le voulez) pour la requête de tirage (pull), puis cliquez à nouveau sur **Créer une requête de tirage (pull)**.
 
 Et voilà ! Les membres de l’équipe de contenu réviseront et fusionneront votre demande de tirage (PR). Vous recevrez peut-être des commentaires avec des demandes des modification si vous avez effectué des modifications majeures.
 
@@ -78,4 +80,4 @@ Les problèmes permettent d’amorcer une conversation sur ce dont vous avez bes
 
 ## <a name="get-more-involved"></a>Engagez-vous plus
 
-D’autres rubriques vous aident à commencer à contribuer de manière productive à Microsoft Docs. Elles expliquent les extensions utilisées sur la plateforme Microsoft Docs, ainsi que l’utilisation des dépôts GitHub et des outils Markdown.
+D’autres rubriques vous aident à commencer à contribuer de manière productive à Microsoft Docs. Elles expliquent les extensions utilisées sur la plateforme Microsoft Docs, ainsi que l’utilisation des référentiels GitHub et des outils Markdown.
