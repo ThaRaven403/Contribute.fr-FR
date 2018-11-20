@@ -11,6 +11,11 @@
 ## [Démarrage rapide pour le style et le ton](style-quick-start.md)
 ## [Liens](how-to-write-links.md)
 ## [Docs Authoring Pack](how-to-write-docs-auth-pack.md)
+# Instructions propres aux jeux de documentation
+## [Documentation .NET](dotnet-contribute.md)
+### [Contribuer à la documentation .NET](dotnet-contribute-process.md)
+### [Conventions de style de documentation .NET](dotnet-style-guide.md)
+### [Guide de style](dotnet-voice-tone.md)
 
 <!--
 ## Creating new content
