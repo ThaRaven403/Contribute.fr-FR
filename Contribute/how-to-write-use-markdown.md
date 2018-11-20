@@ -2,12 +2,12 @@
 title: Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 description: Cet article fournit des informations de base et de référence sur le langage Markdown utilisé pour écrire des articles docs.microsoft.com.
 ms.date: 07/13/2017
-ms.openlocfilehash: 6bb8a1fa20957512addb07dda0e68abec4b0a83f
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805722"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609519"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 
@@ -33,6 +33,14 @@ Pour créer un en-tête, vous utilisez un dièse (#), comme suit :
 #### This is heading 4
 ```
 
+Les en-têtes doivent être de style atx, autrement dit vous devez placer de 1 à 6 caractères dièse (#) au début de la ligne pour indiquer qu’il s’agit d’un en-tête, correspondant aux niveaux d’en-têtes HTML H1 à H6. Des exemples d’en-têtes du premier au quatrième niveau sont utilisés ci-dessus.
+
+Il ne doit y avoir qu’**un seul** en-tête de premier niveau dans votre rubrique, qui sera affiché comme titre de page.
+
+Si votre en-tête se termine par un caractère `#`, vous devez ajouter un caractère `#` supplémentaire à la fin pour que le titre soit affiché correctement. Par exemple, `# Async Programming in F# #`.
+
+Les en-têtes de second niveau génèreront la table des matières de la page affichée dans la section « Dans cet article » sous le titre de page.
+
 ### <a name="bold-and-italic-text"></a>Texte en gras et italique
 
 Pour formater le texte en **gras**, vous l’entourez de deux astérisques :
@@ -52,6 +60,18 @@ Pour formater le texte en ***gras et en italique***, vous l’entourez de trois 
 ```markdown
 This is text is both ***bold and italic***.
 ```
+
+### <a name="blockquotes"></a>Éléments blockquote
+
+Pour créer un élément blockquote, vous utilisez le caractère `>` :
+
+```markdown
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
+```
+
+L’exemple précédent s’affiche comme suit :
+
+> The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
 
 ### <a name="lists"></a>Listes
 
@@ -93,8 +113,8 @@ Pour formater une liste ordonnée/d'étapes, vous utilisez les numéros correspo
 
 ```markdown
 1. First instruction
-2. Second instruction
-3. Third instruction
+1. Second instruction
+1. Third instruction
 ```
 
 s’affichera sous la forme :
@@ -108,8 +128,8 @@ Pour imbriquer une liste dans une autre, indentez les éléments de liste enfant
 ```markdown
 1. First instruction
    1. Sub-instruction
-   2. Sub-instruction
-2. Second instruction
+   1. Sub-instruction
+1. Second instruction
 ```
 
 s’affichera sous la forme :
@@ -118,6 +138,8 @@ s’affichera sous la forme :
    1. Sous-instruction
    2. Sous-instruction
 2. Deuxième instruction
+
+Notez que nous utilisons « 1. » pour toutes les entrées. Cela facilite la révision des différences quand des mises à jour ultérieures comprennent de nouvelles étapes ou suppriment des étapes existantes.
 
 ### <a name="tables"></a>les tableaux
 
@@ -194,6 +216,8 @@ Ces langages prennent en charge les noms conviviaux, et pour la plupart d’entr
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
 |C#|csharp|
+|C# dans le navigateur|csharp-interactive|
+|Console|console|
 |CSHTML|cshtml|
 |DAX|dax|
 |F#|fsharp|
@@ -221,6 +245,8 @@ Ces langages prennent en charge les noms conviviaux, et pour la plupart d’entr
 |VSTS CLI|vstscli|
 |XAML|xaml|
 |XML|xml|
+
+Le nom `csharp-interactive` spécifie le langage C# et la capacité à exécuter les exemples à partir du navigateur. Ces extraits sont compilés et exécutés dans un conteneur Docker, et les résultats de cette exécution de programme sont affichés dans la fenêtre de navigateur de l’utilisateur.
 
 #### <a name="example-c"></a>Exemple : C\#
 
@@ -256,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -265,8 +291,8 @@ __Render__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -296,6 +322,36 @@ Vous pouvez choisir parmi quatre types de blocs de notes pour attirer l’attent
 
 En général, les blocs de notes doivent être utilisés avec parcimonie, car ils peuvent perturber la lecture. Même s’ils prennent également en charge les blocs de code, les images, les listes et les liens, essayez de vous limiter à des blocs de notes simples et directs.
 
+Exemples :
+
+```markdown
+> [!NOTE]
+> This is a NOTE
+
+> [!WARNING]
+> This is a WARNING
+
+> [!TIP]
+> This is a TIP
+
+> [!IMPORTANT]
+> This is IMPORTANT
+```
+
+L’affichage est le suivant :
+
+> [!NOTE]
+> Il s’agit d’une REMARQUE
+
+> [!WARNING]
+> Il s’agit d’un AVERTISSEMENT
+
+> [!TIP]
+> Il s’agit d’un CONSEIL
+
+> [!IMPORTANT]
+> Ceci est IMPORTANT
+
 ### <a name="includes"></a>Includes
 
 Quand vous avez du texte ou des fichiers image réutilisables qui doivent être inclus dans des fichiers d’article, vous pouvez utiliser une référence vers le fichier « include » via la fonctionnalité d’inclusion de fichier de Markdig. Cette fonctionnalité demande à OPS d’inclure le fichier dans votre fichier d’article lors de sa génération, ce qui en fait une partie de votre article publié. Trois types d’includes sont disponibles pour vous aider à réutiliser du contenu :
@@ -317,13 +373,29 @@ Voici les conditions requises et éléments à prendre en compte pour les includ
 - Comme pour les articles ordinaires, ne partagez pas de fichiers multimédias entre fichiers include. Utilisez un fichier distinct avec un nom unique pour chaque include et article. Stockez le fichier multimédia dans le dossier multimédia associé à l’include.
 - N'utilisez pas un include comme seul contenu d'un article.  Les includes sont censés compléter le contenu du reste de l'article.
 
+Exemple :
+
+```markdown
+[!INCLUDE[sample include file](../includes/sampleinclude.md)]
+```
+
 ### <a name="selectors"></a>Des sélecteurs
 
-Utilisez des sélecteurs dans les articles techniques lorsque vous créez plusieurs versions d'un même article, pour répondre aux différences d'implémentation à travers les technologies et plateformes. Cela s'applique particulièrement au contenu pour plateformes mobiles pour développeurs. Il existe actuellement deux types différents de sélecteurs dans Markdig, un sélecteur unique et un multi-sélecteur.
+Utilisez des sélecteurs dans les articles techniques quand vous créez plusieurs versions d’un même article, afin de répondre aux différences d’implémentation entre les technologies et plateformes. Cela s'applique particulièrement au contenu pour plateformes mobiles pour développeurs. Il existe actuellement deux types différents de sélecteurs dans Markdig, un sélecteur unique et un multi-sélecteur.
 
 Le même Markdown de sélecteur allant dans chaque article de la sélection, nous vous recommandons de placer le sélecteur pour votre article dans un include. Vous pouvez ensuite référencer ce dernier dans tous vos articles qui utilisent le même sélecteur.
 
-### <a name="code-snippets"></a>Extraits de code
+Voici un exemple de sélecteur :
+
+```markdown
+> [!div class="op_single_selector"]
+- [macOS](../docs/core/tutorials/using-on-macos.md)
+- [Windows](../docs/core/tutorials/with-visual-studio.md)
+```
+
+Vous pouvez obtenir un exemple de sélecteurs en action dans la [Documentation Azure](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic).
+
+### <a name="code-includes"></a>Inclusions de code
 
 Markdig prend en charge l’inclusion avancée de code dans un article, via son extension d’extraits de code. Elle fournit un rendu avancé qui se base sur les fonctionnalités de GFM comme la sélection du langage de programmation et la coloration de la syntaxe, plus des fonctionnalités intéressantes comme :
 
@@ -348,8 +420,7 @@ Placez les traits de soulignement dans une séquence d’échappement comme ceci
 
 ### <a name="apostrophes-and-quotation-marks"></a>Apostrophes et guillemets
 
-Si vous copiez de Word dans un éditeur Markdown, le texte peut contenir des apostrophes ou guillemets courbes. Vous devez les encoder ou les changer en apostrophes/guillemets de base.
-Sinon, vous verrez des choses semblables à ceci une fois le fichier publié : Itâ€™s
+Si vous copiez de Word dans un éditeur Markdown, le texte peut contenir des apostrophes ou guillemets courbes. Vous devez les encoder ou les changer en apostrophes/guillemets de base. Sinon, vous verrez des choses semblables à ceci une fois le fichier publié : Itâ€™s
 
 Voici les encodages pour les versions courbes de ces signes de ponctuation :
 

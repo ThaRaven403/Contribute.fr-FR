@@ -2,19 +2,19 @@
 title: Flux de travail de contribution à GitHub pour les changements majeurs ou à long terme
 description: Cet article vous montre comment utiliser le flux de travail de contributeur « majeur » pour contribuer aux articles de docs.microsoft.com.
 ms.date: 08/30/2017
-ms.openlocfilehash: 31f9421fc5edbc2f65c5ff20a86da08c70211ec7
-ms.sourcegitcommit: 92aef5ea8bdd692c5c393d5c8f99b9e4f672ef2b
+ms.openlocfilehash: 93e659df4f72c6a272d15fd7487eb3a997bdf3c8
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 06/19/2018
-ms.locfileid: "36239822"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609400"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>Flux de travail de contribution à GitHub pour les changements majeurs ou à long terme
 
 > [!IMPORTANT]
-> Tous les référentiels qui publient sur docs.microsoft.com ont adopté soit le [Code de conduite open source de Microsoft](https://opensource.microsoft.com/codeofconduct/), soit le [Code de conduite de .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Pour plus d’informations, consultez les [questions fréquentes (FAQ) sur le code de conduite](https://opensource.microsoft.com/codeofconduct/faq/). Vous pouvez aussi envoyer vos questions ou vos commentaires à [opencode@microsoft.com](mailto:opencode@microsoft.com) ou à [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org).<br>
+> Tous les dépôts qui publient sur docs.microsoft.com ont adopté soit le [Code de conduite open source de Microsoft](https://opensource.microsoft.com/codeofconduct/), soit le [Code de conduite de .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Pour plus d’informations, consultez les [questions fréquentes (FAQ) sur le code de conduite](https://opensource.microsoft.com/codeofconduct/faq/). Vous pouvez aussi envoyer vos questions ou vos commentaires à [opencode@microsoft.com](mailto:opencode@microsoft.com) ou à [conduct@dotnetfoundation.org](mailto:conduct@dotnetfoundation.org).<br>
 >
-> Les corrections mineures ou les clarifications pour la documentation, ainsi que les exemples de code dans les référentiels publics, sont couverts par les [Conditions d’utilisation du site web docs.microsoft.com](https://docs.microsoft.com/legal/termsofuse). Les nouveautés ou modifications significatives génèrent un commentaire dans la demande de tirage qui vous invite à signer un contrat de licence de contribution en ligne si vous n’êtes pas un employé de Microsoft. Vous devrez remplir le formulaire en ligne pour que nous puissions accepter votre requête de tirage (pull request).
+> Les corrections mineures ou les clarifications pour la documentation, ainsi que les exemples de code dans les dépôts publics, sont couverts par les [Conditions d’utilisation du site web docs.microsoft.com](https://docs.microsoft.com/legal/termsofuse). Les nouveautés ou modifications significatives génèrent un commentaire dans la demande de tirage qui vous invite à signer un contrat de licence de contribution en ligne si vous n’êtes pas un employé de Microsoft. Vous devrez remplir le formulaire en ligne pour que nous puissions accepter votre requête de tirage (pull request).
 
 ## <a name="overview"></a>Vue d'ensemble
 
@@ -30,17 +30,17 @@ Avant de commencer, passons en revue quelques-uns des termes et monikers de Git/
 
 | Nom | Description |
 |-----------|-------------|
-|embranchement|Normalement utilisé comme nom lorsqu'il est fait référence à une copie d'un référentiel GitHub principal. En pratique, un embranchement est simplement un autre référentiel. Mais il est particulier en cela que GitHub conservez une connexion avec le référentiel principal/parent. Ce terme est parfois utilisé sous forme verbale, par exemple « Vous devez d’abord dupliquer le dépôt ».|
-|remote|Une connexion nommée à un référentiel distant, comme les remotes « origin » et « upstream ». Git les appelle « remotes », car elles servent à référencer un dépôt hébergé sur un autre ordinateur. Dans ce flux de travail, une connexion remote concerne toujours un référentiel GitHub.|
-|origin|Nom affecté à la connexion entre votre dépôt local et le dépôt à partir duquel il a été cloné. Dans ce flux de travail, origin représente la connexion à votre embranchement. Il s’agit parfois du moniker pour le dépôt d’origine lui-même, par exemple dans la phrase « N’oubliez pas d’envoyer vos modifications sur origin ».|
-|upstream|Comme pour la connexion remote origin, upstream est le nom d'une connexion vers un autre référentiel. Dans ce flux de travail, upstream représente la connexion entre votre référentiel local et le référentiel principal, à partir duquel votre embranchement a été créé. Il s’agit parfois du moniker pour le dépôt ascendant lui-même, par exemple dans la phrase « N’oubliez pas d’extraire les modifications de l’amont ».|
+|duplication (fork)|Normalement utilisé comme nom lorsqu'il est fait référence à une copie d'un dépôt GitHub principal. En pratique, une duplication (fork) est simplement un autre dépôt. Mais il est particulier en cela que GitHub conservez une connexion avec le dépôt principal/parent. Ce terme est parfois utilisé sous forme verbale, par exemple « Vous devez d’abord dupliquer le dépôt ».|
+|remote|Une connexion nommée à un dépôt distant, comme les remotes « origin » et « upstream ». Git les appelle « remotes », car elles servent à référencer un dépôt hébergé sur un autre ordinateur. Dans ce flux de travail, une connexion remote concerne toujours un dépôt GitHub.|
+|origin|Nom affecté à la connexion entre votre dépôt local et le dépôt à partir duquel il a été cloné. Dans ce flux de travail, origin représente la connexion à votre duplication (fork). Il s’agit parfois du moniker pour le dépôt d’origine lui-même, par exemple dans la phrase « N’oubliez pas d’envoyer vos modifications sur origin ».|
+|upstream|Comme pour la connexion remote origin, upstream est le nom d'une connexion vers un autre dépôt. Dans ce flux de travail, upstream représente la connexion entre votre dépôt local et le dépôt principal, à partir duquel votre duplication (fork) a été créée. Il s’agit parfois du moniker pour le dépôt ascendant lui-même, par exemple dans la phrase « N’oubliez pas d’extraire les modifications de l’amont ».|
 
 ## <a name="workflow"></a>Flux de travail
 
 >[!IMPORTANT]
 > Si vous ne l’avez pas déjà fait, vous devez effectuer les étapes de la section [Configuration](get-started-setup-github.md). Cette section vous guide lors de la configuration de votre compte GitHub, l’installation de Git Bash et d’un éditeur Markdown, la création d’une duplication et la configuration de votre dépôt local. Si vous découvrez les concepts de Git et GitHub, comme les dépôts ou les branches, consultez d’abord les [Bases de Git et GitHub](git-github-fundamentals.md).
 
-Dans ce flux de travail, les changements circulent dans un cycle répétitif. En partant du référentiel local de votre appareil, ils passent par votre branche GitHub, dans le référentiel GitHub principal, puis reviennent localement lorsque vous intégrez les modifications d'autres contributeurs.
+Dans ce flux de travail, les changements circulent dans un cycle répétitif. En partant du dépôt local de votre appareil, ils passent par votre duplication (fork) GitHub, dans le dépôt GitHub principal, puis reviennent localement lorsque vous intégrez les modifications d'autres contributeurs.
 
 ### <a name="use-github-flow"></a>Utiliser le flux GitHub
 
@@ -51,7 +51,7 @@ Isoler les changements liés dans une branche spécifique vous permet de contrô
 >[!TIP]
 >L’insertion de modifications dans la branche principale n’est *pas* une bonne pratique. Supposons que vous utilisez la branche principale pour introduire une série de changements pour une publication de fonctionnalité planifiée. Vous terminez les modifications et attendez de les publier. Entre-temps, vous recevez une demande urgente de correction. Vous apportez donc la modification à un fichier dans la branche principale et publiez la modification. Dans cet exemple, vous publiez par erreur à la fois le correctif *et* les modifications que vous attendiez de publier à une date précise.
 
-Créons maintenant une nouvelle branche de travail dans votre référentiel local pour capturer les modifications que vous proposez. Chaque client Git est différent : consultez l’aide du client choisi. Vous trouverez une vue d’ensemble du processus dans le Guide de GitHub sur [Flux GitHub](https://guides.github.com/introduction/flow/).
+Créons maintenant une nouvelle branche de travail dans votre dépôt local pour capturer les modifications que vous proposez. Chaque client Git est différent : consultez l’aide du client choisi. Vous trouverez une vue d’ensemble du processus dans le Guide de GitHub sur [Flux GitHub](https://guides.github.com/introduction/flow/).
 
 [!INCLUDE[contribute-how-to-write-workflows-pull-request-processing](includes/contribute-how-to-write-workflows-pull-request-processing.md)]
 

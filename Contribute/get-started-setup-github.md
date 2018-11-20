@@ -2,12 +2,12 @@
 title: Étapes de configuration d’un compte GitHub
 description: Cet article décrit pas à pas le processus de configuration d’un compte GitHub, celui-ci étant nécessaire pour contribuer au contenu de docs.microsoft.com.
 ms.date: 02/27/2018
-ms.openlocfilehash: 4bbf110fdbc1a60f77362a36a9c2c5b654d450cf
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 89f45c32f969fe1186eff3b442cb995fd08a8d11
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805488"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609473"
 ---
 # <a name="github-account-setup"></a>Configuration de compte GitHub
 
@@ -22,6 +22,6 @@ Pour contribuer au contenu technique de Docs, vous devez configurer votre propre
 >[!NOTE]
 > Les employés de Microsoft qui participent à des projets open source s’identifient toujours en tant que tels dans leur profil GitHub. Les contributeurs de la communauté doivent vérifier que leur profil n’implique pas à tort une relation professionnelle.
 
-## <a name="next-steps"></a>Étapes suivantes
+## <a name="next-step"></a>Étape suivante
 
 * Passez à l’article [Installations d’outils](get-started-setup-tools.md) pour installer Git Bash, un éditeur Markdown, et bien plus encore.

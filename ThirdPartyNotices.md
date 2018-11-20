@@ -5,6 +5,6 @@ Microsoft, Windows, Microsoft Azure et/ou les autres produits et services Micros
 Les licences de ce projet ne vous accordent pas le droit d’utiliser les noms, logos ou marques de Microsoft.
 Les instructions générales relatives aux marques de Microsoft sont disponibles sur http://go.microsoft.com/fwlink/?LinkID=254653.
 
-Les informations sur la confidentialité sont disponibles sur https://privacy.microsoft.com/en-us/.
+Les informations sur la confidentialité sont disponibles sur https://privacy.microsoft.com/.
 
 Microsoft et tout contributeur se réservent l’ensemble des autres droits, sous leurs droits d’auteur, brevets ou marques respectifs, que ce soit par implication, préclusion ou autrement.

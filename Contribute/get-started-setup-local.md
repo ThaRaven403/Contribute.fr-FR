@@ -4,12 +4,12 @@ description: Cet article vous aider à créer un dépôt Git local et à contrib
 author: jasonwhowell
 ms.author: jasonh
 ms.date: 01/18/2018
-ms.openlocfilehash: 895c0fb0d64708e8e3d0f632c10a060791d15b65
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 5373bf34399105c15caabe0abdc1ea0692c46a4a
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805674"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609496"
 ---
 # <a name="set-up-git-repository-locally-for-documentation"></a>Configurer un dépôt Git localement pour la documentation
 
@@ -41,7 +41,7 @@ Si vous découvrez GitHub, regardez la vidéo ci-dessous pour un aperçu concept
 
 La documentation hébergée sur [docs.microsoft.com](https://docs.microsoft.com) réside dans plusieurs dépôt différents sur [github.com](https://www.github.com).
 
-1. Si vous ne savez pas exactement quel dépôt utiliser, accédez à l’article sur docs.microsoft.com avec votre navigateur web. Sélectionnez le lien **Modifier** (icône en forme de crayon) en haut à droite de l’article.
+1. Si vous ne savez pas exactement quel dépôt utiliser, accédez à l’article sur [docs.microsoft.com](https://docs.microsoft.com) avec votre navigateur web. Sélectionnez le lien **Modifier** (icône en forme de crayon) en haut à droite de l’article.
 
    ![Cliquez sur Modifier pour déterminer l’emplacement du fichier et du dépôt.](media/index/edit-article.png)
 

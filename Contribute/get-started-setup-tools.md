@@ -5,12 +5,12 @@ author: jasonwhowell
 ms.author: jasonh
 manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 9f22a416810711c076645a9483f022112a3a7642
-ms.sourcegitcommit: 886ca76086a302d1d6124967df12a5bcfe4fd4b5
+ms.openlocfilehash: 715634a9a2342311eb1d358cb8379f90a7074d80
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 08/10/2018
-ms.locfileid: "40251456"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609388"
 ---
 # <a name="install-content-authoring-tools"></a>Installer des outils de création de contenu
 
@@ -23,13 +23,13 @@ Cet article décrit les étapes à suivre pour installer de manière interactive
 >[!IMPORTANT]
 > Si vous n’effectuez que des changements mineurs sur un article, vous n’avez *pas* besoin d’effectuer les étapes de cet article et vous pouvez passer directement au [workflow des changements rapides](index.md#quick-edits-to-existing-documents).
 >
-> Les principaux contributeurs sont encouragés à suivre ces étapes, qui permettent d’utiliser le [workflow de modifications majeures/à long terme](how-to-write-workflows-major.md). Même si vous disposez d’autorisations en écriture sur le référentiel principal, *nous vous conseillons vivement (et ce guide part de cette hypothèse) de dupliquer (fork) et de cloner le référentiel*, de façon à ce que vous ayez les autorisations en lecture/écriture nécessaires pour stocker les modifications que vous proposez dans votre fourche.
+> Les principaux contributeurs sont encouragés à suivre ces étapes, qui permettent d’utiliser le [workflow de modifications majeures/à long terme](how-to-write-workflows-major.md). Même si vous disposez d’autorisations en écriture sur le dépôt principal, *nous vous conseillons vivement (et ce guide part de cette hypothèse) de dupliquer (fork) et de cloner le dépôt*, de façon à ce que vous ayez les autorisations en lecture/écriture nécessaires pour stocker les modifications que vous proposez dans votre duplication.
 
 ## <a name="install-git-client-tools"></a>Installer les outils client Git 
 
  Installez la dernière version des [outils client Git de Software Freedom Conservancy](https://git-scm.com/download/) pour votre plateforme. 
 
-* [Git pour Windows](https://git-scm.com/download/win). Cette installation comprend le système de gestion de versions de Git et Git Bash, l’application en ligne de commande qui vous permettra d’interagir avec votre référentiel Git local.
+* [Git pour Windows](https://git-scm.com/download/win). Cette installation comprend le système de gestion de versions de Git et Git Bash, l’application en ligne de commande qui vous permettra d’interagir avec votre dépôt Git local.
 * Git pour Mac est fourni dans le cadre des Outils en ligne de commande Xcode. Exécutez simplement `git` depuis la ligne de commande. Vous serez invité à installer les outils en ligne de commande si nécessaire. Vous pouvez aussi télécharger [Git pour Mac](https://git-scm.com/download/mac) à partir de Software Freedom Conservancy.
 * [Git pour Linux et Unix](https://git-scm.com/download/linux)
 
@@ -37,7 +37,7 @@ Si vous préférez une interface graphique utilisateur (GUI) à une interface de
 
 Suivez les instructions du client choisi pour l’installation et la configuration.
 
-Dans le prochain article, vous allez [Configurer un référentiel Git local](get-started-setup-local.md).
+Dans le prochain article, vous allez [Configurer un dépôt Git local](get-started-setup-local.md).
 
    Voici des liens vers des ressources Git supplémentaires : [Terminologie Git](https://help.github.com/articles/github-glossary) | [Bases de Git](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [Découvrir Git et GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/).
 
@@ -47,7 +47,7 @@ Markdown est un langage de balisage léger à la fois facile à lire et facile �
 
 Le texte Markdown est enregistré dans des fichiers portant l’extension .md.
 
-Vous trouverez davantage de détails sur l’écriture avec Markdown, notamment les bases de Markdown et les fonctionnalités prises en charge par les extensions Markdown personnalisées OPS, plus loin dans l’article [Guide pratique pour utiliser Markdown](how-to-write-use-markdown.md).
+Vous trouverez davantage de détails sur l’écriture avec Markdown, notamment les bases de Markdown et les fonctionnalités prises en charge par les extensions Markdown personnalisées OPS (Open Publishing Services), dans les articles [Guide pratique pour utiliser Markdown pour écrire du contenu Docs](how-to-write-use-markdown.md) et [Informations de référence sur Markdown pour OPS](markdown-reference.md).
 
 ## <a name="visual-studio-code"></a>Visual Studio Code
 
@@ -60,7 +60,7 @@ Téléchargez et installez [VS Code](https://code.visualstudio.com/). La page d�
 - [Linux](https://code.visualstudio.com/docs/setup/linux)
 
 > [!TIP]
-> Pour lancer VS Code et ouvrir le dossier actif, exécutez la commande `code .` en ligne de commande ou dans un interpréteur de commandes Bash. Si le dossier actif fait partie d’un référentiel Git local, l’intégration de GitHub apparaît automatiquement dans Visual Studio Code.
+> Pour lancer VS Code et ouvrir le dossier actif, exécutez la commande `code .` en ligne de commande ou dans un interpréteur de commandes Bash. Si le dossier actif fait partie d’un dépôt Git local, l’intégration de GitHub apparaît automatiquement dans Visual Studio Code.
 
 ## <a name="docs-authoring-pack"></a>Docs Authoring Pack
 Installer Docs Authoring Pack pour Visual Studio Code. Cet ensemble d’extensions inclut une assistance de création de base pour l’écriture de Markdown et une fonctionnalité d’aperçu. Vous pouvez ainsi voir à quoi ressemble le Markdown dans le style du site docs.microsoft.com.
@@ -74,4 +74,4 @@ Installer Docs Authoring Pack pour Visual Studio Code. Cet ensemble d’extensio
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Vous pouvez maintenant [Configurer un référentiel Git local](get-started-setup-local.md).
+Vous pouvez maintenant [Configurer un dépôt Git local](get-started-setup-local.md).
