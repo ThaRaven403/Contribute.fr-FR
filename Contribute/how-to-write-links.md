@@ -1,13 +1,15 @@
 ---
 title: Guide pratique pour utiliser des liens dans la documentation
 description: Cet article vous aide à créer des liens vers du contenu situé sur docs.microsoft.com.
-ms.date: 06/29/2017
-ms.openlocfilehash: 1820ed9af561964d7afe0b29827ee43526c72489
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+author: gewarren
+ms.author: gewarren
+ms.date: 10/31/2018
+ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805766"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609427"
 ---
 # <a name="using-links-in-documentation"></a>Utilisation de liens dans la documentation
 Cet article décrit comment utiliser des liens hypertexte à partir de pages hébergées sur docs.microsoft.com. Vous pouvez facilement ajouter des liens dans la syntaxe Markdown en tenant compte de quelques conventions. Les liens pointent vers du contenu situé dans la même page, dans d’autres pages voisines ou sur des sites et des URL externes.
@@ -22,7 +24,7 @@ Le backend du site docs.microsoft.com utilise OPS (Open Publishing Services) qui
 Les mots que vous incluez dans le texte doivent être conviviaux. En d’autres termes, il doit s’agir de mots simples ou du titre de la page vers laquelle vous établissez le lien.
 
 > [!IMPORTANT]
-> N’utilisez pas de texte de type « cliquez ici ». C'est une mauvaise pratique pour le référencement et cela ne décrit pas correctement la cible.
+> N’utilisez pas de texte de type « cliquez ici ». Ce n’est pas bon pour l’optimisation du référencement d’un site auprès d’un moteur de recherche, et ne décrit pas correctement la cible.
 
 **Correct :**
 
@@ -56,7 +58,7 @@ Pour créer un lien inline d’un article technique Docs à un autre dans le mê
 
   `[link text](../directory/article-name.md)`
 
-- Un lien d’un article à un autre dans différents docsets (même s’ils sont dans le même dépôt) : `[link text](./directory/article-name)`
+- Un lien d’un article à un autre dans différents docsets (même s’ils sont dans le même dépôt) :  `[link text](./directory/article-name)`
 
 > [!IMPORTANT]
 > Aucun des exemples ci-dessus n’utilise de `~/` dans le lien. Si vous créez un lien vers un chemin à la racine du dépôt, commencez avec une `/`. L’ajout d’un `~/` produit des liens non valides quand vous accédez aux dépôts sources sur GitHub. En commençant par une `/`, le problème est résolu.
@@ -84,17 +86,23 @@ Vous n’avez pas besoin de créer des ancres. Elles sont automatiquement géné
 
 Les fichiers include étant situés dans un autre répertoire, vous devez utiliser des chemins d'accès relatifs plus longs. Pour faire un lien vers un article à partir d'un fichier include, utilisez ce format :
 
-    [link text](../articles/folder/article-name.md)
+   ```markdown
+   [link text](../articles/folder/article-name.md)
+   ```
 
 ## <a name="links-in-selectors"></a>Liens dans les sélecteurs
 
-Si vous avez des sélecteurs intégrés dans un include (comme c’est le cas pour l’équipe de documentation Azure), utilisez la structure de liens suivante :
+Un sélecteur est un composant de navigation qui apparaît dans un article de documentation sous forme de liste déroulante. Quand un lecteur sélectionne une valeur dans la liste déroulante, le navigateur ouvre l’article sélectionné. En général, la liste du sélecteur contient des liens vers des articles qui ont un rapport étroit avec celui-ci, par exemple traitant du même sujet dans différents langages de programmation, ou vers une série d’articles connexe. 
 
-    > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
-    - [(Text1 | Example1 )](../articles/folder/article-name1.md)
-    - [(Text1 | Example2 )](../articles/folder/article-name2.md)
-    - [(Text2 | Example3 )](../articles/folder/article-name3.md)
-    - [(Text2 | Example4 )](../articles/folder/article-name4.md) -->
+Si vous avez des sélecteurs intégrés dans un include, utilisez la structure de liens suivante :
+
+   ```markdown
+   > [AZURE.SELECTOR-LIST (Dropdown1 | Dropdown2 )]
+   - [(Text1 | Example1 )](../articles/folder/article-name1.md)
+   - [(Text1 | Example2 )](../articles/folder/article-name2.md)
+   - [(Text2 | Example3 )](../articles/folder/article-name3.md)
+   - [(Text2 | Example4 )](../articles/folder/article-name4.md) -->
+   ```
 
 ## <a name="reference-style-links"></a>Liens de type référence
 
@@ -102,23 +110,29 @@ Vous pouvez utiliser des liens de type référence pour rendre votre contenu sou
 
 Texte intégré :
 
-    I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```markdown
+   I get 10 times more traffic from [Google][1] than from [Yahoo][2] or [MSN][3].
+   ```
 
 Liens de référence à la fin de l'article :
 
-    <!--Reference links in article-->
-    [1]: http://google.com/
-    [2]: http://search.yahoo.com/
-    [3]: http://search.msn.com/
-
+   ```markdown
+   <!--Reference links in article-->
+   [1]: http://google.com/
+   [2]: http://search.yahoo.com/
+   [3]: http://search.msn.com/
+   ```
+   
 Veillez à inclure l’espace après le signe deux-points, avant le lien. Lorsque vous liez d'autres articles techniques, si vous oubliez d'inclure l'espace, le lien sera rompu dans l’article publié.
 
 ## <a name="links-to-pages-that-are-not-part-of-the-technical-documentation-set"></a>Liens vers des pages qui ne font pas partie de l’ensemble de documentation technique
 
 Pour établir un lien vers une page sur une autre propriété de Microsoft (par exemple la page de tarifs, la page du contrat SLA ou toute autre page qui n’est pas un article de documentation), utilisez une URL absolue, mais omettez les paramètres régionaux. Le but ici est que les liens fonctionnent dans GitHub et sur le site rendu :
 
-    [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
-
+   ```markdown
+   [link text](https://azure.microsoft.com/pricing/details/virtual-machines/)
+   ```
+   
 ## <a name="links-to-third-party-sites"></a>Liens vers des sites tiers
 
 Une expérience utilisateur idéale minimise l'envoi d'utilisateurs vers d'autres sites. Basez donc les liens vers des sites tiers, dont nous avons parfois besoin, sur ces informations :
@@ -146,7 +160,7 @@ Structure de l’URL :
   - `/powershell/azure/<topic-file-name>[?view=<moniker-name>]`
   - `/powershell/azure/<service-name>/<topic-file-name>[?view=<moniker-name>]`
 
-La portion &lt;moniker-name&gt; est facultative. Si elle est omise, vous êtes dirigé vers la dernière version du contenu. La partie &lt;service-name&gt; correspond à l’un des exemples présentés dans les URL de base suivantes :
+La partie `<moniker-name>` est facultative. Si elle est omise, vous êtes dirigé vers la dernière version du contenu. La partie `<service-name>` correspond à l’un des exemples présentés dans les URL de base suivantes :
 
 - Contenu Azure PowerShell (AzureRM) : [https://docs.microsoft.com/powershell/azure/](https://docs.microsoft.com/powershell/azure/)
 - Contenu Azure PowerShell (ASM) : [https://docs.microsoft.com/powershell/azure/_servicemanagement_](https://docs.microsoft.com/powershell/azure/servicemanagement)

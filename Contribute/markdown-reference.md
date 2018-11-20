@@ -8,16 +8,16 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: e248eafb0247b200313ba198f2545eca947f5627
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
+ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805886"
+ms.lasthandoff: 11/13/2018
+ms.locfileid: "51609542"
 ---
 # <a name="markdown-reference-for-ops"></a>Informations de référence sur Markdown pour OPS
 
-Markdown est un langage de balisage léger avec une syntaxe de mise en forme en texte brut. OPS prend en charge le standard CommonMark pour Markdown, ainsi que certaines extensions Markdown personnalisées conçues pour fournir du contenu enrichi sur docs.microsoft.com. Cet article fournit des informations de référence par ordre alphabétique, qui facilitent l’utilisation de Markdown dans OPS pour docs.microsoft.com.
+Markdown est un langage de balisage léger avec une syntaxe de mise en forme en texte brut. OPS (Open Publishing Services) prend en charge la norme CommonMark pour Markdown ainsi que certaines extensions Markdown personnalisées conçues pour fournir du contenu enrichi sur docs.microsoft.com. Cet article fournit des informations de référence par ordre alphabétique, qui facilitent l’utilisation de Markdown dans OPS pour docs.microsoft.com.
 
 Vous pouvez utiliser n’importe quel éditeur de texte pour créer du contenu Markdown. Comme éditeur facilitant l’insertion à la fois d’une syntaxe Markdown standard et d’extensions OPS personnalisées, nous recommandons [VS Code](https://code.visualstudio.com/) avec le [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) installé.
 
@@ -25,7 +25,7 @@ OPS s’appuie sur Markdig pour tous les nouveaux dépôts, tandis que les ancie
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>Alertes (Remarque, Conseil, Important, Attention, Avertissement)
 
-Les alertes sont une extension Markdown spécifique à OPS pour créer des citations qui s’affichent sur docs.microsoft.com avec des couleurs et des icônes indiquant la signification du contenu. Les types d’alerte suivants sont pris en charge :
+Les alertes sont une extension Markdown propre à OPS pour créer des citations qui s’affichent sur docs.microsoft.com avec des couleurs et des icônes indiquant la signification du contenu. Les types d’alerte suivants sont pris en charge :
 
 ```markdown
 > [!NOTE]
@@ -206,7 +206,7 @@ To go to a section on another page.
 Pour créer un lien vers des pages de références d’API générées automatiquement dans la documentation actuelle ou dans d’autres documentations, utilisez des liens XREF avec l’ID unique (UID).
 
 > [!NOTE]
-> Pour référencer des pages de références d’API dans d’autres documentations, vous devez ajouter la configuration `xrefService` dans le fichier `docfx.json`.
+> Pour référencer des pages de références d’API dans d’autres jeux de documentation, vous devez ajouter la configuration `xrefService` dans le fichier `docfx.json`.
 > ```
 > "build": {
 >   ...
