@@ -2,12 +2,12 @@
 title: Modèle et aide-mémoire pour les articles .NET
 description: Cet article contient un modèle pratique que vous pouvez utiliser pour créer des articles pour les dépôts de documentation .NET.
 ms.date: 11/07/2018
-ms.openlocfilehash: 8980f5e39213d8f2edd1d29e66d900f2c3d04bbc
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
+ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609736"
+ms.lasthandoff: 11/26/2018
+ms.locfileid: "52299657"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Modèle de métadonnées et de Markdown pour la documentation .NET
 
@@ -79,9 +79,11 @@ L’équipe de documentation .NET applique les conventions suivantes :
 - Dans la plupart des cas, nous utilisons des liens relatifs et déconseillons l’utilisation de `~/` dans les liens, car les liens relatifs sont résolus dans la source sur GitHub. Toutefois, chaque fois que nous établissons une liaison vers un fichier dans un dépôt dépendant, nous utilisons le caractère `~/` pour spécifier le chemin. Étant donné que les fichiers d’un dépôt dépendant sont à un emplacement différent dans GitHub, les liens relatifs ne seront pas résolus correctement, quelle que soit la manière dont ils sont écrits.
 - Les spécifications des langages C# et Visual Basic sont comprises dans la documentation .NET en incluant la source à partir des dépôts de langage. Les sources Markdown sont gérées dans les dépôts [csharplang](https://github.com/dotnet/csharplang) et [vblang](https://github.com/dotnet/vblang).
 
-Les liens vers les spécifications doivent pointer vers les répertoires sources dans lesquels ces spécifications sont stockées. Pour C#, il s’agit de **~/_csharplang/spec**, et pour VB, il s’agit de **~/_vblang/spec**.
+Les liens vers les spécifications doivent pointer vers les répertoires sources dans lesquels ces spécifications sont stockées. Pour C#, il s’agit de **~/_csharplang/spec**, et pour VB, il s’agit de **~/_vblang/spec**, comme dans l’exemple suivant :
 
-- Exemple : `[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)`
+```markdown
+[C# Query Expressions](~/_csharplang/spec/expressions.md#query-expressions)
+```
 
 ### <a name="links-to-apis"></a>Liens vers les API
 
@@ -111,13 +113,13 @@ Exemples :
 - System.Exception.\#ctor devient `System.Exception.%23ctor`
 - System.Lazy\`1.\#ctor(System.Threading.LazyThreadSafetyMode) devient `System.Lazy%601.%23ctor%28System.Threading.LazyThreadSafetyMode%29`
 
-Vous pouvez obtenir les UID des types, une liste des surcharges de membres ou un membre surchargé spécifique à partir de`https://xref.docs.microsoft.com/autocomplete`. La chaîne de requête "?text=*\<type-member-name>*" identifie le type ou le membre dont vous souhaitez voir les UID. Par exemple, `https://xref.docs.microsoft.com/autocomplete?text=string.format` récupère les surcharges [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format). L’outil recherche le paramètre de requête `text` fourni dans n’importe quelle partie de l’UID. Par exemple, vous pouvez rechercher le nom du membre (ToString), le nom du membre partiel (ToStri), le type et le le nom du membre (Double.ToString), et ainsi de suite.
+Vous pouvez obtenir les UID des types, une liste des surcharges de membres ou un membre surchargé spécifique à partir de`https://xref.docs.microsoft.com/autocomplete`. La chaîne de requête `?text=*\<type-member-name>*` identifie le type ou le membre dont vous souhaitez voir les UID. Par exemple, `https://xref.docs.microsoft.com/autocomplete?text=string.format` récupère les surcharges [String.Format](https://docs.microsoft.com/dotnet/api/system.string.format). L’outil recherche le paramètre de requête `text` fourni dans n’importe quelle partie de l’UID. Par exemple, vous pouvez rechercher le nom du membre (ToString), le nom du membre partiel (ToStri), le type et le le nom du membre (Double.ToString), et ainsi de suite.
 
-Si vous ajoutez un \* (ou %2A) après l’UID, le lien représente alors la page de la surcharge et non une API spécifique. Par exemple, vous pouvez utiliser cela quand vous voulez créer un lien vers la page de la méthode [List\<T>.BinarySearch](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) de façon générique, au lieu d’une surcharge spécifique, comme [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_). Vous pouvez aussi utiliser \* pour établir une liaison vers une page de membre quand le membre n’est pas surchargé. Cela vous évite d’avoir à inclure la liste des paramètres dans l’UID.
+Si vous ajoutez un \* (ou un `%2A`) après l’UID, le lien représente alors la page de la surcharge et non une API spécifique. Par exemple, vous pouvez utiliser cela quand vous voulez créer un lien vers la page de la méthode [List\<T>.BinarySearch](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch) de façon générique, au lieu d’une surcharge spécifique, comme [List\<T>.BinarySearch(T, IComparer\<T>)](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1.binarysearch#System_Collections_Generic_List_1_BinarySearch__0_). Vous pouvez aussi utiliser \* pour établir une liaison vers une page de membre quand le membre n’est pas surchargé. Cela vous évite d’avoir à inclure la liste des paramètres dans l’UID.
 
 Pour établir une liaison à une surcharge de méthode spécifique, vous devez inclure le nom de type qualifié complet de chacun des paramètres de la méthode. Par exemple, \<xref:System.DateTime.ToString> établit une liaison à la méthode sans paramètre [DateTime.ToString](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString), tandis que \<xref:System.DateTime.ToString(System.String,System.IFormatProvider)> établit une liaison à la méthode [DateTime.ToString(String,IFormatProvider)](https://docs.microsoft.com/dotnet/api/system.datetime.tostring#System_DateTime_ToString_System_String_System_IFormatProvider_).
 
-Pour établir une liaison à un type générique, tel que [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1), vous utilisez le caractère \` (%60) suivi du nombre de paramètres de type générique. Par exemple, \<xref:System.Nullable%601> établit une liaison au type [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1), tandis que \<xref:System.Func%602> établit une liaison au délégué [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2).
+Pour établir une liaison à un type générique, tel que [System.Collections.Generic.List\<T>](https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1), vous utilisez le caractère \` (`%60`) suivi du nombre de paramètres de type générique. Par exemple, `<xref:System.Nullable%601>` établit une liaison au type [System.Nullable\<T>](https://docs.microsoft.com/dotnet/api/system.nullable-1), tandis que `<xref:System.Func%602>` établit une liaison au délégué [System.Func\<T,TResult>](https://docs.microsoft.com/dotnet/api/system.func-2).
 
 ## <a name="code"></a>Code
 
@@ -182,7 +184,7 @@ Le fait d’inclure des extraits tirés de programmes complets permet de s’ass
 
 Actuellement, vous pouvez incorporer des vidéos Channel 9 et YouTube avec la syntaxe suivante :
 
-### <a name="channel-9"></a>Channel 9
+### <a name="channel-9"></a>Canal 9
 
 ```markdown
 > [!VIDEO <channel9_video_link>]
