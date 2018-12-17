@@ -2,12 +2,12 @@
 title: Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 description: Cet article fournit des informations de base et de référence sur le langage Markdown utilisé pour écrire des articles docs.microsoft.com.
 ms.date: 07/13/2017
-ms.openlocfilehash: 21194c4bd6020d847b526a4d9544c826aa199e2a
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 8613d525afc11caf9ec760c4f15ea44010781634
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609519"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245892"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 
@@ -282,8 +282,8 @@ __Markdown__
 
     ```sql
     CREATE TABLE T1 (
-      c1 int PRIMARY KEY,
-      c2 varchar(50) SPARSE NULL
+      c1 int PRIMARY KEY,
+      c2 varchar(50) SPARSE NULL
     );
     ```
 
@@ -291,8 +291,8 @@ __Render__
 
 ```sql
 CREATE TABLE T1 (
-  c1 int PRIMARY KEY,
-  c2 varchar(50) SPARSE NULL
+  c1 int PRIMARY KEY,
+  c2 varchar(50) SPARSE NULL
 );
 ```
 
@@ -304,7 +304,7 @@ CREATE TABLE T1 (
 Les articles Docs utilisent GFM pour la majeure partie de la mise en forme des articles, comme les paragraphes, les liens, les listes et les en-têtes. Pour une mise en forme plus riche, les articles peuvent utiliser des fonctionnalités Markdig comme :
 
 - Blocs de notes
-- Des includes
+- Fichiers Include
 - Des sélecteurs
 - Des vidéos intégrées
 - Des exemples/extraits de code
@@ -352,26 +352,26 @@ L’affichage est le suivant :
 > [!IMPORTANT]
 > Ceci est IMPORTANT
 
-### <a name="includes"></a>Includes
+### <a name="include-files"></a>Fichiers Include
 
-Quand vous avez du texte ou des fichiers image réutilisables qui doivent être inclus dans des fichiers d’article, vous pouvez utiliser une référence vers le fichier « include » via la fonctionnalité d’inclusion de fichier de Markdig. Cette fonctionnalité demande à OPS d’inclure le fichier dans votre fichier d’article lors de sa génération, ce qui en fait une partie de votre article publié. Trois types d’includes sont disponibles pour vous aider à réutiliser du contenu :
+Quand vous avez du texte ou des fichiers image réutilisables qui doivent être inclus dans des fichiers d’article, vous pouvez utiliser une référence vers le fichier « include » via la fonctionnalité d’inclusion de fichier de Markdig. Cette fonctionnalité demande à OPS d’inclure le fichier dans votre fichier d’article lors de sa génération, ce qui en fait une partie de votre article publié. Trois types de références include sont disponibles pour vous aider à réutiliser du contenu :
 
-- Inline : pour réutiliser un extrait de texte commun au sein d’une autre phrase.
-- Bloc : pour réutiliser un fichier Markdown entier en tant que bloc, imbriqué dans une section d’un article.
-- Image : il s’agit de la façon dont l’inclusion d’images standard est implémentée dans Docs.
+- Inline : pour réutiliser un extrait de texte commun au sein d’une autre phrase.
+- Bloc : pour réutiliser un fichier Markdown entier en tant que bloc, imbriqué dans une section d’un article.
+- Image : il s’agit de la façon dont l’inclusion d’images standard est implémentée dans Docs.
 
-Un include de type inline ou bloc est un simple fichier Markdown (.md). Il peut contenir tout code Markdown valide. Tous les fichiers Markdown include doivent être placés dans un [sous-répertoire `/includes` commun ](git-github-fundamentals.md#includes-subdirectory), à la racine du dépôt. Quand l’article est publié, le fichier inclus y est intégré de façon transparente.
+Un fichier include de type inline ou bloc est un simple fichier Markdown (.md). Il peut contenir tout code Markdown valide. Tous les fichiers Markdown include doivent être placés dans un [sous-répertoire `/includes` commun ](git-github-fundamentals.md#includes-subdirectory), à la racine du dépôt. Quand l’article est publié, le fichier inclus y est intégré de façon transparente.
 
-Voici les conditions requises et éléments à prendre en compte pour les includes :
+Voici les conditions requises et éléments à prendre en compte pour les fichiers include :
 
-- Utilisez les includes lorsque vous souhaitez que le même texte s'affiche dans plusieurs articles.
-- Utilisez des includes de blocs pour les quantités significatives de contenu : un paragraphe ou deux, une procédure partagée ou une section partagée. Ne l'utilisez pas pour des éléments plus petits qu'une phrase.
-- Les includes ne s’afficheront pas dans la vue de votre article rendu par GitHub, car ils reposent sur des extensions Markdig. Ils ne sont rendus qu’après publication.
-- Vérifiez que tout le texte dans un include est écrit par phrases complètes ne dépendant pas du texte précédent ni suivant dans l’article qui référence l’include. Ignorer cette instruction crée une chaîne intraduisible dans l'article, ce qui nuit à l'expérience localisée.
-- N'imbriquez pas d'includes dans d'autres includes. Les groupes ne sont pas pris en charge.
-- Placez les fichiers multimédias dans un dossier multimédia propre au sous-répertoire d’includes, par exemple le dossier `<repo>`/includes/media. Le répertoire multimédia ne doit pas contenir d'images à sa racine. Si l’include ne contient pas d’images, il n’est pas nécessaire d’utiliser un répertoire multimédia correspondant.
-- Comme pour les articles ordinaires, ne partagez pas de fichiers multimédias entre fichiers include. Utilisez un fichier distinct avec un nom unique pour chaque include et article. Stockez le fichier multimédia dans le dossier multimédia associé à l’include.
-- N'utilisez pas un include comme seul contenu d'un article.  Les includes sont censés compléter le contenu du reste de l'article.
+- Utilisez un fichier include quand vous souhaitez que le même texte s’affiche dans plusieurs articles.
+- Utilisez une référence include de type bloc pour les quantités significatives de contenu : un paragraphe ou deux, une procédure partagée ou une section partagée. Ne l'utilisez pas pour des éléments plus petits qu'une phrase.
+- Les références include ne seront pas restituées dans la vue de votre article rendu par GitHub, car elles reposent sur des extensions Markdig. Ils ne sont rendus qu’après publication.
+- Vérifiez que tout le texte dans un fichier include est écrit par phrases complètes ne dépendant pas du texte précédent ni suivant dans l’article qui référence le fichier include. Ignorer cette instruction crée une chaîne intraduisible dans l'article, ce qui nuit à l'expérience localisée.
+- N’incorporez pas de références include dans d’autres fichiers include. Les groupes ne sont pas pris en charge.
+- Placez les fichiers multimédias dans un dossier multimédia propre au sous-répertoire d’includes, par exemple le dossier `<repo>`/includes/media. Le répertoire multimédia ne doit pas contenir d'images à sa racine. Si le fichier include ne contient pas d’images, il n’est pas nécessaire d’utiliser un répertoire multimédia correspondant.
+- Comme pour les articles ordinaires, ne partagez pas de fichiers multimédias entre fichiers include. Utilisez un fichier distinct avec un nom unique pour chaque fichier include et article. Stockez le fichier multimédia dans le dossier multimédia associé au fichier include.
+- N’utilisez pas un fichier include comme seul contenu d’un article.  Les fichiers include sont censés compléter le contenu du reste de l’article.
 
 Exemple :
 
@@ -383,7 +383,7 @@ Exemple :
 
 Utilisez des sélecteurs dans les articles techniques quand vous créez plusieurs versions d’un même article, afin de répondre aux différences d’implémentation entre les technologies et plateformes. Cela s'applique particulièrement au contenu pour plateformes mobiles pour développeurs. Il existe actuellement deux types différents de sélecteurs dans Markdig, un sélecteur unique et un multi-sélecteur.
 
-Le même Markdown de sélecteur allant dans chaque article de la sélection, nous vous recommandons de placer le sélecteur pour votre article dans un include. Vous pouvez ensuite référencer ce dernier dans tous vos articles qui utilisent le même sélecteur.
+Le même Markdown de sélecteur allant dans chaque article de la sélection, nous vous recommandons de placer le sélecteur pour votre article dans un fichier include. Vous pouvez ensuite référencer ce dernier dans tous vos articles qui utilisent le même sélecteur.
 
 Voici un exemple de sélecteur :
 
@@ -395,7 +395,7 @@ Voici un exemple de sélecteur :
 
 Vous pouvez obtenir un exemple de sélecteurs en action dans la [Documentation Azure](https://docs.microsoft.com/azure/expressroute/expressroute-howto-circuit-classic).
 
-### <a name="code-includes"></a>Inclusions de code
+### <a name="code-include-references"></a>Références include de code
 
 Markdig prend en charge l’inclusion avancée de code dans un article, via son extension d’extraits de code. Elle fournit un rendu avancé qui se base sur les fonctionnalités de GFM comme la sélection du langage de programmation et la coloration de la syntaxe, plus des fonctionnalités intéressantes comme :
 
@@ -420,7 +420,7 @@ Placez les traits de soulignement dans une séquence d’échappement comme ceci
 
 ### <a name="apostrophes-and-quotation-marks"></a>Apostrophes et guillemets
 
-Si vous copiez de Word dans un éditeur Markdown, le texte peut contenir des apostrophes ou guillemets courbes. Vous devez les encoder ou les changer en apostrophes/guillemets de base. Sinon, vous verrez des choses semblables à ceci une fois le fichier publié : Itâ€™s
+Si vous copiez de Word dans un éditeur Markdown, le texte peut contenir des apostrophes ou guillemets courbes. Vous devez les encoder ou les changer en apostrophes/guillemets de base. Sinon, vous verrez des choses semblables à ceci une fois le fichier publié : Itâ€™s
 
 Voici les encodages pour les versions courbes de ces signes de ponctuation :
 

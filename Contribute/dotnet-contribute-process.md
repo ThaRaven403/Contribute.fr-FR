@@ -2,12 +2,12 @@
 title: Processus de contribution pour les dépôts de documentation .NET
 description: Cet article fournit une brève introduction à la contribution aux dépôts de documentation .NET. Vous découvrirez les dépôts utilisés, le processus d’organisation du contenu et les stratégies de gestion des exemples de code et autres ressources.
 ms.date: 11/07/2018
-ms.openlocfilehash: b83a3080f1abd4df8caaa9d10859760006216e86
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 0e7199b72cf9b94d00a09fb180ffef0558c59a53
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609759"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245846"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>Processus de contribution à la documentation .NET
 
@@ -24,7 +24,7 @@ Le respect de ces instructions est garant d’une meilleure expérience à la fo
 
 ## <a name="make-a-contribution-to-net-docs"></a>Contribuer à la documentation .NET
 
-**Étape 1 :** Ignorez cette étape pour les petits changements. Si vous souhaitez rédiger du nouveau contenu ou réviser du contenu existant en profondeur, ouvrez un [problème](https://github.com/dotnet/docs/issues) décrivant ce que vous voulez faire.
+**Étape 1** : Ignorez cette étape pour les petits changements. Si vous souhaitez rédiger du nouveau contenu ou réviser du contenu existant en profondeur, ouvrez un [problème](https://github.com/dotnet/docs/issues) décrivant ce que vous voulez faire.
 
 Le contenu du dossier **docs** est organisé en sections qui sont reflétées dans la Table des matières. Définissez l’emplacement de la rubrique dans la Table des matières. Obtenez des commentaires concernant votre proposition.
 
@@ -42,11 +42,11 @@ Vous pouvez aussi consulter notre liste de [problèmes ouverts](https://github.c
 
 Une fois que vous avez choisi une tâche sur laquelle travailler, suivez le guide [Bien démarrer](get-started-setup-github.md) pour créer un compte GitHub et configurer votre environnement.
 
-**Étape 2 :** Dupliquez (fork) les dépôts `/dotnet/docs`, `dotnet/samples`, `dotnet/dotnet-api-docs`, `dotnet/roslyn-api-docs` ou `dotnet/ml-api-docs` selon les besoins, et créez une branche pour vos changements.
+**Étape 2** : Dupliquez (fork) les dépôts `/dotnet/docs`, `dotnet/samples`, `dotnet/dotnet-api-docs`, `dotnet/roslyn-api-docs` ou `dotnet/ml-api-docs` selon les besoins, et créez une branche pour vos changements.
 
 Pour les petits changements, consultez les instructions relatives aux modifications dans GitHub dans la [page d’accueil](index.md#quick-edits-to-existing-documents) du guide du contributeur.
 
-**Étape 3 :** Apportez vos modifications sur cette nouvelle branche.
+**Étape 3** : Effectuez les changements sur cette nouvelle branche.
 
 S’il s’agit d’une nouvelle rubrique, vous pouvez utiliser ce [fichier de modèle](dotnet-style-guide.md) comme point de départ. Il contient les instructions de rédaction et explique également quelles sont les métadonnées nécessaires pour chaque article, telles que les informations sur l’auteur.
 
@@ -65,7 +65,7 @@ Veillez à bien respecter la syntaxe Markdown. Pour obtenir des exemples, consul
             /porting-overview
                 portability_report.png
 
-**Étape 4 :** Envoyez une demande de tirage de votre branche à la branche principale.
+**Étape 4** : Envoyez une demande de tirage (pull request) de votre branche à la branche master.
 
 > [!IMPORTANT]
 > La fonctionnalité d’[automation de commentaire](how-to-write-workflows-major.md#review-and-sign-off) n’est disponible sur aucun des dépôts de documentation .NET pour l’instant. Les membres de l’équipe de documentation .NET examineront et fusionneront votre demande de tirage.
@@ -76,7 +76,7 @@ Si votre demande de tirage résout un problème existant, ajoutez le mot clé `F
 
 L’équipe .NET examinera votre demande de tirage et vous indiquera si d’autres mises à jour/changements sont nécessaires pour son approbation.
 
-**Étape 5 :** Apportez les mises à jour nécessaires à votre branche, comme discuté avec l’équipe.
+**Étape 5** : Apportez les mises à jour nécessaires à votre branche, comme convenu avec l’équipe.
 
 Les personnes chargées de la maintenance fusionneront votre demande de tirage dans la branche principale une fois que les commentaires auront été appliqués et que vos changements auront été approuvés.
 
@@ -131,6 +131,7 @@ Pour créer un exemple de code :
 2. Rédigez une rubrique qui explique les concepts illustrés par votre exemple de code (exemple : `docs/standard/linq/where-clause.md`).
 3. Rédigez votre exemple de code (exemple : `WhereClause-Sample1.cs`).
 4. Créez un fichier Program.cs avec un point d’entrée Main qui appelle votre exemple de code. S’il y en a déjà un, ajoutez l’appel à votre exemple :
+
     ```csharp
     public class Program
     {
@@ -143,6 +144,7 @@ Pour créer un exemple de code :
         }
     }
     ```
+
 Vous devez générer tout exemple ou extrait de code .NET Core à l’aide de l’interface de ligne de commande .NET Core, que vous pouvez installer avec le [SDK .NET Core](https://www.microsoft.com/net/download). Pour générer et exécuter votre exemple de code :
 
 1. Accédez au dossier de l’exemple et générez-le afin de vérifier s’il existe des erreurs :
