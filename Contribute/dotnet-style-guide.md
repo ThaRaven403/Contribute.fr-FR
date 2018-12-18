@@ -2,12 +2,12 @@
 title: Modèle et aide-mémoire pour les articles .NET
 description: Cet article contient un modèle pratique que vous pouvez utiliser pour créer des articles pour les dépôts de documentation .NET.
 ms.date: 11/07/2018
-ms.openlocfilehash: 15f64ec86c475e2da2f6539c8f388d076389c4e0
-ms.sourcegitcommit: 68d81b61ffa60aba16acfed023760449e16de91b
+ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
+ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/26/2018
-ms.locfileid: "52299657"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53264499"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Modèle de métadonnées et de Markdown pour la documentation .NET
 
@@ -144,7 +144,7 @@ Vous pouvez inclure le code à l’aide de la syntaxe suivante :
   * Utilisé pour spécifier la manière dont le code doit être récupéré à partir du fichier :
     * `#` :  `#{tagname}` (nom de balise) *ou* `#L{startlinenumber}-L{endlinenumber}` (plage de lignes).
     Nous déconseillons l’utilisation de numéros de lignes, car ils sont très fragiles. Il est préférable de référencer les exemples de code par nom de balise. Utilisez des noms de balises significatifs. (De nombreux extraits de code ont été migrés à partir d’une plateforme antérieure, et les balise ont des noms tels que `Snippet1`, `Snippet2` et ainsi de suite. Cette pratique est beaucoup plus difficile à maintenir.)
-    * `range` : `?range=1,3-5` plage de lignes. Cet exemple inclut les lignes 1, 3, 4 et 5.
+    * `range` : `?range=1,3-5` plage de lignes. Cet exemple inclut les lignes 1, 3, 4 et 5.
 
 Nous recommandons d’utiliser l’option de nom de balise dans la mesure du possible. Le nom de balise est le nom d’une région ou d’un commentaire de code au format `Snippettagname` présent dans le code source. L’exemple suivant montre comment faire référence au nom de balise `BasicThrow` :
 
@@ -244,13 +244,13 @@ Liens de boutons :
 
 ```markdown
 > [!div class="button"]
-[button links](dotnet-contribute.md)
+> [button links](dotnet-contribute.md)
 ```
 
 Ce code est restitué comme suit :
 
 > [!div class="button"]
-[liens de boutons](dotnet-contribute.md)
+> [liens de boutons](dotnet-contribute.md)
 
 Vous pouvez obtenir un exemple de boutons en action dans la [documentation Visual Studio](https://docs.microsoft.com/visualstudio/install/install-visual-studio#step-2---download-visual-studio).
 
@@ -258,8 +258,8 @@ Vous pouvez obtenir un exemple de boutons en action dans la [documentation Visua
 
 ```markdown
 >[!div class="step-by-step"]
-[Pre](../docs/csharp/expression-trees-interpreting.md)
-[Next](../docs/csharp/expression-trees-translating.md)
+> [Pre](../docs/csharp/expression-trees-interpreting.md)
+> [Next](../docs/csharp/expression-trees-translating.md)
 ```
 
 Vous pouvez obtenir un exemple de pas à pas en action dans le [Guide C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/program-structure).

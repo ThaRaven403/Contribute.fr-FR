@@ -1,6 +1,6 @@
 ---
-title: Informations de référence sur Markdown pour OPS et docs.microsoft.com
-description: Guide de la plateforme OPS pour les extensions Markdown et DFM (DocFX Flavored Markdown).
+title: Informations de référence sur Markdown pour docs.microsoft.com
+description: Guide de la plateforme Docs sur Markdown.
 author: meganbradley
 ms.author: mbradley
 manager: jemash
@@ -8,24 +8,24 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 audience: internal,external
-ms.openlocfilehash: 64921bacf48e638221048db4b24e1a941f1d2777
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 1023f3036e5c1facd0bcd4c31069e6faf3c95483
+ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609542"
+ms.lasthandoff: 12/11/2018
+ms.locfileid: "53245869"
 ---
-# <a name="markdown-reference-for-ops"></a>Informations de référence sur Markdown pour OPS
+# <a name="markdown-reference"></a>Informations de référence sur Markdown
 
-Markdown est un langage de balisage léger avec une syntaxe de mise en forme en texte brut. OPS (Open Publishing Services) prend en charge la norme CommonMark pour Markdown ainsi que certaines extensions Markdown personnalisées conçues pour fournir du contenu enrichi sur docs.microsoft.com. Cet article fournit des informations de référence par ordre alphabétique, qui facilitent l’utilisation de Markdown dans OPS pour docs.microsoft.com.
+Markdown est un langage de balisage léger avec une syntaxe de mise en forme en texte brut. La plateforme Docs prend en charge la norme CommonMark pour Markdown, ainsi que certaines extensions Markdown personnalisées conçues pour fournir du contenu enrichi sur docs.microsoft.com. Cet article fournit des informations de référence par ordre alphabétique, qui facilitent l’utilisation de Markdown pour docs.microsoft.com.
 
-Vous pouvez utiliser n’importe quel éditeur de texte pour créer du contenu Markdown. Comme éditeur facilitant l’insertion à la fois d’une syntaxe Markdown standard et d’extensions OPS personnalisées, nous recommandons [VS Code](https://code.visualstudio.com/) avec le [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) installé.
+Vous pouvez utiliser n’importe quel éditeur de texte pour créer du contenu Markdown. Comme éditeur facilitant l’insertion à la fois d’une syntaxe Markdown standard et d’extensions Docs personnalisées, nous recommandons [VS Code](https://code.visualstudio.com/) avec le [Docs Authoring Pack](https://aka.ms/DocsAuthoringPack) installé.
 
-OPS s’appuie sur Markdig pour tous les nouveaux dépôts, tandis que les anciens dépôts migrent vers Markdig. Vous pouvez tester le rendu de Markdown dans Markdig par rapport à d’autre moteurs sur [https://babelmark.github.io/](https://babelmark.github.io/).
+Docs utilise le moteur Markdown Markdig. Vous pouvez tester le rendu de Markdown dans Markdig par rapport à d’autre moteurs sur [https://babelmark.github.io/](https://babelmark.github.io/).
 
 ## <a name="alerts-note-tip-important-caution-warning"></a>Alertes (Remarque, Conseil, Important, Attention, Avertissement)
 
-Les alertes sont une extension Markdown propre à OPS pour créer des citations qui s’affichent sur docs.microsoft.com avec des couleurs et des icônes indiquant la signification du contenu. Les types d’alerte suivants sont pris en charge :
+Les alertes sont une extension Markdown Docs pour créer des citations qui s’affichent sur docs.microsoft.com avec des couleurs et des icônes indiquant la signification du contenu. Les types d’alerte suivants sont pris en charge :
 
 ```markdown
 > [!NOTE]
@@ -71,7 +71,7 @@ Vous pouvez incorporer des extraits de code dans vos fichiers Markdown :
 
 ## <a name="headings"></a>En-têtes
 
-OPS prend en charge six niveaux de titres Markdown :
+Docs prend en charge six niveaux de titres Markdown :
 
 ```markdown
 # This is a first level heading (H1)
@@ -92,7 +92,7 @@ OPS prend en charge six niveaux de titres Markdown :
 
 ## <a name="html"></a>HTML
 
-Bien que Markdown prenne en charge la syntaxe HTML inline, HTML n’est pas recommandé pour une publication par le biais d’OPS, car, sauf pour un ensemble limité de valeurs, il entraîne des avertissements ou des erreurs de génération. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+Bien que Markdown prenne en charge la syntaxe HTML inline, HTML n’est pas recommandé pour une publication sur Docs, car, sauf pour un ensemble limité de valeurs, il entraîne des avertissements ou des erreurs de génération. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
 
 ## <a name="images"></a>Images
 
@@ -116,7 +116,7 @@ Vous pouvez ajouter la prise en charge d’autres types d’image en les ajoutan
 
 ## <a name="links"></a>Liens
 
-Dans la plupart des cas, OPS utilise des liens Markdown standard vers d’autres fichiers et pages. Les types de liens sont décrits dans des sous-sections plus loin.
+Dans la plupart des cas, Docs utilise des liens Markdown standard vers d’autres fichiers et pages. Les types de liens sont décrits dans des sous-sections plus loin.
 
 > [!TIP]
 > Le Docs Authoring Pack pour VS Code peut aider à insérer correctement des signets et des liens relatifs sans avoir à deviner les chemins !
@@ -132,7 +132,7 @@ Dans la plupart des cas, OPS utilise des liens Markdown standard vers d’autres
 
 ### <a name="relative-links-to-files-in-the-same-doc-set"></a>Liens relatifs vers des fichiers de la même documentation
 
-Un chemin relatif est le chemin du fichier cible par rapport au fichier actuel. Dans OPS, vous pouvez utiliser un chemin relatif pour créer un lien vers un autre fichier de la même documentation. La syntaxe d’un chemin relatif est la suivante :
+Un chemin relatif est le chemin du fichier cible par rapport au fichier actuel. Dans Docs, vous pouvez utiliser un chemin relatif pour créer un lien vers un autre fichier de la même documentation. La syntaxe d’un chemin relatif est la suivante :
 
 ```markdown
 [link text](../../folder/filename.md)
@@ -142,7 +142,7 @@ Où `../` indique un niveau au-dessus dans la hiérarchie.
 
 - Le chemin relatif est résolu pendant la génération, qui inclut la suppression de l’extension .md.
 - Vous pouvez utiliser « ../ » pour créer un lien vers le fichier dans le dossier parent, mais ce fichier doit se trouver dans la même documentation. Vous ne pouvez pas utiliser « ../ » pour créer un lien vers un fichier d’une autre documentation.
-- OPS prend également en charge une forme spéciale de chemin relatif qui commence par « ~ » (par exemple, ~/foo/bar.md). Cette syntaxe indique un fichier par rapport au dossier racine d’une documentation. Ce genre de chemin est aussi validé et résolu pendant la génération.
+- Docs prend également en charge une forme spéciale de chemin relatif qui commence par « ~ » (par exemple, ~/foo/bar.md). Cette syntaxe indique un fichier par rapport au dossier racine d’une documentation. Ce genre de chemin est aussi validé et résolu pendant la génération.
 
 > [!IMPORTANT]
 > Ajoutez l’extension de fichier dans le chemin relatif. La génération valide l’existence du fichier cible de ce chemin relatif. Si le chemin relatif n’inclut pas d’extension de fichier, il est probable qu’un avertissement de lien rompu apparaisse lors de la génération. Par exemple, utilisez :
@@ -153,7 +153,7 @@ Où `../` indique un niveau au-dessus dans la hiérarchie.
 >
 > `[link text](../../folder/filename)`
 
-### <a name="absolute-links-to-other-files-in-ops"></a>Liens absolus vers d’autres fichiers dans OPS
+### <a name="site-relative-links-to-other-files-on-docs"></a>Liens relatifs de site vers d’autres fichiers sur Docs
 
 ```markdown
 [Azure and Linux](/articles/virtual-machines/linux/overview)
@@ -252,7 +252,7 @@ Using XREF may require some configuration. For more information, see XREF Servic
 
 Pour créer une liste numérotée, vous pouvez utiliser exclusivement des « 1 », qui sont restitués sous la forme d’une liste séquentielle au moment de la publication. Pour accroître la lisibilité du texte source, vous pouvez incrémenter vos listes.
 
-N’utilisez pas de lettres dans les listes, y compris dans les listes imbriquées. Elles ne sont pas restituées correctement au moment de la publication par OPS. Les listes imbriquées utilisant des nombres sont restituées avec des lettres minuscules au moment de la publication. Par exemple :
+N’utilisez pas de lettres dans les listes, y compris dans les listes imbriquées. Elles ne sont pas restituées correctement au moment de la publication sur Docs. Les listes imbriquées utilisant des nombres sont restituées avec des lettres minuscules au moment de la publication. Par exemple :
 
 ```markdown
 1. This is
@@ -423,14 +423,6 @@ Le texte Markdown de citation précédent s’affiche ainsi :
 > - [(Xamarin iOS | Javascript)](how-to-write-workflows-major.md)
 > - [(Xamarin Android | Javascript)](how-to-write-workflows-major.md)
 
-<!-- uncomment and link when Cory's topic is live
-## Tabbed content
-
-Tabs are a Markdown extension for docs.microsoft.com that allow us to present different versions of content, such as procedural steps to accomplish the same task on different platforms, in a tabbed format.
-
-Because the syntax and requirements for tabbed content are fairly complex, they are documented separately in Tabbed Content.
--->
-
 ## <a name="tables"></a>les tableaux
 
 Le moyen le plus simple de créer un tableau en Markdown est d’utiliser des barres verticales et des lignes. Pour créer un tableau standard avec un en-tête, faites suivre la première ligne d’une ligne en pointillés :
@@ -535,13 +527,13 @@ Les tableaux HTML ne sont pas recommandés dans docs.microsoft.com. Ils ne se pr
 
 ### <a name="embedding-videos-into-a-markdown-page"></a>Incorporation de vidéos dans une page Markdown
 
-OPS peut prendre en charge les vidéos publiées sur :
+À l’heure actuelle, Docs peut prendre en charge les vidéos publiées sur :
 
 - YouTube
 - Canal 9
 - Système « One Player » de Microsoft
 
-Vous pouvez incorporer une vidéo avec la syntaxe suivante et permettre à OPS de l’afficher.
+Vous pouvez incorporer une vidéo avec la syntaxe suivante et permettre à Docs de l’afficher.
 
 ```markdown
 > [!VIDEO <embedded_video_link>]
