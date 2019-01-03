@@ -2,12 +2,12 @@
 title: Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 description: Cet article fournit des informations de base et de référence sur le langage Markdown utilisé pour écrire des articles docs.microsoft.com.
 ms.date: 07/13/2017
-ms.openlocfilehash: 8613d525afc11caf9ec760c4f15ea44010781634
-ms.sourcegitcommit: 21c9ac71e1abff946466cddf17a1ee97bc349ec5
+ms.openlocfilehash: ef75ffd59b75db5757822642f651d863906cf14c
+ms.sourcegitcommit: 18c271ebec920bb976a4bc901f4ab8c1d36b02fa
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53245892"
+ms.lasthandoff: 12/19/2018
+ms.locfileid: "53615832"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 
@@ -232,7 +232,8 @@ Ces langages prennent en charge les noms conviviaux, et pour la plupart d’entr
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
-|Power Apps Formula|powerappsfl|
+|PowerApps (séparateur décimal point)|powerapps-dot|
+|PowerApps (séparateur décimal virgule)|powerapps-comma|
 |PowerShell|powershell|
 |Python|python|
 |Q#|qsharp|
