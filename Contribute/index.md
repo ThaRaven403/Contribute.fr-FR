@@ -5,12 +5,12 @@ author: billwagner
 ms.author: wiwagn
 manager: wpickett
 ms.date: 04/17/2018
-ms.openlocfilehash: dab2de80654fb55382b2ca7c9f78df36df9971dc
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 4a9a7573a62cfc7d5187b90de7e1fe147825273e
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609358"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712852"
 ---
 # <a name="microsoft-docs-contributor-guide-overview"></a>Guide du contributeur Microsoft Docs - Vue d’ensemble
 
@@ -37,7 +37,7 @@ Les modifications rapides permettent de rationaliser le processus de signalement
 
 Cliquez ensuite sur l’icône représentant un crayon affichée sur la figure suivante pour modifier l’article.
 
-![Emplacement de l’icône de crayon](./media/index/editicon.png)
+![Emplacement de l’icône de crayon](./media/index/edit-icon.png)
 
 > [!NOTE]
 > Si l’icône représentant un crayon est grisée, vous devez vous connecter à votre compte GitHub ou créer un compte.
