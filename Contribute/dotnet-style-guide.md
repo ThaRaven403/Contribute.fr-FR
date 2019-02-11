@@ -2,12 +2,12 @@
 title: Modèle et aide-mémoire pour les articles .NET
 description: Cet article contient un modèle pratique que vous pouvez utiliser pour créer des articles pour les dépôts de documentation .NET.
 ms.date: 11/07/2018
-ms.openlocfilehash: 08c8e19c858e7417d49cc2de543c67f330b93e89
-ms.sourcegitcommit: b0556fc33803358009a030ac9efcaed23f562868
+ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
+ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/11/2018
-ms.locfileid: "53264499"
+ms.lasthandoff: 02/04/2019
+ms.locfileid: "55712921"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Modèle de métadonnées et de Markdown pour la documentation .NET
 
@@ -123,7 +123,7 @@ Pour établir une liaison à un type générique, tel que [System.Collections.Ge
 
 ## <a name="code"></a>Code
 
-Le meilleur moyen d’inclure du code consiste à inclure des extraits à partir d’un exemple opérationnel. Créez votre exemple en suivant les instructions fournies dans l’article [Contribution à .NET](dotnet-contribute-process.md#contributing-to-samples). Les règles de base pour l’inclusion de code figurent dans les instructions générales concernant le [code](how-to-write-use-markdown.md#code-includes).
+Le meilleur moyen d’inclure du code consiste à inclure des extraits à partir d’un exemple opérationnel. Créez votre exemple en suivant les instructions fournies dans l’article [Contribution à .NET](dotnet-contribute-process.md#contributing-to-samples). Les règles de base pour l’inclusion de code figurent dans les instructions générales concernant le [code](how-to-write-use-markdown.md#code-snippets).
 
 Vous pouvez inclure le code à l’aide de la syntaxe suivante :
 
