@@ -16,6 +16,7 @@
 ### [Contribuer à la documentation .NET](dotnet-contribute-process.md)
 ### [Conventions de style de documentation .NET](dotnet-style-guide.md)
 ### [Guide de style](dotnet-voice-tone.md)
+### [Processus de révision des demandes de tirage (pull request)](dotnet-pr-review.md)
 # [Ressources supplémentaires](additional-resources.md)
 
 <!--
