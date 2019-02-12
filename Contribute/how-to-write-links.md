@@ -4,17 +4,17 @@ description: Cet article vous aide à créer des liens vers du contenu situé su
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: e56bc0fe3a5428af2a79641a8959b4da21270d53
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 9dc1b6dc2ac19b8f28a5a137817245f9a8c34eaf
+ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609427"
+ms.lasthandoff: 02/07/2019
+ms.locfileid: "55887249"
 ---
 # <a name="using-links-in-documentation"></a>Utilisation de liens dans la documentation
 Cet article décrit comment utiliser des liens hypertexte à partir de pages hébergées sur docs.microsoft.com. Vous pouvez facilement ajouter des liens dans la syntaxe Markdown en tenant compte de quelques conventions. Les liens pointent vers du contenu situé dans la même page, dans d’autres pages voisines ou sur des sites et des URL externes.
 
-Le backend du site docs.microsoft.com utilise OPS (Open Publishing Services) qui implémente DFM (DocFX Flavored Markdown). DFM, hautement compatible avec GFM (GitHub Flavored Markdown), propose des fonctionnalités supplémentaires par le biais d’extensions Markdown.
+Le back-end du site docs.microsoft.com utilise OPS (Open Publishing Services) qui prend en charge Markdown conforme avec [CommonMark](https://commonmark.org/) analysé via [Markdig](https://github.com/lunet-io/markdig) et qui prend aussi en charge [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/). Ces types Markdown sont essentiellement compatibles avec [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), car la plupart des documents sont stockés dans GitHub et peuvent être modifiés à cet endroit. Des fonctionnalités sont ajoutées via des extensions Markdown.
 
 > [!IMPORTANT]
 > Tous les liens doivent être sécurisés (`https` et `http`) lorsque la cible le permet (dans la grande majorité des cas).
@@ -140,9 +140,9 @@ Une expérience utilisateur idéale minimise l'envoi d'utilisateurs vers d'autre
 - **Responsabilité** : Établissez un lien vers du contenu tiers quand il s’agit des informations que le tiers est tenu de partager. Par exemple, il ne revient pas à Microsoft d’expliquer aux utilisateurs comment utiliser les outils pour développeurs d’Android. Cette tâche incombe à Google. Si besoin, nous pouvons expliquer comment utiliser les outils Android *avec* Azure, mais l'explication de l'utilisation des outils eux-mêmes est le travail de Google.
 - **Validation des PM** : Demandez à Microsoft de valider le contenu tiers. En établissant un lien, nous donnons des indications de notre confiance et de nos obligations si les utilisateurs suivent les instructions.
 - **Révisions d’actualisation** : Vérifiez que les informations tierces sont toujours actuelles, correctes et pertinentes, et que le lien n’a pas changé.
-- **Hors site** : Informez les utilisateurs qu’ils vont vers un autre site. Si le contexte ne l’indique pas explicitement, ajoutez une phrase pour cela, par exemple « Les conditions requises comprennent les outils pour développeurs d’Android, que vous pouvez télécharger sur le site d’Android Studio ».
+- **Hors site** : Informez les utilisateurs qu’ils vont vers un autre site. Si le contexte ne l’indique pas explicitement, ajoutez une phrase pour cela, Par exemple : « Les prérequis comprennent les outils pour développeurs d'Android, que vous pouvez télécharger sur le site d'Android Studio ».
 - **Étapes suivantes** : Vous pouvez ajouter un lien vers, par exemple, un blog MVP dans une section « Étapes suivantes ». Encore une fois, assurez-vous juste que les utilisateurs comprennent qu’ils vont quitter le site.
-- **Juridique**  : Nous sommes légalement couverts sous **Liens vers des sites tiers** dans les **Conditions d’utilisation** en pied de page de chaque page ms.com.
+- **Juridique** : Nous sommes légalement couverts sous **Liens vers des sites tiers** dans les **Conditions d’utilisation** en pied de page de chaque page ms.com.
 
 ## <a name="links-to-msdn-or-technet"></a>Liens vers MSDN ou TechNet
 
