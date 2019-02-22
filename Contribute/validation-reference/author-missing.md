@@ -6,30 +6,30 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 12/12/2018
 ms.prod: non-product-specific
-ms.openlocfilehash: cba9788c113101fc93bffa674702b2bed95afbcb
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 89725dcfbd4ec266071c45a003748021b480bbc2
+ms.sourcegitcommit: f374ad2607360f46d88982b4b7ecc63d3ab08235
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713036"
+ms.lasthandoff: 02/20/2019
+ms.locfileid: "56431527"
 ---
-# <a name="author-missing"></a><span data-ttu-id="eb669-103">author-missing</span><span class="sxs-lookup"><span data-stu-id="eb669-103">author-missing</span></span>
+# <a name="author-missing"></a><span data-ttu-id="4a84a-103">author-missing</span><span class="sxs-lookup"><span data-stu-id="4a84a-103">author-missing</span></span>
 
-<span data-ttu-id="eb669-104">**Bientôt disponible !**</span><span class="sxs-lookup"><span data-stu-id="eb669-104">**Coming soon!**</span></span>
+<span data-ttu-id="4a84a-104">**Bientôt disponible !**</span><span class="sxs-lookup"><span data-stu-id="4a84a-104">**Coming soon!**</span></span>
 
 [!INCLUDE [suggestion-note](includes/suggestion-note.md)]
 
-## <a name="suggestion"></a><span data-ttu-id="eb669-105">Suggestion</span><span class="sxs-lookup"><span data-stu-id="eb669-105">Suggestion</span></span>
+## <a name="suggestion"></a><span data-ttu-id="4a84a-105">Suggestion</span><span class="sxs-lookup"><span data-stu-id="4a84a-105">Suggestion</span></span>
 
 `Missing attribute: author. Add a valid GitHub ID.`
 
-<span data-ttu-id="eb669-106">L’attribut `author` identifie l’auteur de l’article par ID GitHub.</span><span class="sxs-lookup"><span data-stu-id="eb669-106">The `author` attribute identifies the author of the article by GitHub ID.</span></span> 
+<span data-ttu-id="4a84a-106">L’attribut `author` identifie l’auteur de l’article par ID GitHub.</span><span class="sxs-lookup"><span data-stu-id="4a84a-106">The `author` attribute identifies the author of the article by GitHub ID.</span></span> 
 
-## <a name="resolution"></a><span data-ttu-id="eb669-107">Résolution</span><span class="sxs-lookup"><span data-stu-id="eb669-107">Resolution</span></span>
+## <a name="resolution"></a><span data-ttu-id="4a84a-107">Résolution</span><span class="sxs-lookup"><span data-stu-id="4a84a-107">Resolution</span></span>
 
-<span data-ttu-id="eb669-108">Ajoutez l’ID GitHub de l’auteur à l’en-tête YML :</span><span class="sxs-lookup"><span data-stu-id="eb669-108">Add the author's GitHub ID to the YML header:</span></span>
+<span data-ttu-id="4a84a-108">Ajoutez l’ID GitHub de l’auteur à l’en-tête YML :</span><span class="sxs-lookup"><span data-stu-id="4a84a-108">Add the author's GitHub ID to the YML header:</span></span>
 
-```markdown
+```yml
 ---
 author: meganbradley
 ms.author: mbradley
