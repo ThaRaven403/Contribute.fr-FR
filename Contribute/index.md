@@ -3,20 +3,14 @@ title: Guide du contributeur Microsoft Docs - Vue d’ensemble
 description: Ce guide vous explique comment contribuer au site de documentation Microsoft docs.microsoft.com.
 author: billwagner
 ms.author: wiwagn
-manager: wpickett
-ms.date: 04/17/2018
-ms.openlocfilehash: 4a9a7573a62cfc7d5187b90de7e1fe147825273e
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
-ms.translationtype: HT
-ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712852"
+ms.date: 02/19/2019
 ---
+
 # <a name="microsoft-docs-contributor-guide-overview"></a>Guide du contributeur Microsoft Docs - Vue d’ensemble
 
 Bienvenue dans le guide du contributeur [docs.microsoft.com](https://docs.microsoft.com) (Docs) !
 
-Beaucoup de nos ensembles de documentation sont open source et hébergés sur GitHub. Ce modèle est de plus en plus souvent adopté par les équipes Microsoft. Même les ensembles de documents qui sont pas entièrement open source ont des référentiels publics où vous êtes invité à faire des demandes de tirage (pull requests). Ceci rationalise et améliore la communication entre les ingénieurs produits, les équipes de contenu et nos clients. Le travail en open source offre de nombreux avantages :
+Plusieurs des ensembles de documents Microsoft sont open source et hébergés sur GitHub. Certains ensembles de documents ne sont pas entièrement open source, mais plusieurs ont des référentiels publics où vous êtes invité à faire des demandes de tirage (pull requests). Ceci rationalise et améliore la communication entre les ingénieurs produits, les équipes de contenu et nos clients. Le travail en open source offre de nombreux avantages :
 
 - Un plan du référentiel open source pour savoir quels sont les documents les plus demandés.
 - Une revue du référentiel open source pour publier le contenu le plus utile lors de notre première mise en production.
@@ -31,30 +25,30 @@ L’expérience utilisateur sur [docs.microsoft.com](https://docs.microsoft.com)
 
 ## <a name="quick-edits-to-existing-documents"></a>Modifications rapides de documents existants
 
-Les modifications rapides permettent de rationaliser le processus de signalement et de correction de petites erreurs et omissions dans des documents. Malgré tous les efforts, nos documents publiés peuvent contenir de petites fautes de grammaire et d’orthographe. Même si vous pouvez signaler des problèmes et nous faire part d’erreurs, il est plus rapide et plus facile de créer une demande de tirage (pull request) pour résoudre un problème. Presque tous les articles sont dotés d’un bouton de modification comme celui de la figure suivante. En cliquant sur le bouton **Modification** (ou terme localisé équivalent), vous accédez au fichier source sur GitHub.
+Les modifications rapides permettent de rationaliser le processus de signalement et de correction de petites erreurs et omissions dans des documents. Malgré tous les efforts, nos documents publiés peuvent contenir de petites fautes de grammaire et d’orthographe. Même si vous pouvez signaler des problèmes et nous faire part d’erreurs, il est plus rapide et plus facile de créer une demande de tirage (pull request) pour résoudre un problème lorsque l’option est disponible.
 
-![Emplacement du lien de modification](./media/index/edit-article.png)
+1. Certaines pages de documents vous permettent de modifier le contenu directement dans le navigateur. Dans ce cas, un bouton **Modifier** comme celui illustré ci-dessous s’affiche. En cliquant sur le bouton **Modification** (ou terme localisé équivalent), vous accédez au fichier source sur GitHub. Si le bouton **Modifier** (icône crayon) est absent, cela signifie que la page de documentation ne peut pas être modifiée.
 
-Cliquez ensuite sur l’icône représentant un crayon affichée sur la figure suivante pour modifier l’article.
+   ![Emplacement du lien de modification](./media/index/edit-article.png)
 
-![Emplacement de l’icône de crayon](./media/index/edit-icon.png)
+2. Ensuite, cliquez sur l’icône crayon pour modifier l’article, comme indiqué. Si l’icône représentant un crayon est grisée, vous devez vous connecter à votre compte GitHub ou créer un compte. 
 
-> [!NOTE]
-> Si l’icône représentant un crayon est grisée, vous devez vous connecter à votre compte GitHub ou créer un compte.
+   ![Emplacement de l’icône de crayon](./media/index/edit-icon.png)
 
-Effectuez vos modifications dans l’éditeur web. Vous pouvez cliquer sur l’onglet **Aperçu des modifications** pour vérifier la mise en forme de votre modification.
 
-Une fois vos modifications effectuées, faites défiler vers le bas de la page. Entrez un titre et une description pour votre demande de tirage (PR) et cliquez sur **Proposer une modification du fichier** comme indiqué sur la figure suivante :
+3. Effectuez vos modifications dans l’éditeur web. Cliquez sur l’onglet **Aperçu des modifications** pour vérifier la mise en forme de votre modification.
 
-![votre proposition de modification](./media/index/submit-pull-request.png)
+4. Une fois vos modifications effectuées, faites défiler vers le bas de la page. Entrez un titre et une description de vos modifications et cliquez sur **Proposer une modification du fichier** comme indiqué sur la figure suivante :
 
-À présent que vous avez proposé votre modification, vous devez demander aux propriétaires du référentiel de « tirer (pull) » vos modifications dans leur référentiel. Pour cela, vous utilisez une « requête de tirage (pull) ». Lorsque vous avez cliqué sur **Proposer une modification du fichier** dans la figure ci-dessus, vous devriez avoir été dirigé vers une nouvelle page qui ressemble à la figure suivante :
+   ![Proposer une modification de fichier](./media/index/submit-pull-request.png)
 
-![créer une requête de tirage](media/index/create-pull-request.png)
+5. À présent que vous avez proposé votre modification, vous devez demander aux propriétaires du référentiel de « tirer (pull) » vos modifications dans leur référentiel. Pour cela, vous utilisez une « requête de tirage (pull) ». Lorsque vous avez cliqué sur **Proposer une modification du fichier** dans la figure ci-dessus, vous devriez avoir été dirigé vers une nouvelle page qui ressemble à la figure suivante :
 
-Cliquez sur **Créer une requête de tirage (pull)**, entrez un titre (et une description si vous le voulez) pour la requête de tirage (pull), puis cliquez à nouveau sur **Créer une requête de tirage (pull)**.
+   ![créer une requête de tirage](media/index/create-pull-request.png)
 
-Et voilà ! Les membres de l’équipe de contenu réviseront et fusionneront votre demande de tirage (PR). Vous recevrez peut-être des commentaires avec des demandes des modification si vous avez effectué des modifications majeures.
+   Cliquez sur **Créer une requête de tirage (pull)**, entrez un titre (et une description si vous le voulez) pour la requête de tirage (pull), puis cliquez à nouveau sur **Créer une requête de tirage (pull)**.
+
+6. Et voilà ! Les membres de l’équipe de contenu réviseront et fusionneront votre demande de tirage (PR). Vous recevrez peut-être des commentaires avec des demandes des modification si vous avez effectué des modifications majeures.
 
 L’interface utilisateur de modification GitHub est fonction de vos autorisations dans le référentiel. Les images précédentes sont concernent les contributeurs qui n’ont pas d’autorisations d’écriture pour le référentiel cible. GitHub crée automatiquement une duplication (fork) du référentiel cible dans votre compte. Si vous bénéficiez d’un accès en écriture au référentiel cible, GitHub y crée une nouvelle branche. Le nom de la branche a la structure **\<GitHubId\>-patch-n**, avec votre identifiant GitHub et un identificateur numérique pour la branche du correctif.
 
@@ -75,6 +69,8 @@ Vous pouvez lire les nouvelles rubriques avant leur publication en consultant le
 ## <a name="create-quality-issues"></a>Signaler des problèmes de qualité
 
 Nos documents font l’objet d’un travail continu. Les problèmes pertinents nous aident à concentrer nos efforts sur les priorités absolues de la communauté virtuelle. Plus vous pouvez fournir de détails, plus la signalisation du problème sera utile. Dites-nous quelles informations vous avez cherchées. Dites-nous quels termes vous avez utilisés pour la recherche. Si vous n’arrivez-pas à la lancer, dites-nous comment vous souhaitez commencer à explorer une technologie qui ne vous est pas familière.
+
+La plupart des pages de la documentation Microsoft contient une section **Commentaires** au bas de la page sur laquelle vous pouvez cliquer pour laisser des **commentaires sur le produit** ou des **commentaires sur le contenu** afin d’effectuer le suivi des problèmes spécifiques à cet article.
 
 Les problèmes permettent d’amorcer une conversation sur ce dont vous avez besoin. L’équipe chargée du contenu réagira aux problèmes signalés avec des idées concernant ce que nous pouvons ajouter et vous demandera votre avis. Lorsque nous créons un brouillon, nous vous demandons de [réviser la demande de tirage (PR)](#review-open-prs).
 
