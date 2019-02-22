@@ -17,7 +17,7 @@ Onglet dépendant facultatif :
 
 Exemple d’une section d’onglets à un niveau avec deux onglets et le terminateur de groupe d’onglets (---) :
 
-```
+```markdown
 # [Linux](#tab/linux)
 
 Content for Linux...
