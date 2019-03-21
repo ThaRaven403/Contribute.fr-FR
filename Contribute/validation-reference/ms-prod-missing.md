@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 2/2/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: ee29396a20345f6884a5bbc94aa25f48dafaff52
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 2578ab47dab315a446529d24357e9489d7fd0bad
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713220"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987695"
 ---
 # <a name="ms-prod-missing"></a>ms-prod-missing
 
@@ -29,7 +29,7 @@ Utilisez `ms.prod` pour spécifier les produits sur site. Pour spécifier des in
 
 Confirmez que la valeur `ms.technology` spécifiée est correcte pour votre article. Puis, ajoutez la valeur `ms.prod` appropriée qui est un parent valide de `ms.technology`.
 
-Vous trouverez les valeurs valides sur [ce site Microsoft interne](https://docsmetadatatool.azurewebsites.net/whitelists).
+Vous trouverez les valeurs valides sur [ce site Microsoft interne](https://docsmetadatatool.azurewebsites.net/allowlists).
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]

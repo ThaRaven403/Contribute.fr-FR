@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 1/15/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 6a2efc5cee04d7721e7a8fe1602ca24dc09ca7fd
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 7dee18e7b902b660a8071bcb4a0dee21c19f4f7f
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713128"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987635"
 ---
 # <a name="ms-service-and-subservice-invalid"></a>ms-service-and-subservice-invalid
 
@@ -29,7 +29,7 @@ Utilisez `ms.service` pour spécifier les services cloud. Pour spécifier des in
 
 Confirmez que votre valeur `ms.service` est correcte pour votre article. Puis, choisissez une valeur `ms.subservice` valide.
 
-Vous trouverez les valeurs valides sur [ce site Microsoft interne](https://docsmetadatatool.azurewebsites.net/whitelists).
+Vous trouverez les valeurs valides sur [ce site Microsoft interne](https://docsmetadatatool.azurewebsites.net/allowlists).
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
