@@ -1,3 +1,11 @@
+---
+ms.openlocfilehash: fa7cd177f6c4a3c4862677dbfa89f63a91e7f464
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987810"
+---
 # <a name="tabbed-conceptual"></a>Conception à onglets
 
 > [!IMPORTANT]
@@ -58,13 +66,13 @@ Les validations suivantes s’appliquent à la syntaxe des onglets :
 - Un seul niveau de dépendance est autorisé.
 - Le nombre minimum d’onglets autorisés est de deux.
 - Le nombre maximum d’onglets autorisés est de quatre.
-- Les onglets doivent être sur liste verte.
+- Les onglets doivent être approuvés.
 - Les paires onglet/ID doivent être valides.
 - Un groupe d’onglets ne peut pas contenir plusieurs ID d’onglet identiques.
 
-## <a name="tab-whitelist"></a>Liste verte d’onglets
+## <a name="approved-tabs"></a>Onglets approuvés
 
-Les paires nom d’onglet/ID d’onglet suivantes sont sur liste verte. Les ID d’onglets dépendants ne sont pas associés, mais ils doivent être valides conformément à la colonne ID de l’onglet. Les valeurs respectent la casse.
+Les paires nom d’onglet/ID d’onglet suivantes sont approuvées. Les ID d’onglets dépendants ne sont pas associés, mais ils doivent être valides conformément à la colonne ID de l’onglet. Les valeurs respectent la casse.
 
 |Nom de l’onglet              |ID de l’onglet            |
 |----------------------|------------------|

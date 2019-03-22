@@ -12,9 +12,9 @@ Bienvenue dans le guide du contributeur [docs.microsoft.com](https://docs.micros
 
 Plusieurs des ensembles de documents Microsoft sont open source et hébergés sur GitHub. Certains ensembles de documents ne sont pas entièrement open source, mais plusieurs ont des référentiels publics où vous êtes invité à faire des demandes de tirage (pull requests). Ceci rationalise et améliore la communication entre les ingénieurs produits, les équipes de contenu et nos clients. Le travail en open source offre de nombreux avantages :
 
-- Un plan du référentiel open source pour savoir quels sont les documents les plus demandés.
-- Une revue du référentiel open source pour publier le contenu le plus utile lors de notre première mise en production.
-- Une mise à jour du référentiel open source pour faciliter l’amélioration de son contenu.
+- _Planification en open_ des dépôts open source pour obtenir du feedback servant à savoir quels documents sont les plus demandés.
+- _Révision en open_ des dépôts open source pour publier le contenu le plus utile lors de notre première publication.
+- _Mise à jour en open_ des dépôts open source pour simplifier l’amélioration en continu du contenu.
 
 L’expérience utilisateur sur [docs.microsoft.com](https://docs.microsoft.com) intègre directement les workflows [GitHub](https://github.com) pour être encore plus agréable. Commencez par [modifier le document que vous visualisez](#quick-edits-to-existing-documents). Apportez votre aide en [révisant de nouvelles rubriques](#review-open-prs), ou [signalez des problèmes de qualité](#create-quality-issues).
 
@@ -25,9 +25,9 @@ L’expérience utilisateur sur [docs.microsoft.com](https://docs.microsoft.com)
 
 ## <a name="quick-edits-to-existing-documents"></a>Modifications rapides de documents existants
 
-Les modifications rapides permettent de rationaliser le processus de signalement et de correction de petites erreurs et omissions dans des documents. Malgré tous les efforts, nos documents publiés peuvent contenir de petites fautes de grammaire et d’orthographe. Même si vous pouvez signaler des problèmes et nous faire part d’erreurs, il est plus rapide et plus facile de créer une demande de tirage (pull request) pour résoudre un problème lorsque l’option est disponible.
+Les modifications rapides permettent de rationaliser le processus de signalement et de correction de petites erreurs et omissions dans des documents. Malgré tous nos efforts, les documents que nous publions _peuvent_ contenir de petites fautes de grammaire et d’orthographe. Même si vous pouvez signaler des problèmes et nous faire part d’erreurs, il est plus rapide et plus facile de créer une demande de tirage (pull request) pour résoudre un problème lorsque l’option est disponible.
 
-1. Certaines pages de documents vous permettent de modifier le contenu directement dans le navigateur. Dans ce cas, un bouton **Modifier** comme celui illustré ci-dessous s’affiche. En cliquant sur le bouton **Modification** (ou terme localisé équivalent), vous accédez au fichier source sur GitHub. Si le bouton **Modifier** (icône crayon) est absent, cela signifie que la page de documentation ne peut pas être modifiée.
+1. Certaines pages de documents vous permettent de modifier le contenu directement dans le navigateur. Dans ce cas, un bouton **Modifier** comme celui illustré ci-dessous s’affiche. En cliquant sur le bouton **Modifier**, vous accédez au fichier source sur GitHub. Si le bouton **Modifier** (icône crayon sans texte) est absent, cela signifie que la page de documentation ne peut pas être modifiée.
 
    ![Emplacement du lien de modification](./media/index/edit-article.png)
 
@@ -46,15 +46,15 @@ Les modifications rapides permettent de rationaliser le processus de signalement
 
    ![créer une requête de tirage](media/index/create-pull-request.png)
 
-   Cliquez sur **Créer une requête de tirage (pull)**, entrez un titre (et une description si vous le voulez) pour la requête de tirage (pull), puis cliquez à nouveau sur **Créer une requête de tirage (pull)**.
+   Cliquez sur **Créer une requête de tirage (pull)**, entrez un titre (et une description si vous le voulez) pour la requête de tirage (pull), puis cliquez à nouveau sur **Créer une requête de tirage (pull)**. (Si vous débutez avec GitHub, consultez [À propos des demandes de tirage](https://help.github.com/en/articles/about-pull-requests) pour plus d’informations.)
 
 6. Et voilà ! Les membres de l’équipe de contenu réviseront et fusionneront votre demande de tirage (PR). Vous recevrez peut-être des commentaires avec des demandes des modification si vous avez effectué des modifications majeures.
 
-L’interface utilisateur de modification GitHub est fonction de vos autorisations dans le référentiel. Les images précédentes sont concernent les contributeurs qui n’ont pas d’autorisations d’écriture pour le référentiel cible. GitHub crée automatiquement une duplication (fork) du référentiel cible dans votre compte. Si vous bénéficiez d’un accès en écriture au référentiel cible, GitHub y crée une nouvelle branche. Le nom de la branche a la structure **\<GitHubId\>-patch-n**, avec votre identifiant GitHub et un identificateur numérique pour la branche du correctif.
+L’interface utilisateur de modification GitHub est fonction de vos autorisations dans le référentiel. Les images précédentes sont concernent les contributeurs qui n’ont pas d’autorisations d’écriture pour le référentiel cible. GitHub crée automatiquement une duplication (fork) du référentiel cible dans votre compte. Si vous bénéficiez d’un accès en écriture au dépôt cible, GitHub y crée une nouvelle branche. Le nom de la branche a la structure **\<GitHubId\>-patch-n**, avec votre identifiant GitHub et un identificateur numérique pour la branche du correctif.
 
-Nous utilisons des demandes de tirage (PR) pour toutes les modifications, même pour les contributeurs bénéficiant d’un accès en écriture. La branche `master` de la plupart des référentiels étant protégée, les mises à jour doivent êtres envoyées sous forme de demandes de tirage (PR).
+Nous utilisons des demandes de tirage pour toutes les modifications, même pour les contributeurs bénéficiant d’un accès en écriture. La branche `master` de la plupart des référentiels étant protégée, les mises à jour doivent êtres envoyées sous forme de demandes de tirage (PR).
 
-L’expérience de modification dans le navigateur est la mieux adaptée à des modifications mineures ou peu fréquentes. Si vous effectuez des contributions importantes, ou que vous utilisez des fonctionnalités avancées de Git (comme la gestion des branches ou la résolution des conflits de fusion avancés), vous devez [dupliquer le référentiel et travailler localement](how-to-write-workflows-major.md).
+L’expérience de modification dans le navigateur est la mieux adaptée à des modifications mineures ou peu fréquentes. Si vous effectuez des contributions importantes ou que vous utilisez des fonctionnalités avancées de Git (comme la gestion des branches ou la résolution des conflits de fusion avancés), vous devez [dupliquer le dépôt et travailler localement](how-to-write-workflows-major.md).
 
 > [!NOTE]
 > Si cette option est activée, vous pouvez modifier un article dans **n’importe quelle langue** et, selon le type de modification, voici ce qui se produit :
@@ -72,7 +72,7 @@ Nos documents font l’objet d’un travail continu. Les problèmes pertinents n
 
 La plupart des pages de la documentation Microsoft contient une section **Commentaires** au bas de la page sur laquelle vous pouvez cliquer pour laisser des **commentaires sur le produit** ou des **commentaires sur le contenu** afin d’effectuer le suivi des problèmes spécifiques à cet article.
 
-Les problèmes permettent d’amorcer une conversation sur ce dont vous avez besoin. L’équipe chargée du contenu réagira aux problèmes signalés avec des idées concernant ce que nous pouvons ajouter et vous demandera votre avis. Lorsque nous créons un brouillon, nous vous demandons de [réviser la demande de tirage (PR)](#review-open-prs).
+Les problèmes permettent d’amorcer une conversation sur ce dont vous avez besoin. L’équipe chargée du contenu réagira aux problèmes signalés avec des idées concernant ce que nous pouvons ajouter et vous demandera votre avis. Lorsque nous créons un brouillon, nous vous demandons de [réviser la demande de tirage (PR)](#review-open-PRs).
 
 ## <a name="get-more-involved"></a>Engagez-vous plus
 

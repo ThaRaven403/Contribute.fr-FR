@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
-ms.openlocfilehash: 17bc6d3bf2de5077f490bea2f03cddf23d925b78
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: b4ac631a4ebdf7daf00bc39be80fe2e479720392
+ms.sourcegitcommit: 42e5a6ae071826afc2a32a9b7150ca113b39afdf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712944"
+ms.lasthandoff: 03/19/2019
+ms.locfileid: "57987879"
 ---
 # <a name="markdown-reference"></a>Informations de référence sur Markdown
 
@@ -90,7 +90,7 @@ Docs prend en charge six niveaux de titres Markdown :
 
 ## <a name="html"></a>HTML
 
-Bien que Markdown prenne en charge la syntaxe HTML inline, HTML n’est pas recommandé pour une publication sur Docs, car, sauf pour un ensemble limité de valeurs, il entraîne des avertissements ou des erreurs de génération. <!--For more information, see HTML Whitelist. // do we want to add the whitelist? -->
+Bien que Markdown prenne en charge la syntaxe HTML inline, HTML n’est pas recommandé pour une publication sur Docs, car, sauf pour un ensemble limité de valeurs, il entraîne des avertissements ou des erreurs de génération.
 
 ## <a name="images"></a>Images
 
@@ -110,7 +110,7 @@ Les images doivent être stockées dans un dossier `/media` au sein de votre doc
 - .jpg
 - .png
 
-Vous pouvez ajouter la prise en charge d’autres types d’image en les ajoutant en tant que ressources au fichier docfx.json <!--add link to reference when available--> de votre documentation.
+Vous pouvez ajouter la prise en charge d’autres types d’image en les ajoutant comme ressources au fichier docfx.json<!--add link to reference when available--> de votre documentation.
 
 ## <a name="links"></a>Liens
 
@@ -169,7 +169,7 @@ Lien basé sur une URL vers une autre page web (doit inclure https://).
 
 ### <a name="bookmark-links"></a>Liens de signet
 
-Lien de signet vers un titre d’un autre fichier du même dépôt :
+Lien de signet vers un titre d’un autre fichier du même dépôt Par exemple :
 
 ```markdown
 [Managed Disks](../../linux/overview.md#managed-disks)
@@ -181,7 +181,12 @@ Lien de signet vers un titre du fichier actuel :
 [Managed Disks](#managed-disks)
 ```
 
-Utilisez un signe dièse suivi des mots du titre sans signe de ponctuation et en remplaçant les espaces par des tirets.
+Utilisez un signe dièse `#` suivi des mots du titre. Pour changer le texte du titre dans le texte du lien :
+- Utiliser des caractères minuscules
+- Supprimer la ponctuation
+- Remplacer les espaces par des tirets
+
+Par exemple, si le nom du titre est « Problèmes de sécurité 2.2 », le texte du lien du signet sera « #problèmes-de-sécurité-22 ».
 
 ### <a name="explicit-anchor-links"></a>Liens d’ancrage explicites
 
@@ -230,7 +235,7 @@ Exemples :
 - `<xref:System.String?displayProperty=nameWithType>` s’affiche sous la forme « System.String ».
 - `[String class](xref:System.String)` s’affiche sous la forme « String class ».
 
-Il n’existe actuellement aucun moyen facile de trouver les UID. <!-- ? -->La meilleure façon de trouver l’UID pour une API consiste à afficher le source de la page de l’API vers laquelle vous voulez créer un lien et à rechercher la valeur de ms.assetid. Les valeurs des surcharges individuelles ne figurent pas dans la source. Nous nous efforçons de mettre au point un meilleur système dans le futur.
+Il n’existe actuellement aucun moyen facile de trouver les UID. <!-- ? -->La meilleure façon de trouver l’UID pour une API consiste à afficher la source de la page de l’API vers laquelle vous voulez créer un lien et à rechercher la valeur de ms.assetid. Les valeurs des surcharges individuelles ne figurent pas dans la source. Nous nous efforçons de mettre au point un meilleur système dans le futur.
 
 Quand l’UID contient les caractères spéciaux \`, \# ou \*, la valeur de l’UID doit être encodée en HTML en tant que `%60`, `%23` et `%2A`, respectivement. Vous pouvez parfois trouver des parenthèses dans l’encodage, mais elles ne sont pas obligatoires.
 
@@ -336,7 +341,8 @@ Vous pouvez utiliser n’importe quel lien pris en charge dans une action d’é
 
 ## <a name="section-definition"></a>Définition de section
 
-<!-- more info about this would be helpful! --> Vous aurez peut-être à définir une section. Cette syntaxe est principalement utilisée pour les tables de code.
+<!-- more info about this would be helpful! -->
+Vous aurez peut-être à définir une section. Cette syntaxe est principalement utilisée pour les tables de code.
 Regardez l’exemple suivant :
 
 ````
@@ -360,7 +366,8 @@ Le texte Markdown de citation précédent s’affiche ainsi :
 
 ## <a name="selectors"></a>Des sélecteurs
 
-<!-- could be more clear! --> Vous pouvez utiliser un sélecteur pour lier plusieurs pages d’un même article. Les lecteurs peuvent ainsi passer d’une page à l’autre.
+<!-- could be more clear! -->
+Vous pouvez utiliser un sélecteur pour lier plusieurs pages d’un même article. Les lecteurs peuvent ainsi passer d’une page à l’autre.
 
 > [!NOTE]
 > Cette extension fonctionne différemment sur docs.microsoft.com et sur MSDN. <!-- should we keep info about MSDN? If so say how they differ?-->
