@@ -2,12 +2,12 @@
 title: Modèle et aide-mémoire pour les articles .NET
 description: Cet article contient un modèle pratique que vous pouvez utiliser pour créer des articles pour les dépôts de documentation .NET.
 ms.date: 11/07/2018
-ms.openlocfilehash: e342373a09b623dc71aadd63e8d8627d154ec8b6
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 9b57abd96093940c96f90a4a01b9f81eae063ffb
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712921"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653617"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Modèle de métadonnées et de Markdown pour la documentation .NET
 
@@ -132,7 +132,7 @@ Vous pouvez inclure le code à l’aide de la syntaxe suivante :
 ```
 
 * `-<language>` (*facultatif* mais *recommandé*)
-  * Langage de l’extrait de code référencé. Pour obtenir la liste des valeurs prise en charge, consultez [Langages pris en charge](#supported-languages).
+  * Langage de l’extrait de code référencé.
 
 * `<name>` (*facultatif*)
   * Nom de l’extrait de code. Il n’a aucun impact sur la sortie HTML, mais vous pouvez l’utiliser pour améliorer la lisibilité de votre source Markdown.
