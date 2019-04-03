@@ -1,13 +1,13 @@
 ---
 title: Processus de révision des demandes de tirage (pull request) pour les documents .NET
 description: Les webhooks de fusion des demandes de tirage ne sont pas activés sur les documents .NET. Cet article décrit le processus des demandes de tirage pour ces référentiels
-ms.date: 01/-4/2019
-ms.openlocfilehash: d8f35e328beffcbd5bac9f0f7313d8127fbeffb0
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.date: 01/04/2019
+ms.openlocfilehash: f710e330e31e56887d43030290d5aa6a5c62961b
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55713565"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653594"
 ---
 # <a name="pull-request-review-process-for-the-net-docs-repositories"></a>Processus de révisions des demandes de tirage pour les référentiels de documents .NET
 
