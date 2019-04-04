@@ -4,13 +4,18 @@ description: Ce guide vous explique comment contribuer au site de documentation 
 author: billwagner
 ms.author: wiwagn
 ms.date: 02/19/2019
+ms.openlocfilehash: 9b091f864f5191c9f7a00900ec11a4a1cffdb698
+ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58653502"
 ---
-
 # <a name="microsoft-docs-contributor-guide-overview"></a>Guide du contributeur Microsoft Docs - Vue d’ensemble
 
 Bienvenue dans le guide du contributeur [docs.microsoft.com](https://docs.microsoft.com) (Docs) !
 
-Plusieurs des ensembles de documents Microsoft sont open source et hébergés sur GitHub. Certains ensembles de documents ne sont pas entièrement open source, mais plusieurs ont des référentiels publics où vous êtes invité à faire des demandes de tirage (pull requests). Ceci rationalise et améliore la communication entre les ingénieurs produits, les équipes de contenu et nos clients. Le travail en open source offre de nombreux avantages :
+Plusieurs des ensembles de documents Microsoft sont open source et hébergés sur GitHub. Certains ensembles de documents ne sont pas entièrement open source, mais plusieurs ont des référentiels publics dans lesquels vous pouvez suggérer des modifications via des requêtes de tirage. Cette approche open source simplifie et améliore la communication entre les ingénieurs produit, les équipes de contenu et les clients, et offre d’autres avantages :
 
 - _Planification en open_ des dépôts open source pour obtenir du feedback servant à savoir quels documents sont les plus demandés.
 - _Révision en open_ des dépôts open source pour publier le contenu le plus utile lors de notre première publication.
@@ -72,7 +77,7 @@ Nos documents font l’objet d’un travail continu. Les problèmes pertinents n
 
 La plupart des pages de la documentation Microsoft contient une section **Commentaires** au bas de la page sur laquelle vous pouvez cliquer pour laisser des **commentaires sur le produit** ou des **commentaires sur le contenu** afin d’effectuer le suivi des problèmes spécifiques à cet article.
 
-Les problèmes permettent d’amorcer une conversation sur ce dont vous avez besoin. L’équipe chargée du contenu réagira aux problèmes signalés avec des idées concernant ce que nous pouvons ajouter et vous demandera votre avis. Lorsque nous créons un brouillon, nous vous demandons de [réviser la demande de tirage (PR)](#review-open-PRs).
+Les problèmes permettent d’amorcer une conversation sur ce dont vous avez besoin. L’équipe chargée du contenu réagira aux problèmes signalés avec des idées concernant ce que nous pouvons ajouter et vous demandera votre avis. Lorsque nous créons un brouillon, nous vous demandons de [réviser la demande de tirage (PR)](#review-open-prs).
 
 ## <a name="get-more-involved"></a>Engagez-vous plus
 

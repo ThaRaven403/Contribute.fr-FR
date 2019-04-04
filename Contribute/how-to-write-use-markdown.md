@@ -1,19 +1,18 @@
 ---
 title: Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 description: Cet article fournit des informations de base et de référence sur le langage Markdown utilisé pour écrire des articles docs.microsoft.com.
-ms.date: 01/29/2019
-ms.openlocfilehash: 5235189d11c8c20ac20c91572d8bafcf525fb7c0
-ms.sourcegitcommit: fbdd61ae4fb3761aec072732eefcbf2c2dca8011
+ms.date: 03/26/2019
+ms.openlocfilehash: eeb49961fbf530676b55ae4e42d4fca7b8d7edf7
+ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/07/2019
-ms.locfileid: "55887295"
+ms.lasthandoff: 03/29/2019
+ms.locfileid: "58637480"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 
-Les articles [docs.microsoft.com](http://docs.microsoft.com) sont écrits dans un langage de balisage léger appelé [Markdown](https://daringfireball.net/projects/markdown/), à la fois facile à lire et facile à apprendre. Ces qualités lui ont permis de s’établir rapidement comme une norme du secteur.
+Les articles [docs.microsoft.com](http://docs.microsoft.com) sont écrits dans un langage de balisage léger appelé [Markdown](https://daringfireball.net/projects/markdown/), à la fois facile à lire et facile à apprendre. Ces qualités lui ont permis de s’établir rapidement comme une norme du secteur. Le site docs utilise le [type Markdig](#markdown-flavor) de Markdown.
 
-Le back-end du site docs.microsoft.com utilise OPS (Open Publishing Services) qui prend en charge Markdown conforme avec [CommonMark](https://commonmark.org/) analysé via [Markdig](https://github.com/lunet-io/markdig) et qui prend aussi en charge [DocFX Flavored Markdown (DFM)](https://dotnet.github.io/docfx/). Ces types Markdown sont essentiellement compatibles avec [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), car la plupart des documents sont stockés dans GitHub et peuvent être modifiés à cet endroit. Des fonctionnalités sont ajoutées via des extensions Markdown.
 
 ## <a name="markdown-basics"></a>Les bases de Markdown
 
@@ -162,7 +161,6 @@ s’affichera sous la forme :
 
 Pour plus d'informations sur la création de tableaux, consultez :
 
-- La [fonctionnalité de wrapping de tableaux](#table-wrapping) Markdig, qui peut vous aider à mettre en forme les tableaux larges.
 - [Organisation des informations avec des tableaux](https://help.github.com/articles/organizing-information-with-tables/), de GitHub.
 - L’application web [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables).
 - [« Markdown Cheatsheet » d’Adam Pritchard](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#wiki-tables).
@@ -207,6 +205,7 @@ Ces langages prennent en charge les noms conviviaux, et pour la plupart d’entr
 |AzCopy|azcopy|
 |Azure CLI|azurecli|
 |Azure PowerShell|azurepowershell|
+|Bash|bash|
 |C++|cpp|
 |C++/CX|cppcx|
 |C++/WinRT|cppwinrt|
@@ -430,6 +429,10 @@ Voici les encodages pour les versions courbes de ces signes de ponctuation :
 Il est courant d’utiliser des crochets pointus pour indiquer un espace réservé. Quand vous effectuez cette opération dans un texte (pas dans du code), vous devez encoder les crochets pointus. Sinon, Markdown considère qu’il s’agit d’une balise HTML.
 
 Par exemple, encodez `<script name>` en `&lt;script name&gt;`
+
+## <a name="markdown-flavor"></a>Type de markdown
+
+Le back-end du site docs.microsoft.com utilise OPS (Open Publishing Services) qui prend en charge Markdown conforme avec [CommonMark](https://commonmark.org/) analysé via le moteur [Markdig](https://github.com/lunet-io/markdig). Ce type Markdown est essentiellement compatible avec [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), car la plupart des documents sont stockés dans GitHub et peuvent être modifiés à cet endroit. Des fonctionnalités sont ajoutées via des extensions Markdown.
 
 ## <a name="see-also"></a>Voir aussi :
 
