@@ -17,7 +17,7 @@ Bienvenue dans le guide du contributeur [docs.microsoft.com](https://docs.micros
 
 Plusieurs des ensembles de documents Microsoft sont open source et hébergés sur GitHub. Certains ensembles de documents ne sont pas entièrement open source, mais plusieurs ont des référentiels publics dans lesquels vous pouvez suggérer des modifications via des requêtes de tirage. Cette approche open source simplifie et améliore la communication entre les ingénieurs produit, les équipes de contenu et les clients, et offre d’autres avantages :
 
-- _Planification en open_ des dépôts open source pour obtenir du feedback servant à savoir quels documents sont les plus demandés.
+- _Planification en open_ des dépôts open source pour obtenir du feedback permettant de savoir quels documents sont les plus demandés.
 - _Révision en open_ des dépôts open source pour publier le contenu le plus utile lors de notre première publication.
 - _Mise à jour en open_ des dépôts open source pour simplifier l’amélioration en continu du contenu.
 
@@ -32,7 +32,7 @@ L’expérience utilisateur sur [docs.microsoft.com](https://docs.microsoft.com)
 
 Les modifications rapides permettent de rationaliser le processus de signalement et de correction de petites erreurs et omissions dans des documents. Malgré tous nos efforts, les documents que nous publions _peuvent_ contenir de petites fautes de grammaire et d’orthographe. Même si vous pouvez signaler des problèmes et nous faire part d’erreurs, il est plus rapide et plus facile de créer une demande de tirage (pull request) pour résoudre un problème lorsque l’option est disponible.
 
-1. Certaines pages de documents vous permettent de modifier le contenu directement dans le navigateur. Dans ce cas, un bouton **Modifier** comme celui illustré ci-dessous s’affiche. En cliquant sur le bouton **Modifier**, vous accédez au fichier source sur GitHub. Si le bouton **Modifier** (icône crayon sans texte) est absent, cela signifie que la page de documentation ne peut pas être modifiée.
+1. Certaines pages de documents vous permettent de modifier le contenu directement dans le navigateur. Dans ce cas, un bouton **Edit (Modifier)** comme celui illustré ci-dessous s’affiche. En cliquant sur le bouton **Modifier**, vous accédez au fichier source sur GitHub. Si le bouton **Modifier** (icône crayon sans texte) est absent, cela signifie que la page de documentation ne peut pas être modifiée.
 
    ![Emplacement du lien de modification](./media/index/edit-article.png)
 
@@ -41,9 +41,9 @@ Les modifications rapides permettent de rationaliser le processus de signalement
    ![Emplacement de l’icône de crayon](./media/index/edit-icon.png)
 
 
-3. Effectuez vos modifications dans l’éditeur web. Cliquez sur l’onglet **Aperçu des modifications** pour vérifier la mise en forme de votre modification.
+3. Effectuez vos modifications dans l’éditeur web. Cliquez sur l’onglet **Preview changes (Aperçu des modifications)** pour vérifier la mise en forme de votre modification.
 
-4. Une fois vos modifications effectuées, faites défiler vers le bas de la page. Entrez un titre et une description de vos modifications et cliquez sur **Proposer une modification du fichier** comme indiqué sur la figure suivante :
+4. Une fois vos modifications effectuées, faites défiler vers le bas de la page. Entrez un titre et une description de vos modifications et cliquez sur **Propose file chang (Proposer une modification du fichie)** comme indiqué sur la figure suivante :
 
    ![Proposer une modification de fichier](./media/index/submit-pull-request.png)
 
@@ -55,7 +55,7 @@ Les modifications rapides permettent de rationaliser le processus de signalement
 
 6. Et voilà ! Les membres de l’équipe de contenu réviseront et fusionneront votre demande de tirage (PR). Vous recevrez peut-être des commentaires avec des demandes des modification si vous avez effectué des modifications majeures.
 
-L’interface utilisateur de modification GitHub est fonction de vos autorisations dans le référentiel. Les images précédentes sont concernent les contributeurs qui n’ont pas d’autorisations d’écriture pour le référentiel cible. GitHub crée automatiquement une duplication (fork) du référentiel cible dans votre compte. Si vous bénéficiez d’un accès en écriture au dépôt cible, GitHub y crée une nouvelle branche. Le nom de la branche a la structure **\<GitHubId\>-patch-n**, avec votre identifiant GitHub et un identificateur numérique pour la branche du correctif.
+L’interface utilisateur de modification GitHub est fonction de vos autorisations dans le référentiel. Les images précédentes concernent les contributeurs qui n’ont pas d’autorisations d’écriture pour le référentiel cible. GitHub crée automatiquement une duplication (fork) du référentiel cible dans votre compte. Si vous bénéficiez d’un accès en écriture au dépôt cible, GitHub y crée une nouvelle branche. Le nom de la branche a la structure **\<GitHubId\>-patch-n**, avec votre identifiant GitHub et un identificateur numérique pour la branche du correctif.
 
 Nous utilisons des demandes de tirage pour toutes les modifications, même pour les contributeurs bénéficiant d’un accès en écriture. La branche `master` de la plupart des référentiels étant protégée, les mises à jour doivent êtres envoyées sous forme de demandes de tirage (PR).
 
@@ -75,7 +75,7 @@ Vous pouvez lire les nouvelles rubriques avant leur publication en consultant le
 
 Nos documents font l’objet d’un travail continu. Les problèmes pertinents nous aident à concentrer nos efforts sur les priorités absolues de la communauté virtuelle. Plus vous pouvez fournir de détails, plus la signalisation du problème sera utile. Dites-nous quelles informations vous avez cherchées. Dites-nous quels termes vous avez utilisés pour la recherche. Si vous n’arrivez-pas à la lancer, dites-nous comment vous souhaitez commencer à explorer une technologie qui ne vous est pas familière.
 
-La plupart des pages de la documentation Microsoft contient une section **Commentaires** au bas de la page sur laquelle vous pouvez cliquer pour laisser des **commentaires sur le produit** ou des **commentaires sur le contenu** afin d’effectuer le suivi des problèmes spécifiques à cet article.
+La plupart des pages de la documentation Microsoft contiennent une section **Commentaires** au bas de la page sur laquelle vous pouvez cliquer pour laisser des **commentaires sur le produit** ou des **commentaires sur le contenu** afin d’effectuer le suivi des problèmes spécifiques à cet article.
 
 Les problèmes permettent d’amorcer une conversation sur ce dont vous avez besoin. L’équipe chargée du contenu réagira aux problèmes signalés avec des idées concernant ce que nous pouvons ajouter et vous demandera votre avis. Lorsque nous créons un brouillon, nous vous demandons de [réviser la demande de tirage (PR)](#review-open-prs).
 
