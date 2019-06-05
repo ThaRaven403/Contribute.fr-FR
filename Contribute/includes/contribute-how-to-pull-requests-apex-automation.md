@@ -1,9 +1,15 @@
+---
+ms.openlocfilehash: b64e8dd4c62ca05b6e04ef404ebf98a618d0171e
+ms.sourcegitcommit: 2563918217ba0760a4f3877af2272a0a4b2c3052
+ms.translationtype: HT
+ms.contentlocale: fr-FR
+ms.lasthandoff: 05/30/2019
+ms.locfileid: "66391318"
+---
 L’automatisation de commentaires permet aux utilisateurs en lecture (les utilisateurs ne disposant pas d’autorisations en écriture dans un dépôt) d’effectuer une action en écriture, en affectant le libellé approprié à une demande de tirage. Si vous travaillez dans un dépôt où l’automatisation de commentaires a été implémentée, utilisez les commentaires de hashtag répertoriés dans le tableau suivant pour affecter des libellés, modifier les libellés ou fermer une demande de tirage. Les employés de Microsoft seront également avertis par e-mail de la révision et la validation des demandes de tirage de dépôt public, chaque fois que des modifications sont proposées pour des articles dont vous êtes l’auteur.
-
 
 | Commentaire de hashtag | Fonction | Disponibilité du dépôt |
 | --- | --- | --- |
-| #sign-off |Quand l’auteur d’un article tape le commentaire **#sign-off** dans le flux de commentaires, le libellé **prêt pour la fusion** est affecté. Ce libellé informe les réviseurs dans le dépôt quand une demande de tirage est prête pour la révision/fusion. |Public et privé |
-| #sign-off |Si un contributeur qui n’est *pas* l’auteur répertorié tente de valider une demande de tirage publique à l’aide du commentaire **#sign-off**, un message est écrit dans la demande de tirage qui indique que seul l’auteur peut affecter le libellé. |Public |
-| #hold-off |Les auteurs peuvent taper **#hold-off** dans un commentaire de demande de tirage pour supprimer le libellé **prêt pour la fusion**, au cas où ils changeraient d’avis ou feraient une erreur. Dans le dépôt privé, le libellé **do-not-merge** (ne pas fusionner) est affecté. |Public et privé |
-| #please-close |Les auteurs peuvent taper **#please-close** dans le flux de commentaires pour fermer la demande de tirage s’ils décident de ne pas fusionner les modifications. |Public |
+| `#sign-off` |Quand l’auteur d’un article tape le commentaire `#sign-off` dans le flux de commentaires, le libellé **prêt pour la fusion** est affecté. Ce libellé informe les réviseurs dans le dépôt quand une demande de tirage est prête pour la révision/fusion. <br/><br/> Si un contributeur qui n’est *pas* l’auteur listé tente de valider une demande de tirage de dépôt public à l’aide du commentaire `#sign-off`, un message est écrit dans la demande de tirage qui indique que seul l’auteur peut affecter le libellé. |Public et privé |
+| `#hold-off` |Les auteurs peuvent taper `#hold-off` dans un commentaire de demande de tirage pour supprimer le libellé **prêt pour la fusion**, au cas où ils changeraient d’avis ou feraient une erreur. Dans le dépôt privé, le libellé **do-not-merge** (ne pas fusionner) est affecté. |Public et privé |
+| `#please-close` |Les auteurs peuvent taper `#please-close` dans le flux de commentaires pour fermer la demande de tirage s’ils décident de ne pas fusionner les modifications. |Public |

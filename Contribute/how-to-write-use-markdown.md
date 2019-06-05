@@ -2,12 +2,12 @@
 title: Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 description: Cet article fournit des informations de base et de référence sur le langage Markdown utilisé pour écrire des articles docs.microsoft.com.
 ms.date: 03/26/2019
-ms.openlocfilehash: eeb49961fbf530676b55ae4e42d4fca7b8d7edf7
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: 9fcd76e6103761465815784e4bf24e7042fb9f34
+ms.sourcegitcommit: 5f7212a091e9fc4e9cd1320fdfa8efaff51384c7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637480"
+ms.lasthandoff: 05/29/2019
+ms.locfileid: "66373105"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 
@@ -150,7 +150,7 @@ Par exemple, le code Markdown suivant :
 | $1                   | $1                   | $1              |
 ```
 
-s’affichera sous la forme :
+sera restitué comme ceci :
 
 | Amusez-vous                  | avec                 | les tableaux          |
 | :------------------- | -------------------: |:---------------:|
