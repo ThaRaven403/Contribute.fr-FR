@@ -1,30 +1,31 @@
 ---
 ms.date: 03/29/2019
-ms.openlocfilehash: 4e07ecf777f1361e21343b7b80f59ad9c5e86b3e
-ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+title: Conception à onglets
+ms.openlocfilehash: 3d6f38c1659297182a8bd50bf52b9853bd21b2c8
+ms.sourcegitcommit: 1e53d17639277bebd89b2e7cabeb45bdad526354
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58653410"
+ms.lasthandoff: 06/12/2019
+ms.locfileid: "66841306"
 ---
-# <a name="tabbed-conceptual"></a><span data-ttu-id="7e44e-101">Conception à onglets</span><span class="sxs-lookup"><span data-stu-id="7e44e-101">Tabbed conceptual</span></span>
+# <a name="tabbed-conceptual"></a><span data-ttu-id="66214-102">Conception à onglets</span><span class="sxs-lookup"><span data-stu-id="66214-102">Tabbed conceptual</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="7e44e-102">La syntaxe conceptuelle à onglets ayant été dépréciée, n’ajoutez pas de nouveaux onglets.</span><span class="sxs-lookup"><span data-stu-id="7e44e-102">The tabbed conceptual syntax has been deprecated and new tabs should not be added.</span></span> <span data-ttu-id="7e44e-103">Les validations décrites dans cet article s’appliquent aux ensembles de contenus autorisés à utiliser une conception à onglets jusqu’à ce qu’une fonctionnalité de remplacement soit disponible.</span><span class="sxs-lookup"><span data-stu-id="7e44e-103">The validations described in this article apply to content sets that have been approved to use tabbed conceptual until replacement functionality is available.</span></span>
+> <span data-ttu-id="66214-103">La syntaxe conceptuelle à onglets ayant été dépréciée, n’ajoutez pas de nouveaux onglets.</span><span class="sxs-lookup"><span data-stu-id="66214-103">The tabbed conceptual syntax has been deprecated and new tabs should not be added.</span></span> <span data-ttu-id="66214-104">Les validations décrites dans cet article s’appliquent aux ensembles de contenus autorisés à utiliser une conception à onglets jusqu’à ce qu’une fonctionnalité de remplacement soit disponible.</span><span class="sxs-lookup"><span data-stu-id="66214-104">The validations described in this article apply to content sets that have been approved to use tabbed conceptual until replacement functionality is available.</span></span>
 
-## <a name="tab-syntax"></a><span data-ttu-id="7e44e-104">Syntaxe des onglets</span><span class="sxs-lookup"><span data-stu-id="7e44e-104">Tab syntax</span></span>
+## <a name="tab-syntax"></a><span data-ttu-id="66214-105">Syntaxe des onglets</span><span class="sxs-lookup"><span data-stu-id="66214-105">Tab syntax</span></span>
 
-<span data-ttu-id="7e44e-105">La syntaxe des onglets est la suivante :</span><span class="sxs-lookup"><span data-stu-id="7e44e-105">The syntax for tabs is as follows:</span></span>
+<span data-ttu-id="66214-106">La syntaxe des onglets est la suivante :</span><span class="sxs-lookup"><span data-stu-id="66214-106">The syntax for tabs is as follows:</span></span>
 
-<span data-ttu-id="7e44e-106">Onglet à un niveau :</span><span class="sxs-lookup"><span data-stu-id="7e44e-106">Single level tab:</span></span>
+<span data-ttu-id="66214-107">Onglet à un niveau :</span><span class="sxs-lookup"><span data-stu-id="66214-107">Single level tab:</span></span>
 
 `# [Tab Display Name](#tab/tab-id)`
 
-<span data-ttu-id="7e44e-107">Onglet dépendant facultatif :</span><span class="sxs-lookup"><span data-stu-id="7e44e-107">Optional dependent tab:</span></span>
+<span data-ttu-id="66214-108">Onglet dépendant facultatif :</span><span class="sxs-lookup"><span data-stu-id="66214-108">Optional dependent tab:</span></span>
 
 `# [Tab Display Name](#tab/tab-id/tab-condition)`
 
-<span data-ttu-id="7e44e-108">Exemple d’une section d’onglets à un niveau avec deux onglets et le terminateur de groupe d’onglets (---) :</span><span class="sxs-lookup"><span data-stu-id="7e44e-108">Example of a single-level tab section with two tabs and the tab group terminator (---):</span></span>
+<span data-ttu-id="66214-109">Exemple d’une section d’onglets à un niveau avec deux onglets et le terminateur de groupe d’onglets (---) :</span><span class="sxs-lookup"><span data-stu-id="66214-109">Example of a single-level tab section with two tabs and the tab group terminator (---):</span></span>
 
 ```markdown
 # [Linux](#tab/linux)
@@ -38,7 +39,7 @@ Content for Windows...
 ---
 ```
 
-<span data-ttu-id="7e44e-109">Les onglets peuvent éventuellement contenir des onglets secondaires (ou onglets de dépendance).</span><span class="sxs-lookup"><span data-stu-id="7e44e-109">Tabs can optionally contain secondary tabs, or dependency tabs.</span></span> <span data-ttu-id="7e44e-110">Les onglets dépendent alors de la sélection dans un autre ensemble d’onglets.</span><span class="sxs-lookup"><span data-stu-id="7e44e-110">This makes tabs dependent on the selection in another set of tabs.</span></span> <span data-ttu-id="7e44e-111">Voici un exemple :</span><span class="sxs-lookup"><span data-stu-id="7e44e-111">Here's an example:</span></span>
+<span data-ttu-id="66214-110">Les onglets peuvent éventuellement contenir des onglets secondaires (ou onglets de dépendance).</span><span class="sxs-lookup"><span data-stu-id="66214-110">Tabs can optionally contain secondary tabs, or dependency tabs.</span></span> <span data-ttu-id="66214-111">Les onglets dépendent alors de la sélection dans un autre ensemble d’onglets.</span><span class="sxs-lookup"><span data-stu-id="66214-111">This makes tabs dependent on the selection in another set of tabs.</span></span> <span data-ttu-id="66214-112">Voici un exemple :</span><span class="sxs-lookup"><span data-stu-id="66214-112">Here's an example:</span></span>
 
 ```markdown
 # [Azure CLI](#tab/azure-cli/linux)
@@ -60,22 +61,22 @@ PowerShell content for Windows...
 ---
 ```
 
-<span data-ttu-id="7e44e-112">Les validations suivantes s’appliquent à la syntaxe des onglets :</span><span class="sxs-lookup"><span data-stu-id="7e44e-112">The following validations apply to tab syntax:</span></span>
+<span data-ttu-id="66214-113">Les validations suivantes s’appliquent à la syntaxe des onglets :</span><span class="sxs-lookup"><span data-stu-id="66214-113">The following validations apply to tab syntax:</span></span>
 
-- <span data-ttu-id="7e44e-113">La syntaxe des onglets doit être correcte.</span><span class="sxs-lookup"><span data-stu-id="7e44e-113">Tab syntax must be correct.</span></span>
-- <span data-ttu-id="7e44e-114">Les onglets dépendants doivent avoir été définis dans un groupe d’onglets précédent.</span><span class="sxs-lookup"><span data-stu-id="7e44e-114">Dependent tabs must have been defined in a previous tab group.</span></span>
-- <span data-ttu-id="7e44e-115">Un seul niveau de dépendance est autorisé.</span><span class="sxs-lookup"><span data-stu-id="7e44e-115">Only one level of dependency is allowed.</span></span>
-- <span data-ttu-id="7e44e-116">Le nombre minimum d’onglets autorisés est de deux.</span><span class="sxs-lookup"><span data-stu-id="7e44e-116">No fewer than two tabs are allowed.</span></span>
-- <span data-ttu-id="7e44e-117">Le nombre maximum d’onglets autorisés est de quatre.</span><span class="sxs-lookup"><span data-stu-id="7e44e-117">No more than four tabs are allowed.</span></span>
-- <span data-ttu-id="7e44e-118">Les onglets doivent être approuvés.</span><span class="sxs-lookup"><span data-stu-id="7e44e-118">Tabs must be approved.</span></span>
-- <span data-ttu-id="7e44e-119">Les paires onglet/ID doivent être valides.</span><span class="sxs-lookup"><span data-stu-id="7e44e-119">Tab/ID pairs must be valid.</span></span>
-- <span data-ttu-id="7e44e-120">Un groupe d’onglets ne peut pas contenir plusieurs ID d’onglet identiques.</span><span class="sxs-lookup"><span data-stu-id="7e44e-120">Cannot have the same tab ID multiple times in one tab group.</span></span>
+- <span data-ttu-id="66214-114">La syntaxe des onglets doit être correcte.</span><span class="sxs-lookup"><span data-stu-id="66214-114">Tab syntax must be correct.</span></span>
+- <span data-ttu-id="66214-115">Les onglets dépendants doivent avoir été définis dans un groupe d’onglets précédent.</span><span class="sxs-lookup"><span data-stu-id="66214-115">Dependent tabs must have been defined in a previous tab group.</span></span>
+- <span data-ttu-id="66214-116">Un seul niveau de dépendance est autorisé.</span><span class="sxs-lookup"><span data-stu-id="66214-116">Only one level of dependency is allowed.</span></span>
+- <span data-ttu-id="66214-117">Le nombre minimum d’onglets autorisés est de deux.</span><span class="sxs-lookup"><span data-stu-id="66214-117">No fewer than two tabs are allowed.</span></span>
+- <span data-ttu-id="66214-118">Le nombre maximum d’onglets autorisés est de quatre.</span><span class="sxs-lookup"><span data-stu-id="66214-118">No more than four tabs are allowed.</span></span>
+- <span data-ttu-id="66214-119">Les onglets doivent être approuvés.</span><span class="sxs-lookup"><span data-stu-id="66214-119">Tabs must be approved.</span></span>
+- <span data-ttu-id="66214-120">Les paires onglet/ID doivent être valides.</span><span class="sxs-lookup"><span data-stu-id="66214-120">Tab/ID pairs must be valid.</span></span>
+- <span data-ttu-id="66214-121">Un groupe d’onglets ne peut pas contenir plusieurs ID d’onglet identiques.</span><span class="sxs-lookup"><span data-stu-id="66214-121">Cannot have the same tab ID multiple times in one tab group.</span></span>
 
-## <a name="approved-tabs"></a><span data-ttu-id="7e44e-121">Onglets approuvés</span><span class="sxs-lookup"><span data-stu-id="7e44e-121">Approved tabs</span></span>
+## <a name="approved-tabs"></a><span data-ttu-id="66214-122">Onglets approuvés</span><span class="sxs-lookup"><span data-stu-id="66214-122">Approved tabs</span></span>
 
-<span data-ttu-id="7e44e-122">Les paires nom d’onglet/ID d’onglet suivantes sont approuvées.</span><span class="sxs-lookup"><span data-stu-id="7e44e-122">The following tab name/tab ID pairs are approved.</span></span> <span data-ttu-id="7e44e-123">Les ID d’onglets dépendants ne sont pas associés, mais ils doivent être valides conformément à la colonne ID de l’onglet.</span><span class="sxs-lookup"><span data-stu-id="7e44e-123">Dependent tab IDs are not paired but must be valid per the Tab ID column.</span></span> <span data-ttu-id="7e44e-124">Les valeurs respectent la casse.</span><span class="sxs-lookup"><span data-stu-id="7e44e-124">The values are case-sensitive</span></span>
+<span data-ttu-id="66214-123">Les paires nom d’onglet/ID d’onglet suivantes sont approuvées.</span><span class="sxs-lookup"><span data-stu-id="66214-123">The following tab name/tab ID pairs are approved.</span></span> <span data-ttu-id="66214-124">Les ID d’onglets dépendants ne sont pas associés, mais ils doivent être valides conformément à la colonne ID de l’onglet.</span><span class="sxs-lookup"><span data-stu-id="66214-124">Dependent tab IDs are not paired but must be valid per the Tab ID column.</span></span> <span data-ttu-id="66214-125">Les valeurs respectent la casse.</span><span class="sxs-lookup"><span data-stu-id="66214-125">The values are case-sensitive</span></span>
 
-|<span data-ttu-id="7e44e-125">Nom de l’onglet</span><span class="sxs-lookup"><span data-stu-id="7e44e-125">Tab name</span></span>              |<span data-ttu-id="7e44e-126">ID de l’onglet</span><span class="sxs-lookup"><span data-stu-id="7e44e-126">Tab ID</span></span>            |
+|<span data-ttu-id="66214-126">Nom de l’onglet</span><span class="sxs-lookup"><span data-stu-id="66214-126">Tab name</span></span>              |<span data-ttu-id="66214-127">ID de l’onglet</span><span class="sxs-lookup"><span data-stu-id="66214-127">Tab ID</span></span>            |
 |----------------------|------------------|
 |`[.NET]`              |`(#tab/dotnet)`   |
 |`[.NET Core 1.x]`     |`(#tab/netcore1x)`|
