@@ -81,9 +81,9 @@ Pour formater une liste à puces/non ordonnée, vous pouvez utiliser des astéri
 
 s’affichera sous la forme :
 
-- Élément de liste 1
-- Élément de liste 2
-- Élément de liste 3
+- List item 1
+- List item 2
+- List item 3
 
 Pour imbriquer une liste dans une autre, indentez les éléments de liste enfants. Par exemple, le code Markdown suivant :
 
@@ -96,10 +96,10 @@ Pour imbriquer une liste dans une autre, indentez les éléments de liste enfant
 
 s’affichera sous la forme :
 
-- Élément de liste 1
-  - Élément de liste A
-  - Élément de liste B
-- Élément de liste 2
+- List item 1
+  - List item A
+  - List item B
+- List item 2
 
 #### <a name="ordered-list"></a>Liste ordonnée
 
@@ -113,9 +113,9 @@ Pour formater une liste ordonnée/d'étapes, vous utilisez les numéros correspo
 
 s’affichera sous la forme :
 
-1. Première instruction
-2. Deuxième instruction
-3. Troisième instruction
+1. First instruction
+2. Second instruction
+3. Third instruction
 
 Pour imbriquer une liste dans une autre, indentez les éléments de liste enfants. Par exemple, le code Markdown suivant :
 
@@ -128,14 +128,14 @@ Pour imbriquer une liste dans une autre, indentez les éléments de liste enfant
 
 s’affichera sous la forme :
 
-1. Première instruction
-   1. Sous-instruction
-   2. Sous-instruction
-2. Deuxième instruction
+1. First instruction
+   1. Sub-instruction
+   2. Sub-instruction
+2. Second instruction
 
 Notez que nous utilisons « 1. » pour toutes les entrées. Cela facilite la révision des différences quand des mises à jour ultérieures comprennent de nouvelles étapes ou suppriment des étapes existantes.
 
-### <a name="tables"></a>les tableaux
+### <a name="tables"></a>Les tableaux
 
 Les tableaux ne sont pas pris en charge par la spécification Markdown principale, mais ils sont pris en charge par GFM. Vous pouvez créer des tableaux avec la barre verticale (|) et le trait d’union (-). Les traits d’union servent à créer l’en-tête de chaque colonne, tandis que les barres verticales séparent chaque colonne. Ajoutez une ligne vide avant votre tableau pour qu’il s’affiche correctement.
 
@@ -152,12 +152,12 @@ Par exemple, le code Markdown suivant :
 
 sera restitué comme ceci :
 
-| Amusez-vous                  | avec                 | les tableaux          |
+| Fun                  | With                 | Les tableaux          |
 | :------------------- | -------------------: |:---------------:|
-| colonne alignée à gauche  | colonne alignée à droite | colonne centrée |
-| 100 $                 | 100 $                 | 100 $            |
-| 10 $                  | 10 $                  | 10 $             |
-| 1 $                   | 1 $                   | 1 $              |
+| left-aligned column  | right-aligned column | centered column |
+| $100                 | $100                 | $100            |
+| $10                  | $10                  | $10             |
+| $1                   | $1                   | $1              |
 
 Pour plus d'informations sur la création de tableaux, consultez :
 
@@ -197,7 +197,7 @@ L’alias après les trois caractères accent grave (`) initiaux définit le sur
 
 Ces langages prennent en charge les noms conviviaux, et pour la plupart d’entre eux, la mise en surbrillance de la syntaxe.
 
-|Nom|Étiquette Markdown|
+|Name|Étiquette Markdown|
 |-----|-------|
 |.NET Console|dotnetcli|
 |ASP.NET (C#)|aspx-csharp|
@@ -336,16 +336,16 @@ Exemples :
 L’affichage est le suivant :
 
 > [!NOTE]
-> Il s’agit d’une REMARQUE
+> This is a NOTE
 
 > [!WARNING]
-> Il s’agit d’un AVERTISSEMENT
+> This is a WARNING
 
 > [!TIP]
-> Il s’agit d’un CONSEIL
+> This is a TIP
 
 > [!IMPORTANT]
-> Ceci est IMPORTANT
+> This is IMPORTANT
 
 ### <a name="include-files"></a>Fichiers Include
 

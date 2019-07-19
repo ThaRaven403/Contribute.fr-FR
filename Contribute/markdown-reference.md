@@ -45,19 +45,19 @@ Les alertes sont une extension Markdown Docs pour créer des citations qui s’a
 Ces alertes ressemblent à ceci sur docs.microsoft.com :
 
 > [!NOTE]
-> Informations que l’utilisateur doit remarquer même s’il parcourt le contenu rapidement.
+> Information the user should notice even if skimming.
 
 > [!TIP]
-> Informations facultatives qui aident l’utilisateur à être plus performant.
+> Optional information to help a user be more successful.
 
 > [!IMPORTANT]
-> Informations essentielles nécessaires à la réussite de l’utilisateur.
+> Essential information required for user success.
 
 > [!CAUTION]
-> Conséquences éventuellement négatives d’une action.
+> Negative potential consequences of an action.
 
 > [!WARNING]
-> Certaines conséquences dangereuses d’une action.
+> Dangerous certain consequences of an action.
 
 ## <a name="code-snippets"></a>Extraits de code
 
@@ -307,9 +307,9 @@ Les listes de contrôle sont utilisables sur docs.microsoft.com (uniquement) par
 Cet exemple s’affiche sur docs.microsoft.com ainsi :
 
 > [!div class="checklist"]
-> * Élément de liste 1
-> * Élément de liste 2
-> * Élément de liste 3
+> * List item 1
+> * List item 2
+> * List item 3
 
 Utilisez des listes de contrôle au début ou à la fin d’un article pour récapituler le contenu que l’utilisateur va étudier ou a étudié. N’ajoutez pas de listes de contrôle aléatoires dans vos articles.
 <!-- is this guidance still accurate? -->
@@ -506,11 +506,11 @@ Voici un exemple de code Markdown d’un tableau, avec trois lignes encapsulées
 Cela s’affiche ainsi :
 
 > [!div class="mx-tdBreakAll"]
-> |Nom|Syntaxe|Obligatoire pour une installation sans assistance ?|Description|
+> |Name|Syntax|Mandatory for silent installation?|Description|
 > |-------------|----------|---------|---------|
-> |Silencieux|/quiet|Oui|Exécute le programme d’installation sans afficher d’interface utilisateur ni d’invites.|
-> |NoRestart|/norestart|Non|Supprime toute tentative de redémarrage. Par défaut, l’interface utilisateur invite l’utilisateur à confirmer le redémarrage.|
-> |Aide|/help|Non|Fournit de l’aide et un aide-mémoire. Affiche l’utilisation correcte de la commande d’installation, y compris la liste de tous les comportements et options.|
+> |Quiet|/quiet|Yes|Runs the installer, displaying no UI and no prompts.|
+> |NoRestart|/norestart|No|Suppresses any attempts to restart. By default, the UI will prompt before restart.|
+> |Help|/help|No|Provides help and quick reference. Displays the correct use of the setup command, including a list of all options and behaviors.|
 
 ### <a name="mx-tdcol2breakall"></a>mx-tdCol2BreakAll
 
