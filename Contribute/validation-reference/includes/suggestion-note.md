@@ -1,12 +1,12 @@
 ---
 author: meganbradley
 ms.author: mbradley
-ms.openlocfilehash: 97a5e8df1fbac10119a1bed7f979ad424db1cab0
-ms.sourcegitcommit: 4053577bd0478d711257a283ee661d618b49c2df
+ms.openlocfilehash: 22d9b3b13856e978aa5b8a902f27e460293e0bd0
+ms.sourcegitcommit: 495d49f10df51a8897687940aa653e906c48c2a0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57457931"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68819710"
 ---
 > [!IMPORTANT]
-> Initialement, cette règle est activée en tant que « Suggestion » pour donner aux équipes en charge du contenu le temps de juger l’impact et de développer un plan de nettoyage de leurs référentiels. Les suggestions ne nécessitent pas une action immédiate, mais nous vous conseillons de les corriger dès que possible, avant qu’elles ne passent à l’état Erreur ou Avertissement. Détails sur le délai selon lequel la gravité change et sur ce qui sera inclus dans le message.
+> Initialement, cette règle était activée en tant que « Suggestion » pour donner aux équipes en charge du contenu le temps de juger l’impact et de développer un plan de nettoyage de leurs référentiels. **Elle va devenir un « Avertissement » le 01/09/2019**.
