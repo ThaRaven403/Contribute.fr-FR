@@ -1,12 +1,12 @@
 ---
 author: meganbradley
 ms.author: mbradley
-ms.openlocfilehash: 97a5e8df1fbac10119a1bed7f979ad424db1cab0
-ms.sourcegitcommit: 4053577bd0478d711257a283ee661d618b49c2df
+ms.openlocfilehash: 22d9b3b13856e978aa5b8a902f27e460293e0bd0
+ms.sourcegitcommit: 495d49f10df51a8897687940aa653e906c48c2a0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2019
-ms.locfileid: "57457931"
+ms.lasthandoff: 08/06/2019
+ms.locfileid: "68819710"
 ---
 > [!IMPORTANT]
-> <span data-ttu-id="a0e4a-101">Initialement, cette règle est activée en tant que « Suggestion » pour donner aux équipes en charge du contenu le temps de juger l’impact et de développer un plan de nettoyage de leurs référentiels.</span><span class="sxs-lookup"><span data-stu-id="a0e4a-101">This rule is initially enabled as a "Suggestion" to give content teams time to gauge impact and develop a plan to clean up their repos.</span></span> <span data-ttu-id="a0e4a-102">Les suggestions ne nécessitent pas une action immédiate, mais nous vous conseillons de les corriger dès que possible, avant qu’elles ne passent à l’état Erreur ou Avertissement.</span><span class="sxs-lookup"><span data-stu-id="a0e4a-102">Suggestions don't require immediate action, but you should fix them as soon as possible because at some point they will be elevated to Warnings or Errors.</span></span> <span data-ttu-id="a0e4a-103">Détails sur le délai selon lequel la gravité change et sur ce qui sera inclus dans le message.</span><span class="sxs-lookup"><span data-stu-id="a0e4a-103">Details about when the severity will change and to what will be included in the message when available.</span></span>
+> <span data-ttu-id="8c254-101">Initialement, cette règle était activée en tant que « Suggestion » pour donner aux équipes en charge du contenu le temps de juger l’impact et de développer un plan de nettoyage de leurs référentiels.</span><span class="sxs-lookup"><span data-stu-id="8c254-101">This rule was initially enabled as a "Suggestion" to give content teams time to gauge impact and develop a plan to clean up their repos.</span></span> <span data-ttu-id="8c254-102">**Elle va devenir un « Avertissement » le 01/09/2019**.</span><span class="sxs-lookup"><span data-stu-id="8c254-102">**It will be elevated to a "Warning" on 9/1/2019**.</span></span>
