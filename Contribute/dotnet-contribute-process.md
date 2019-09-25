@@ -2,12 +2,12 @@
 title: Processus de contribution pour les dépôts de documentation .NET
 description: Cet article fournit une brève introduction à la contribution aux dépôts de documentation .NET. Vous découvrirez les dépôts utilisés, le processus d’organisation du contenu et les stratégies de gestion des exemples de code et autres ressources.
 ms.date: 11/07/2018
-ms.openlocfilehash: 121f6c885ef6d292968e5bb3961cae8e9c22942b
-ms.sourcegitcommit: 8e897e90268a8a87dc4b97d7c28d22ed5950c8d9
+ms.openlocfilehash: a5429864efe56e2004ccfeac4443dc74fbf15dc3
+ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58637503"
+ms.lasthandoff: 09/24/2019
+ms.locfileid: "71247325"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>Processus de contribution à la documentation .NET
 
@@ -94,7 +94,7 @@ Nous faisons la distinction suivante pour le code qui existe dans notre dépôt�
 Tout le code réside dans le dépôt [dotnet/samples](https://github.com/dotnet/samples). Nous travaillons actuellement à l’élaboration d’un modèle dans lequel notre structure de dossiers d’exemples de code correspond à notre structure de dossiers de documentation. Nous respectons les règles suivantes :
 
 - Le dossier de premier niveau *snippets* contient des extraits de code pour de petits exemples bien précis.
-- Les exemples de référence d’API sont placés dans un dossier qui suit ce modèle : *snippets/\<langage>/api/\<espace_de_noms>/\<nom_api>*.
+- Les exemples de référence d’API sont placés dans un dossier qui suit ce modèle : *snippets/\<langage>/api/\<espace_de_noms>/\<nom_api>* .
 - Les autres dossiers de niveau supérieur correspondent aux dossiers de niveau supérieur du dépôt *docs*. Par exemple, le dépôt docs contient un dossier *machine-learning/tutorials*, et les exemples de code relatifs aux tutoriels d’apprentissage automatique se trouvent dans le dossier *samples/machine-learning/tutorials*.
 
 De plus, tous les exemples de code sous les dossiers *core* et *standard* doivent pouvoir être générés et exécutés sur toutes les plateformes prises en charge par .NET Core. Notre système Build CI (intégration continue) appliquera cette règle. Le dossier *framework* de premier niveau contient des exemples de code qui sont générés et validés uniquement sur Windows.
@@ -103,7 +103,7 @@ Les exemples de projets doivent pouvoir être générés et exécutés sur la ga
 
 Nous essayons actuellement de mettre en place un système d’intégration continue pour tout le code. Quand vous effectuez une mise à jour d’un exemple de code, veillez à ce qu’elle fasse partie d’un projet pouvant être généré. Dans l’idéal, ajoutez également des tests pour vérifier que les exemples de code sont corrects.
 
-Chaque exemple de code complet que vous créez doit contenir un fichier *readme.md*. Ce fichier doit contenir une brève description de l’exemple (un ou deux paragraphes). Votre fichier *readme.md* doit indiquer aux lecteurs ce qu’ils apprendront en explorant cet exemple. Il doit également contenir un lien vers le document actif sur le [site de documentation .NET](https://docs.microsoft.com/dotnet/welcome). Pour déterminer l’emplacement sur ce site où est mappé un fichier stocké dans le dépôt, remplacez `/docs` dans le chemin du dépôt par `http://docs.microsoft.com/dotnet`.
+Chaque exemple de code complet que vous créez doit contenir un fichier *readme.md*. Ce fichier doit contenir une brève description de l’exemple (un ou deux paragraphes). Votre fichier *readme.md* doit indiquer aux lecteurs ce qu’ils apprendront en explorant cet exemple. Il doit également contenir un lien vers le document actif sur le [site de documentation .NET](https://docs.microsoft.com/dotnet/welcome). Pour déterminer l’emplacement sur ce site où est mappé un fichier stocké dans le dépôt, remplacez `/docs` dans le chemin du dépôt par `https://docs.microsoft.com/dotnet`.
 
 Votre rubrique contiendra aussi des liens vers l’exemple de code. Établissez un lien direct vers le dossier de l’exemple de code sur GitHub.
 
@@ -158,7 +158,7 @@ Vous devez générer tout exemple ou extrait de code .NET Core à l’aide de l�
     dotnet run
     ```
 
-3. Ajoutez un fichier readme.md au répertoire racine de votre exemple. 
+3. Ajoutez un fichier readme.md au répertoire racine de votre exemple.
 
    Il doit inclure une brève description du code et renvoyer le lecteur à l’article qui référence l’exemple.
 
