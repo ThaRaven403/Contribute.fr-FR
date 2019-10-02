@@ -4,14 +4,14 @@ description: Explication et résolution du problème de génération Docs ms-aut
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 2/28/2019
+ms.date: 9/27/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: 25428f93eaa7d36a5bbe35d77434ef33972e8944
-ms.sourcegitcommit: dd751d0cb5b11f81a64ef62f3c83fd17cc5f0541
+ms.openlocfilehash: b3100b4a304356aee3c50f805628890b8c738fe1
+ms.sourcegitcommit: d2f5b68b6a6d1ac902dba5063482ff5955a5b1f7
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70236538"
+ms.lasthandoff: 09/28/2019
+ms.locfileid: "71481698"
 ---
 # <a name="ms-author-invalid"></a>ms-author-invalid
 
@@ -21,9 +21,9 @@ ms.locfileid: "70236538"
 
 ## <a name="resolution"></a>Résolution
 
-Vérifiez que la valeur `ms.author` est l’alias Microsoft valide de l’auteur actuel. Si l’alias est une liste de distribution, il doit également figurer dans la liste verte.
+Vérifiez que la valeur `ms.author` est l’alias Microsoft valide de l’auteur actuel. Nous recommandons que l’auteur désigné soit un employé à plein temps ou une liste de distribution d’équipe, plutôt qu’un fournisseur à court terme. Si l’alias est une liste de distribution, il doit également figurer dans la liste verte `ms.author`.
 
-Vous trouverez les valeurs valides des listes de distribution sur [ce site interne de Microsoft](https://docsmetadatatool.azurewebsites.net/allowlists).
+Vous trouverez les valeurs valides des listes de distribution `ms.author` sur [ce site interne de Microsoft](https://docsmetadatatool.azurewebsites.net/allowlists).
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]
