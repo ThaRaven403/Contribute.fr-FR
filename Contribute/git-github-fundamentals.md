@@ -1,13 +1,16 @@
 ---
 title: Bases de Git et GitHub pour la documentation
 description: Cet article propose une vue d’ensemble de Git, du dépôt GitHub et de la façon dont le contenu est organisé. Il décrit aussi les conventions de nommage utilisées pour docs.microsoft.com.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 06/30/2017
-ms.openlocfilehash: b7eb82f299d3efcdb1e49649fb77367ef8ba3fae
-ms.sourcegitcommit: 203ca15fda2d217f082c74ec648c1f1db323f9f1
+ms.openlocfilehash: 5154b80102069f1d5526b744637f8ba854f1fe3f
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/04/2019
-ms.locfileid: "55712875"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288445"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Bases de Git et GitHub pour le contenu Docs
 
