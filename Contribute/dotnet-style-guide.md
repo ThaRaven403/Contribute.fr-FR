@@ -1,13 +1,16 @@
 ---
 title: Modèle et aide-mémoire pour les articles .NET
 description: Cet article contient un modèle pratique que vous pouvez utiliser pour créer des articles pour les dépôts de documentation .NET.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 9b57abd96093940c96f90a4a01b9f81eae063ffb
-ms.sourcegitcommit: af37d44eb67daa2841959817cd205ec95db18cec
+ms.openlocfilehash: 998ebf90c8a162451dd4ca2e7c8a55833ed9d408
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2019
-ms.locfileid: "58653617"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288364"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Modèle de métadonnées et de Markdown pour la documentation .NET
 
