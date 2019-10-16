@@ -1,13 +1,16 @@
 ---
 title: Processus de contribution pour les dépôts de documentation .NET
 description: Cet article fournit une brève introduction à la contribution aux dépôts de documentation .NET. Vous découvrirez les dépôts utilisés, le processus d’organisation du contenu et les stratégies de gestion des exemples de code et autres ressources.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: a5429864efe56e2004ccfeac4443dc74fbf15dc3
-ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
+ms.openlocfilehash: e54ade313f026b5ea512c0f783d3f8ad83979390
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71247325"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288358"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>Processus de contribution à la documentation .NET
 
