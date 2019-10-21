@@ -1,25 +1,28 @@
 ---
 title: Docs Authoring Pack pour Visual Studio Code
 description: Cet article décrit le pack d’extensions Visual Studio Code visant à faciliter la création de contenu Markdown pour docs.microsoft.com.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 author: meganbradley
 ms.author: mbradley
 ms.date: 10/22/2018
-ms.openlocfilehash: 00afafbbf16096ac6433c0ab276578d8d9084b51
-ms.sourcegitcommit: d3c7b49dc854dae8da9cd49da8ac4035789a5010
+ms.openlocfilehash: 11f18ce4f769b478108d399b780937f927e0e12d
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/23/2018
-ms.locfileid: "49805651"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288334"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Docs Authoring Pack pour VS Code
 
 Le Docs Authoring Pack est une collection d’extensions Visual Studio Code visant à faciliter la création de contenu Markdown pour docs.microsoft.com. [Disponible dans le VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack), le pack contient les extensions suivantes :
 
-- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) : créé par David Anson, ce linter populaire vérifie que le contenu Markdown respecte les bonnes pratiques.
-- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) : outil de vérification orthographique entièrement hors ligne de Street Side Software.
-- [Docs Preview](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-preview) : utilise la feuilles de style en cascade docs.microsoft.com pour un aperçu Markdown plus précis, notamment Markdown personnalisé.
-- [Docs Markdown](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown) : fournit de l’aide sur la création de contenu Markdown pour docs.microsoft.com dans OPS (Open Publishing System), notamment la prise en charge de base de Markdown et la prise en charge de syntaxes Markdown personnalisées dans OPS. Le reste de cette rubrique décrit l’extension Docs Markdown.
-- [Docs Article Templates](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-article-templates) : permet aux utilisateurs d’appliquer du contenu squelette Markdown aux nouveaux fichiers.
+- [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) : Un linter Markdown créé par David Anson pour vérifier que votre Markdown respecte les bonnes pratiques.
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) : Un outil de vérification orthographique entièrement hors connexion par Street Side Software.
+- [Docs Preview](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-preview) : Utilise la feuille de style en cascade de docs.microsoft.com pour un aperçu Markdown plus précis, notamment le Markdown personnalisé.
+- [Docs Markdown](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-markdown) : Fournit de l’aide sur la création de contenu Markdown pour docs.microsoft.com dans OPS (Open Publishing System), notamment la prise en charge de base de Markdown et la prise en charge de syntaxes Markdown personnalisées dans OPS. Le reste de cette rubrique décrit l’extension Docs Markdown.
+- [Docs Article Templates](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-article-templates) : Permet aux utilisateurs d’appliquer du contenu de squelette Markdown à de nouveaux fichiers.
 
 ## <a name="prerequisites-and-assumptions"></a>Prérequis et hypothèses
 
@@ -41,9 +44,9 @@ Pour accéder au menu Docs Markdown, tapez `ALT+M`. Vous pouvez cliquer sur la f
 |Liste numérotée|Insère une nouvelle liste numérotée.<br><br> Si plusieurs lignes sont sélectionnées, chaque ligne constitue un élément de liste. Notez que les listes numérotées apparaissent toutes dans Markdown avec des 1. Toutefois, elles s’affichent sur docs.microsoft.com avec des numéros séquentiels ou, pour les listes imbriquées, des lettres. Pour créer une liste numérotée imbriquée, appuyez sur Tab dans la liste parente.|
 |Liste à puces|Insère une nouvelle liste à puces.|
 |Table        |Insère une structure de table Markdown.<br><br>Après avoir sélectionné la commande table, spécifiez le nombre de colonnes et de lignes au format colonnes:lignes. Par exemple : 3:4. Dans un souci de lisibilité, notez que le nombre maximum de colonnes que vous pouvez spécifier avec cette extension est de 5.|
-|Lien vers un fichier dans le dépôt|Insère un lien relatif à un autre fichier dans le dépôt actuel. Après avoir sélectionné cette option, tapez du texte dans la fenêtre de commande pour filtrer les fichiers par nom, puis sélectionnez le fichier souhaité. Si vous aviez précédemment sélectionné du texte, il devient le texte du lien. Sinon, le titre H1 du fichier cible est utilisé comme texte du lien.|
+|Lien vers un fichier dans le référentiel|Insère un lien relatif à un autre fichier dans le référentiel actuel. Après avoir sélectionné cette option, tapez du texte dans la fenêtre de commande pour filtrer les fichiers par nom, puis sélectionnez le fichier souhaité. Si vous aviez précédemment sélectionné du texte, il devient le texte du lien. Sinon, le titre H1 du fichier cible est utilisé comme texte du lien.|
 |Lien vers une page web    |Insère un lien vers une page web. Une fois cette option sélectionnée, collez ou tapez l’URI dans la fenêtre de commande. `https://` est obligatoire. Si vous aviez précédemment sélectionné du texte, il devient le texte du lien. Sinon, l’URI sera utilisé comme texte du lien.|
-|Lien vers un titre     |Assure le lien vers un signet dans le fichier actuel ou un autre fichier du dépôt.<br>`Bookmark in this file` : choisissez un élément dans une liste de titres du fichier actif pour insérer un signet correctement mis en forme.<br>`Bookmark in another file` : commencez par filtrer les fichiers par nom et sélectionnez le fichier vers lequel doit pointer le lien, puis choisissez le titre approprié dans le fichier sélectionné.|
+|Lien vers un titre     |Assure le lien vers un signet dans le fichier actuel ou un autre fichier du référentiel.<br>`Bookmark in this file` : Choisissez un élément dans une liste de titres du fichier actif pour insérer un signet correctement mis en forme.<br>`Bookmark in another file` : Commencez par filtrer les fichiers par nom et sélectionnez le fichier vers lequel doit pointer le lien, puis choisissez le titre approprié dans le fichier sélectionné.|
 |Image        |Tapez le texte de remplacement (obligatoire à des fins d’accessibilité) et sélectionnez-le, puis appelez cette commande pour filtrer la liste des fichiers image pris en charge dans le dépôt et sélectionnez celui que vous voulez. Si aucun texte de remplacement n’est sélectionné quand vous appelez cette commande, vous êtes invité à le faire avant de pouvoir choisir un fichier image.|
 |Inclure      |Recherchez un fichier à incorporer au fichier actif.|
 |Extrait      |Recherchez un extrait de code dans le dépôt à incorporer au fichier actif.|
@@ -87,7 +90,7 @@ Les utilisateurs de la préversion de l’extension remarqueront que la barre d�
 
 ## <a name="how-to-use-docs-templates"></a>Utilisation des modèles Docs
 
-L’extension Docs Article Templates permet à ceux qui écrivent en VS Code d’extraire un modèle Markdown à partir d’un magasin centralisé et de l’appliquer à un fichier. Les modèles peuvent permettre de s’assurer que les métadonnées requises sont incluses dans les articles, que les normes relatives au contenu sont respectées, etc. Les modèles sont gérés en tant que fichiers Markdown dans un dépôt GitHub public.
+L’extension Docs Article Templates permet à ceux qui écrivent en VS Code d’extraire un modèle Markdown à partir d’un magasin centralisé et de l’appliquer à un fichier. Les modèles peuvent permettre de s’assurer que les métadonnées requises sont incluses dans les articles, que les normes relatives au contenu sont respectées, etc. Les modèles sont gérés en tant que fichiers Markdown dans un référentiel GitHub public.
 
 ### <a name="to-apply-a-template-in-vs-code"></a>Pour appliquer un modèle dans VS Code
 

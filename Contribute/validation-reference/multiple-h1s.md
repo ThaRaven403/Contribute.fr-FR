@@ -4,14 +4,14 @@ description: Explication et résolution du problème de génération Docs multip
 author: meganbradley
 ms.author: mbradley
 ms.topic: error-reference
-ms.date: 12/12/2018
+ms.date: 10/09/2019
 ms.prod: non-product-specific
-ms.openlocfilehash: a1006d9d75ebd53751c9ab81aa016d67d6e5df57
-ms.sourcegitcommit: 89147521f0aa3b39e7ddf390136b09a43d95c416
+ms.openlocfilehash: c97ae237cd2ce657bd02132af5169cb6544ae306
+ms.sourcegitcommit: 57eb071bdc55ef71fa3f8ac979326c3f8fbe9c45
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/10/2019
-ms.locfileid: "70848611"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72246273"
 ---
 # <a name="multiple-h1"></a>multiple-h1
 
@@ -22,6 +22,16 @@ ms.locfileid: "70848611"
 `Multiple H1s are not allowed. You can only have one top-level heading.`
 
 H1 désigne le premier titre dans un fichier Markdown. Lors de la publication sur docs.microsoft.com, le titre H1 s’affiche en haut de la page dans une grande taille de police. Un titre H1 est créé en commençant une ligne par un signe dièse (#) suivi d’un espace, puis du texte du titre. Vous ne pouvez avoir qu’un seul titre H1 dans chaque fichier.
+
+Vous pouvez également recevoir ce message si votre article contient une ligne de signe « égal » constituant un double soulignement, comme ceci : `=======`. Il s’agit d’une syntaxe Markdown alternative pour un titre H1. Il apparaît aussi souvent dans les conflits de fusion :
+
+```markdown
+<<<<<<< HEAD
+...
+=======
+...
+>>>>>>> 1d82c7efe18f86136247fb366df5030843199c19
+```
 
 ## <a name="resolution"></a>Résolution
 
@@ -38,6 +48,8 @@ Some content...
 
 ## This is an H2
 ```
+
+Si un titre H1 supplémentaire est en fait un double soulignement (`=======`), supprimez-le ou remplacez-le par un titre de mot-dièse, comme `##`, selon le cas. Si le double soulignement est impliqué dans un conflit de fusion, veillez également à supprimer les marqueurs de début et de fin du conflit de fusion, et le texte obsolète.
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]

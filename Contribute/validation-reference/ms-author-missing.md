@@ -6,12 +6,12 @@ ms.author: mbradley
 ms.topic: error-reference
 ms.date: 12/20/2018
 ms.prod: non-product-specific
-ms.openlocfilehash: eb969487a432014795920b9c40025ec899cf3e1c
-ms.sourcegitcommit: dd751d0cb5b11f81a64ef62f3c83fd17cc5f0541
+ms.openlocfilehash: 6b313bd6b168b913d82721607126fcd4e6255009
+ms.sourcegitcommit: 57eb071bdc55ef71fa3f8ac979326c3f8fbe9c45
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/03/2019
-ms.locfileid: "70236461"
+ms.lasthandoff: 10/10/2019
+ms.locfileid: "72246253"
 ---
 # <a name="ms-author-missing"></a>ms-author-missing
 
@@ -21,9 +21,11 @@ ms.locfileid: "70236461"
 
 ## <a name="resolution"></a>Résolution
 
-Ajoutez l’alias Microsoft de l’auteur actuel pour `ms.author`. Il doit s’agir de l’auteur individuel de l’article ou d’un alias d’équipe désigné.
+Ajoutez l’alias Microsoft de l’auteur actuel pour `ms.author`. Notez que ce doit être le propriétaire *actuel* de l’article, pas l’auteur d’origine si l’appartenance a changé. Nous recommandons que l’auteur désigné soit un employé à plein temps ou une liste de distribution d’équipe, plutôt qu’un fournisseur à court terme. 
 
-Notez que ce doit être le propriétaire *actuel* de l’article, pas l’auteur d’origine si l’appartenance a changé.
+Si l’alias est une liste de distribution, il doit également figurer dans la liste verte `ms.author`.
+
+Vous trouverez les valeurs valides des listes de distribution `ms.author` sur [ce site interne de Microsoft](https://docsmetadatatool.azurewebsites.net/allowlists).
 
 <!--make sure to add this file to your includes folder and verify the path-->
 [!INCLUDE [validation-reference-help](includes/validation-reference-help.md)]

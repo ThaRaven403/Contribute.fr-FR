@@ -1,0 +1,56 @@
+- name: Vue d’ensemble du guide du contributeur et tâches basées sur le navigateur
+  href: index.md
+- name: Configurer et travailler localement
+  items:
+    - name: 1. S’inscrire à GitHub
+      href: get-started-setup-github.md
+    - name: 2. Installer les outils Git et Markdown
+      href: get-started-setup-tools.md
+    - name: 3. Configurer un dépôt Git local
+      href: get-started-setup-local.md
+    - name: Notions de bases de Git et de GitHub
+      href: git-github-fundamentals.md
+    - name: Flux de travail complet
+      href: how-to-write-workflows-major.md
+- name: Éléments principaux sur l’écriture
+  items:
+    - name: Markdown
+      href: how-to-write-use-markdown.md
+    - name: Informations de référence sur Markdown
+      href: markdown-reference.md
+    - name: Démarrage rapide pour le style et le ton
+      href: style-quick-start.md
+    - name: Liens
+      href: how-to-write-links.md
+    - name: Docs Authoring Pack
+      href: how-to-write-docs-auth-pack.md
+- name: Instructions propres aux jeux de documentation
+  items:
+    - name: Documentation .NET
+      items:
+        - name: Guide pratique pour contribuer à la documentation .NET
+          href: dotnet-contribute.md
+        - name: Contribuer à la documentation .NET
+          href: dotnet-contribute-process.md
+        - name: Conventions de style de la documentation .NET
+          href: dotnet-style-guide.md
+        - name: Guide de style
+          href: dotnet-voice-tone.md
+        - name: Processus de révision des demandes de tirage (pull request)
+          href: dotnet-pr-review.md
+    - name: Documentation PowerShell
+      items:
+        - name: Guide pratique pour contribuer à la documentation PowerShell
+          href: powershell\powershell-contribute.md
+        - name: Processus de contribution pour PowerShell
+          href: powershell\powershell-contribute-process.md
+        - name: Démarrage rapide pour l’écriture d’articles PowerShell
+          href: powershell\powershell-style-basic-markdown.md
+        - name: Guide de style pour les exemples de script PowerShell
+          href: powershell\powershell-style-code.md
+        - name: Guide de style pour les informations de référence sur les applets de commande PowerShell
+          href: powershell\powershell-style-reference.md
+        - name: Envoi d’une demande de tirage (pull request) pour PowerShell
+          href: powershell\powershell-pull-requests.md
+- name: Ressources supplémentaires
+  href: additional-resources.md

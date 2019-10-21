@@ -1,13 +1,16 @@
 ---
 title: Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 description: Cet article fournit des informations de base et de référence sur le langage Markdown utilisé pour écrire des articles docs.microsoft.com.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: 7a42aa88bab65846ce54e2444387ac3a578779c0
-ms.sourcegitcommit: 7e73bef8bcdca39fd54cd79fbe8cb22da5566411
+ms.openlocfilehash: c823e086ba61e7ddfe643da13afc8597e5ea280c
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 09/24/2019
-ms.locfileid: "71247346"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288423"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 
@@ -291,10 +294,10 @@ CREATE TABLE T1 (
 );
 ```
 
-## <a name="ops-custom-markdown-extensions"></a>Extensions Markdown personnalisées OPS
+## <a name="docs-custom-markdown-extensions"></a>Extensions Markdown personnalisées Docs
 
 > [!NOTE]
-> OPS (Open Publishing Services) implémente un analyseur Markdig pour Markdown, qui est hautement compatible avec GFM (GitHub Flavored Markdown). Markdig ajoute des fonctionnalités via des extensions Markdown. À ce titre, des articles sélectionnés du Guide de création OPS complet sont inclus dans ce guide pour référence. (Par exemple, consultez « Extensions Markdown et Markdig » et « Extraits de code » dans la table des matières.)
+> Docs.Microsoft.com (Docs) implémente un analyseur Markdig pour Markdown, qui est hautement compatible avec GFM (GitHub Flavored Markdown). Markdig ajoute des fonctionnalités via des extensions Markdown. À ce titre, des articles sélectionnés du Guide de création OPS complet sont inclus dans ce guide pour référence. (Par exemple, consultez « Extensions Markdown et Markdig » et « Extraits de code » dans la table des matières.)
 
 Les articles Docs utilisent GFM pour la majeure partie de la mise en forme des articles, comme les paragraphes, les liens, les listes et les en-têtes. Pour une mise en forme plus riche, les articles peuvent utiliser des fonctionnalités Markdig comme :
 
@@ -432,7 +435,7 @@ Par exemple, encodez `<script name>` en `&lt;script name&gt;`
 
 ## <a name="markdown-flavor"></a>Type de markdown
 
-Le back-end du site docs.microsoft.com utilise OPS (Open Publishing Services) qui prend en charge Markdown conforme avec [CommonMark](https://commonmark.org/) analysé via le moteur [Markdig](https://github.com/lunet-io/markdig). Ce type Markdown est essentiellement compatible avec [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), car la plupart des documents sont stockés dans GitHub et peuvent être modifiés à cet endroit. Des fonctionnalités sont ajoutées via des extensions Markdown.
+Le back-end du site docs.microsoft.com prend en charge le Markdown conforme à [CommonMark](https://commonmark.org/) analysé via le moteur d’analyse [Markdig](https://github.com/lunet-io/markdig). Ce type Markdown est essentiellement compatible avec [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), car la plupart des documents sont stockés dans GitHub et peuvent être modifiés à cet endroit. Des fonctionnalités sont ajoutées via des extensions Markdown.
 
 ## <a name="see-also"></a>Voir aussi :
 

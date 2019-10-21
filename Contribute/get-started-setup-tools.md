@@ -1,16 +1,18 @@
 ---
 title: Installer des outils de création de contenu
 description: Cet article vous aide à télécharger et installer les outils clients dont vous avez besoin pour Git et pour l’édition de fichiers Markdown.
+ms.topic: contributor-guide
+ms.prod: non-product-specific
+ms.custom: external-contributor-guide
 author: jasonwhowell
 ms.author: jasonh
-manager: kfile
 ms.date: 04/30/2018
-ms.openlocfilehash: 715634a9a2342311eb1d358cb8379f90a7074d80
-ms.sourcegitcommit: 44eb4f5ee65c1848d7f36fca107b296eb7687397
+ms.openlocfilehash: 24d47c4e094c318be75a27dbaaec11d8ead94452
+ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/13/2018
-ms.locfileid: "51609388"
+ms.lasthandoff: 10/12/2019
+ms.locfileid: "72288555"
 ---
 # <a name="install-content-authoring-tools"></a>Installer des outils de création de contenu
 
@@ -23,13 +25,13 @@ Cet article décrit les étapes à suivre pour installer de manière interactive
 >[!IMPORTANT]
 > Si vous n’effectuez que des changements mineurs sur un article, vous n’avez *pas* besoin d’effectuer les étapes de cet article et vous pouvez passer directement au [workflow des changements rapides](index.md#quick-edits-to-existing-documents).
 >
-> Les principaux contributeurs sont encouragés à suivre ces étapes, qui permettent d’utiliser le [workflow de modifications majeures/à long terme](how-to-write-workflows-major.md). Même si vous disposez d’autorisations en écriture sur le dépôt principal, *nous vous conseillons vivement (et ce guide part de cette hypothèse) de dupliquer (fork) et de cloner le dépôt*, de façon à ce que vous ayez les autorisations en lecture/écriture nécessaires pour stocker les modifications que vous proposez dans votre duplication.
+> Les principaux contributeurs sont encouragés à suivre ces étapes, qui permettent d’utiliser le [workflow de modifications majeures/à long terme](how-to-write-workflows-major.md). Même si vous disposez d’autorisations en écriture sur le référentiel principal, *nous vous conseillons vivement (et ce guide part de cette hypothèse) de dupliquer (fork) et de cloner le référentiel*, de façon à ce que vous ayez les autorisations en lecture/écriture nécessaires pour stocker les modifications que vous proposez dans votre fourche.
 
 ## <a name="install-git-client-tools"></a>Installer les outils client Git 
 
  Installez la dernière version des [outils client Git de Software Freedom Conservancy](https://git-scm.com/download/) pour votre plateforme. 
 
-* [Git pour Windows](https://git-scm.com/download/win). Cette installation comprend le système de gestion de versions de Git et Git Bash, l’application en ligne de commande qui vous permettra d’interagir avec votre dépôt Git local.
+* [Git pour Windows](https://git-scm.com/download/win). Cette installation comprend le système de gestion de versions de Git et Git Bash, l’application en ligne de commande qui vous permettra d’interagir avec votre référentiel Git local.
 * Git pour Mac est fourni dans le cadre des Outils en ligne de commande Xcode. Exécutez simplement `git` depuis la ligne de commande. Vous serez invité à installer les outils en ligne de commande si nécessaire. Vous pouvez aussi télécharger [Git pour Mac](https://git-scm.com/download/mac) à partir de Software Freedom Conservancy.
 * [Git pour Linux et Unix](https://git-scm.com/download/linux)
 
@@ -37,9 +39,9 @@ Si vous préférez une interface graphique utilisateur (GUI) à une interface de
 
 Suivez les instructions du client choisi pour l’installation et la configuration.
 
-Dans le prochain article, vous allez [Configurer un dépôt Git local](get-started-setup-local.md).
+Dans le prochain article, vous allez [Configurer un référentiel Git local](get-started-setup-local.md).
 
-   Voici des liens vers des ressources Git supplémentaires : [Terminologie Git](https://help.github.com/articles/github-glossary) | [Bases de Git](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [Découvrir Git et GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/).
+   Des ressources Git supplémentaires sont disponibles ici : [Terminologie Git](https://help.github.com/articles/github-glossary) | [Notions de base de Git](https://git-scm.com/book/en/v2/Getting-Started-Git-Basics) | [Découvrir Git et GitHub](https://help.github.com/articles/good-resources-for-learning-git-and-github/)
 
 ## <a name="understand-markdown-editors"></a>Comprendre les éditeurs Markdown
 
@@ -74,4 +76,4 @@ Installer Docs Authoring Pack pour Visual Studio Code. Cet ensemble d’extensio
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Vous pouvez maintenant [Configurer un dépôt Git local](get-started-setup-local.md).
+Vous pouvez maintenant [Configurer un référentiel Git local](get-started-setup-local.md).
