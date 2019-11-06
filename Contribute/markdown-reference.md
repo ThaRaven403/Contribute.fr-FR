@@ -7,12 +7,12 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 3142b1aee8cadb69f82bfbcd3f89c701fac5b356
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: a5ff6c5122a08d2b611fd6b0344a6f5740d93928
+ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288293"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592561"
 ---
 # <a name="markdown-reference"></a>Informations de référence sur Markdown
 
@@ -26,7 +26,7 @@ Docs utilise le moteur Markdown Markdig. Vous pouvez tester le rendu de Markdown
 
 Les alertes sont une extension Markdown Docs pour créer des citations qui s’affichent sur docs.microsoft.com avec des couleurs et des icônes indiquant la signification du contenu. Les types d’alerte suivants sont pris en charge :
 
-```markdown
+```md
 > [!NOTE]
 > Information the user should notice even if skimming.
 
@@ -45,26 +45,13 @@ Les alertes sont une extension Markdown Docs pour créer des citations qui s’a
 
 Ces alertes ressemblent à ceci sur docs.microsoft.com :
 
-> [!NOTE]
-> Information the user should notice even if skimming.
-
-> [!TIP]
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]
-> Essential information required for user success.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
-
-> [!WARNING]
-> Dangerous certain consequences of an action.
+![montre comment les alertes de l’exemple précédent apparaissent sur la page Documentation publiée avec les différentes icônes et couleurs](media/alerts-rendering.png)
 
 ## <a name="code-snippets"></a>Extraits de code
 
 Vous pouvez incorporer des extraits de code dans vos fichiers Markdown :
 
-```markdown
+```md
 [!code-<language>[<name>](<codepath><queryoption><queryoptionvalue> "<title>")]
 ```
 
@@ -72,7 +59,7 @@ Vous pouvez incorporer des extraits de code dans vos fichiers Markdown :
 
 Docs prend en charge six niveaux de titres Markdown :
 
-```markdown
+```md
 # This is a first level heading (H1)
 
 ## This is a second level heading (H2)
@@ -97,7 +84,7 @@ Bien que Markdown prenne en charge la syntaxe HTML inline, HTML n’est pas reco
 
 La syntaxe pour inclure une image est :
 
-```markdown
+```md
 ![[alt text]](<folderPath>)
 
 Example:
@@ -133,7 +120,7 @@ Dans la plupart des cas, Docs utilise des liens Markdown standard vers d’autre
 
 Un chemin relatif est le chemin du fichier cible par rapport au fichier actuel. Dans Docs, vous pouvez utiliser un chemin relatif pour créer un lien vers un autre fichier de la même documentation. La syntaxe d’un chemin relatif est la suivante :
 
-```markdown
+```md
 [link text](../../folder/filename.md)
 ```
 
@@ -154,7 +141,7 @@ Où `../` indique un niveau au-dessus dans la hiérarchie.
 
 ### <a name="site-relative-links-to-other-files-on-docs"></a>Liens relatifs de site vers d’autres fichiers sur Docs
 
-```markdown
+```md
 [Azure and Linux](/articles/virtual-machines/linux/overview)
 ```
 
@@ -162,7 +149,7 @@ N’incluez pas l’extension de fichier (.md). Ce lien dirige vers le fichier L
 
 ### <a name="links-to-external-sites"></a>Liens vers des sites externes
 
-```markdown
+```md
 [Microsoft](https://www.microsoft.com)
 ```
 
@@ -172,13 +159,13 @@ Lien basé sur une URL vers une autre page web (doit inclure https://).
 
 Lien de signet vers un titre d’un autre fichier du même dépôt Par exemple :
 
-```markdown
+```md
 [Managed Disks](../../linux/overview.md#managed-disks)
 ```
 
 Lien de signet vers un titre du fichier actuel :
 
-```markdown
+```md
 [Managed Disks](#managed-disks)
 ```
 
@@ -197,7 +184,7 @@ Les liens d’ancrage explicites utilisant la balise HTML `<a>` **ne sont pas ob
 
 Pour créer un lien vers des ancrages explicites, utilisez la syntaxe suivante :
 
-```markdown
+```md
 To go to a section on the same page:
 [text](#AnchorText)
 
@@ -258,7 +245,7 @@ Pour créer une liste numérotée, vous pouvez utiliser exclusivement des « 1�
 
 N’utilisez pas de lettres dans les listes, y compris dans les listes imbriquées. Elles ne sont pas restituées correctement au moment de la publication sur Docs. Les listes imbriquées utilisant des nombres sont restituées avec des lettres minuscules au moment de la publication. Par exemple :
 
-```markdown
+```md
 1. This is
 1. a parent numbered list
    1. and this is
@@ -278,7 +265,7 @@ Ce code est restitué comme suit :
 
 Pour créer une liste à puces, utilisez `-` suivi d’un espace au début de chaque ligne :
 
-```markdown
+```md
 - This is
 - a parent bulleted list
   - and this is
@@ -298,7 +285,7 @@ Ce code est restitué comme suit :
 
 Les listes de contrôle sont utilisables sur docs.microsoft.com (uniquement) par le biais d’une extension Markdown personnalisée :
 
-```markdown
+```md
 > [!div class="checklist"]
 > * List item 1
 > * List item 2
@@ -321,14 +308,14 @@ Vous pouvez utiliser une extension personnalisée pour ajouter un bouton d’act
 
 La syntaxe est la suivante :
 
-```markdown
+```md
 > [!div class="nextstepaction"]
 > [button text](link to topic)
 ```
 
 Par exemple :
 
-```markdown
+```md
 > [!div class="nextstepaction"]
 > [Learn about basic style](style-quick-start.md)
 ```
@@ -433,7 +420,7 @@ Vous pouvez utiliser un sélecteur pour lier plusieurs pages d’un même articl
 
 Le moyen le plus simple de créer un tableau en Markdown est d’utiliser des barres verticales et des lignes. Pour créer un tableau standard avec un en-tête, faites suivre la première ligne d’une ligne en pointillés :
 
-```markdown
+```md
 |This is   |a simple   |table header|
 |----------|-----------|------------|
 |table     |data       |here        |
@@ -449,7 +436,7 @@ Ce code est restitué comme suit :
 
 Vous pouvez également créer un tableau sans en-tête. Par exemple, pour créer une liste à plusieurs colonnes :
 
-```markdown
+```md
 |   |   |
 | - | - |
 | This | table |
@@ -465,7 +452,7 @@ Ce code est restitué comme suit :
 
 Vous pouvez aligner les colonnes à l’aide de signes deux-points :
 
-```markdown
+```md
 |                  |
 |------------------|
 |    right aligned:|
@@ -495,7 +482,7 @@ Si vous créez un tableau en Markdown, le tableau peut s’étendre sur la barre
 
 Voici un exemple de code Markdown d’un tableau, avec trois lignes encapsulées par un `div`, avec le nom de classe `mx-tdBreakAll`.
 
-```markdown
+```md
 > [!div class="mx-tdBreakAll"]
 > |Name|Syntax|Mandatory for silent installation?|Description|
 > |-------------|----------|---------|---------|
@@ -541,13 +528,13 @@ Les tableaux HTML ne sont pas recommandés dans docs.microsoft.com. Ils ne se pr
 
 Vous pouvez incorporer une vidéo avec la syntaxe suivante et permettre à Docs de l’afficher.
 
-```markdown
+```md
 > [!VIDEO <embedded_video_link>]
 ```
 
 Exemple :
 
-```markdown
+```md
 > [!VIDEO https://channel9.msdn.com/Series/Youve-Got-Key-Values-A-Redis-Jump-Start/03/player]
 
 > [!VIDEO https://www.youtube.com/embed/iAtwVM-Z7rY]
@@ -591,6 +578,6 @@ Toute nouvelle vidéo doit être chargée à l’aide du processus suivant :
 1. Une fois que vous avez récupéré le lien de la vidéo, fermez l’élément de travail.
 1. Vous pouvez alors ajouter le lien de la vidéo à votre publication à l’aide de la syntaxe suivante :
 
-   ```markdown
+   ```md
    > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE1XVQS]
    ```

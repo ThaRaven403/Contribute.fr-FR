@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: c823e086ba61e7ddfe643da13afc8597e5ea280c
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: ffc44f07929890ef17b3878ba389dfeea82691a6
+ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288423"
+ms.lasthandoff: 11/05/2019
+ms.locfileid: "73592461"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 
@@ -23,7 +23,7 @@ Les articles [docs.microsoft.com](https://docs.microsoft.com) sont écrits dans 
 
 Pour créer un en-tête, vous utilisez un dièse (#), comme suit :
 
-```markdown
+```md
 # This is heading 1
 ## This is heading 2
 ### This is heading 3
@@ -42,19 +42,19 @@ Les en-têtes de second niveau génèreront la table des matières de la page af
 
 Pour formater le texte en **gras**, vous l’entourez de deux astérisques :
 
-```markdown
+```md
 This text is **bold**.
 ```
 
 Pour formater le texte en *italique*, vous l’entourez d’un seul astérisque :
 
-```markdown
+```md
 This text is *italic*.
 ```
 
 Pour formater le texte en ***gras et en italique***, vous l’entourez de trois astérisques :
 
-```markdown
+```md
 This is text is both ***bold and italic***.
 ```
 
@@ -62,7 +62,7 @@ This is text is both ***bold and italic***.
 
 Pour créer un élément blockquote, vous utilisez le caractère `>` :
 
-```markdown
+```md
 > The drought had lasted now for ten million years, and the reign of the terrible lizards had long since ended. Here on the Equator, in the continent which would one day be known as Africa, the battle for existence had reached a new climax of ferocity, and the victor was not yet in sight. In this barren and desiccated land, only the small or the swift or the fierce could flourish, or even hope to survive.
 ```
 
@@ -76,7 +76,7 @@ L’exemple précédent s’affiche comme suit :
 
 Pour formater une liste à puces/non ordonnée, vous pouvez utiliser des astérisques ou des tirets. Par exemple, le code Markdown suivant :
 
-```markdown
+```md
 - List item 1
 - List item 2
 - List item 3
@@ -90,7 +90,7 @@ s’affichera sous la forme :
 
 Pour imbriquer une liste dans une autre, indentez les éléments de liste enfants. Par exemple, le code Markdown suivant :
 
-```markdown
+```md
 - List item 1
   - List item A
   - List item B
@@ -108,7 +108,7 @@ s’affichera sous la forme :
 
 Pour formater une liste ordonnée/d'étapes, vous utilisez les numéros correspondants. Par exemple, le code Markdown suivant :
 
-```markdown
+```md
 1. First instruction
 1. Second instruction
 1. Third instruction
@@ -122,7 +122,7 @@ s’affichera sous la forme :
 
 Pour imbriquer une liste dans une autre, indentez les éléments de liste enfants. Par exemple, le code Markdown suivant :
 
-```markdown
+```md
 1. First instruction
    1. Sub-instruction
    1. Sub-instruction
@@ -144,7 +144,7 @@ Les tableaux ne sont pas pris en charge par la spécification Markdown principal
 
 Par exemple, le code Markdown suivant :
 
-```markdown
+```md
 | Fun                  | With                 | Tables          |
 | :------------------- | -------------------: |:---------------:|
 | left-aligned column  | right-aligned column | centered column |
@@ -322,33 +322,26 @@ En général, les blocs de notes doivent être utilisés avec parcimonie, car il
 
 Exemples :
 
-```markdown
+```md
 > [!NOTE]
-> This is a NOTE
-
-> [!WARNING]
-> This is a WARNING
+> Information the user should notice even if skimming.
 
 > [!TIP]
-> This is a TIP
+> Optional information to help a user be more successful.
 
 > [!IMPORTANT]
-> This is IMPORTANT
+> Essential information required for user success.
+
+> [!CAUTION]
+> Negative potential consequences of an action.
+
+> [!WARNING]
+> Dangerous certain consequences of an action.
 ```
 
-L’affichage est le suivant :
+Ces alertes ressemblent à ceci sur docs.microsoft.com :
 
-> [!NOTE]
-> This is a NOTE
-
-> [!WARNING]
-> This is a WARNING
-
-> [!TIP]
-> This is a TIP
-
-> [!IMPORTANT]
-> This is IMPORTANT
+![montre comment les alertes de l’exemple précédent apparaissent sur la page Documentation publiée avec les différentes icônes et couleurs](media/alerts-rendering.png)
 
 ### <a name="include-files"></a>Fichiers Include
 
@@ -373,7 +366,7 @@ Voici les conditions requises et éléments à prendre en compte pour les fichie
 
 Exemple :
 
-```markdown
+```md
 [!INCLUDE[sample include file](../includes/sampleinclude.md)]
 ```
 
@@ -385,7 +378,7 @@ Le même Markdown de sélecteur allant dans chaque article de la sélection, nou
 
 Voici un exemple de sélecteur :
 
-```markdown
+```md
 > [!div class="op_single_selector"]
 - [macOS](../docs/core/tutorials/using-on-macos.md)
 - [Windows](../docs/core/tutorials/with-visual-studio.md)
@@ -406,13 +399,13 @@ Markdig prend en charge l’inclusion avancée de code dans un article, via son 
 
 Le texte de remplacement qui contient des traits de soulignement ne s’affiche pas correctement. Par exemple, au lieu d’utiliser ceci :
 
-```markdown
+```md
 ![ADextension_2FA_Configure_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
 Placez les traits de soulignement dans une séquence d’échappement comme ceci :
 
-```markdown
+```md
 ![ADextension\_2FA\_Configure\_Step4](./media/bogusfilename/ADextension_2FA_Configure_Step4.PNG)
 ```
 
