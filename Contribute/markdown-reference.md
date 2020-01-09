@@ -7,12 +7,12 @@ ms.date: 05/18/2018
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: a5ff6c5122a08d2b611fd6b0344a6f5740d93928
-ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
+ms.openlocfilehash: 452cbf97db748532ae2b0e09b4bb558c8f757a61
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592561"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188256"
 ---
 # <a name="markdown-reference"></a>Informations de référence sur Markdown
 
@@ -73,7 +73,7 @@ Docs prend en charge six niveaux de titres Markdown :
 - Chaque fichier Markdown doit avoir un, et un seul, titre H1.
 - Le titre H1 doit être le premier contenu du fichier après le bloc de métadonnées YML.
 - Les titres H2 apparaissent automatiquement dans le menu de navigation de droite du fichier publié. Ce n’est pas le cas des titres de niveau inférieur, donc privilégiez l’utilisation de titres H2 pour aider les lecteurs à parcourir votre contenu.
-- Les titres HMTL, comme `<h1>`, ne sont pas recommandés. En effet, dans certains cas, ils entraînent l’affichage d’avertissements de génération.
+- Les titres HTML, comme `<h1>`, ne sont pas recommandés. En effet, dans certains cas, ils entraînent l’affichage d’avertissements de génération.
 - Vous pouvez créer un lien vers des titres spécifiques dans un fichier par le biais de [signets](#bookmark-links).
 
 ## <a name="html"></a>HTML
@@ -178,7 +178,7 @@ Par exemple, si le nom du titre est « Problèmes de sécurité 2.2 », le tex
 
 ### <a name="explicit-anchor-links"></a>Liens d’ancrage explicites
 
-Les liens d’ancrage explicites utilisant la balise HTML `<a>` **ne sont pas obligatoires ou recommandés** sauf dans les pages d’arrivée et hub. Utilisez des signets comme indiqué plus haut dans les fichiers Markdown généraux. Pour les pages hub et d’arrivée, utilisez des ancrages comme suit :
+Les liens d’ancrage explicites utilisant la balise HTML `<a>`**ne sont pas obligatoires ou recommandés** sauf dans les pages d’arrivée et hub. Utilisez des signets comme indiqué plus haut dans les fichiers Markdown généraux. Pour les pages hub et d’arrivée, utilisez des ancrages comme suit :
 
 `## <a id="AnchorText"> </a>Header text` ou `## <a name="AnchorText"> </a>Header text`
 

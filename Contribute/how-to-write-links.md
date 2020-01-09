@@ -7,15 +7,16 @@ ms.custom: external-contributor-guide
 author: gewarren
 ms.author: gewarren
 ms.date: 10/31/2018
-ms.openlocfilehash: 69371cd201d156b2d0ce5e3e38527d77baca5a8a
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 970f80b4e6ce795e0e2f15192d31680d7de6d35b
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288573"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188322"
 ---
-# <a name="using-links-in-documentation"></a>Utilisation de liens dans la documentation
-Cet article décrit comment utiliser des liens hypertexte à partir de pages hébergées sur docs.microsoft.com. Vous pouvez facilement ajouter des liens dans la syntaxe Markdown en tenant compte de quelques conventions. Les liens pointent vers du contenu situé dans la même page, dans d’autres pages voisines ou sur des sites et des URL externes.
+# <a name="use-links-in-documentation"></a>Utiliser des liens dans la documentation
+
+Cet article décrit comment utiliser des liens hypertexte à partir de pages hébergées sur docs.microsoft.com. Vous pouvez facilement ajouter des liens dans la syntaxe Markdown en tenant compte de quelques conventions. Les liens pointent vers du contenu situé dans la même page, dans d’autres pages voisines ou vers des sites et des URL externes.
 
 Le back-end du site docs.microsoft.com utilise OPS (Open Publishing Services) qui prend en charge Markdown conforme avec [CommonMark](https://commonmark.org/) analysé via le moteur [Markdig](https://github.com/lunet-io/markdig). Ce type Markdown est essentiellement compatible avec [GitHub Flavored Markdown (GFM)](https://help.github.com/categories/writing-on-github/), car la plupart des documents sont stockés dans GitHub et peuvent être modifiés à cet endroit. Des fonctionnalités sont ajoutées via des extensions Markdown.
 
@@ -27,7 +28,7 @@ Le back-end du site docs.microsoft.com utilise OPS (Open Publishing Services) qu
 Les mots que vous incluez dans le texte doivent être conviviaux. En d’autres termes, il doit s’agir de mots simples ou du titre de la page vers laquelle vous établissez le lien.
 
 > [!IMPORTANT]
-> N’utilisez pas de texte de type « cliquez ici ». Ce n’est pas bon pour l’optimisation du référencement d’un site auprès d’un moteur de recherche, et ne décrit pas correctement la cible.
+> N’utilisez pas de texte de type « cliquez ici ». Ce n’est pas bon pour l’optimisation du référencement d’un site auprès d’un moteur de recherche et cela ne décrit pas correctement la cible.
 
 **Correct :**
 
@@ -43,28 +44,35 @@ Les mots que vous incluez dans le texte doivent être conviviaux. En d’autres 
 
 ## <a name="links-from-one-article-to-another"></a>Liens d'un article à un autre
 
-Pour créer un lien inline d’un article technique Docs à un autre dans le même docset, utilisez la syntaxe de lien suivante :
+Pour créer un lien inline d’un article technique Docs vers un autre dans le même *docset*, utilisez la syntaxe de lien suivante :
 
-- Un article dans un répertoire fait un lien vers un autre article du même répertoire :
+- Un article a un lien vers un autre article du même répertoire :
 
   `[link text](article-name.md)`
 
-- Un article fait un lien d'un sous-répertoire d'un article vers le répertoire racine :
+- Un article a un lien vers un article du répertoire parent du répertoire actif :
 
   `[link text](../article-name.md)`
 
-- Un article dans le répertoire racine fait un lien vers un article dans un sous-répertoire :
+- Un article a un lien vers un article d’un sous-répertoire du répertoire actif :
 
-  `[link text](./directory/article-name.md)`
+  `[link text](directory/article-name.md)`
 
-- Un article dans un sous-répertoire fait un lien vers un article d'un autre sous-répertoire :
+- Un article a un lien vers un article d’un sous-répertoire du répertoire parent du répertoire actif :
 
   `[link text](../directory/article-name.md)`
 
-- Un lien d’un article à un autre dans différents docsets (même s’ils sont dans le même dépôt) :  `[link text](./directory/article-name)`
+> [!NOTE]
+> Aucun des exemples précédents n’utilise de `~/` dans le lien. Pour créer un lien vers un chemin absolu qui commence à la racine du dépôt, commencez le lien avec `/`. L’ajout d’un `~/` produit des liens non valides quand vous accédez aux dépôts sources sur GitHub. En commençant par une `/`, le problème est résolu.
 
-> [!IMPORTANT]
-> Aucun des exemples ci-dessus n’utilise de `~/` dans le lien. Si vous créez un lien vers un chemin à la racine du dépôt, commencez avec une `/`. L’ajout d’un `~/` produit des liens non valides quand vous accédez aux dépôts sources sur GitHub. En commençant par une `/`, le problème est résolu.
+Pour créer un lien vers un article d’un autre docset, même si le fichier se trouve dans le même dépôt, utilisez la syntaxe suivante :
+
+`[link text](/docset-root/directory/article-name)`
+   
+Par exemple, si un article dont l’URL racine est `https://docs.microsoft.com/dotnet` a un lien vers un article dont l’URL racine est `https://docs.microsoft.com/visualstudio`, le lien ressemble à `[link text](/visualstudio/directory/article-name)`.
+
+> [!TIP]
+> Les articles du même *docset* ont le même fragment d’URL après « docs.microsoft.com ». Par exemple, `https://docs.microsoft.com/dotnet/core/get-started` et `https://docs.microsoft.com/dotnet/framework/install` se trouvent dans le même docset, alors que `https://docs.microsoft.com/dotnet/core/get-started` et `https://docs.microsoft.com/visualstudio/whats-new` se trouvent dans des docsets différents.
 
 ## <a name="links-to-anchors"></a>Liens vers ancres
 
@@ -75,12 +83,7 @@ Vous n’avez pas besoin de créer des ancres. Elles sont automatiquement géné
   `[link](#the-text-of-the-H2-section-separated-by-hyphens)`
   `[Create cache](#create-cache)`
 
-- Pour faire un lien vers une ancre dans un autre article du même sous-répertoire :
-
-  `[link text](article-name.md#anchor-name)`
-  `[Configure your profile](media-services-create-account.md#configure-your-profile)`
-
-- Pour faire un lien vers une ancre dans un autre sous-répertoire du service :
+- Pour créer un lien vers une ancre d’un autre article :
 
   `[link text](../directory/article-name.md#anchor-name)`
   `[Configure your profile](../directory/media-services-create-account.md#configure-your-profile)`
@@ -147,10 +150,6 @@ Une expérience utilisateur idéale minimise l'envoi d'utilisateurs vers d'autre
 - **Étapes suivantes** : Vous pouvez ajouter un lien vers, par exemple, un blog MVP dans une section « Étapes suivantes ». Encore une fois, assurez-vous juste que les utilisateurs comprennent qu’ils vont quitter le site.
 - **Juridique** : Nous sommes légalement couverts sous **Liens vers des sites tiers** dans les **Conditions d’utilisation** en pied de page de chaque page ms.com.
 
-## <a name="links-to-msdn-or-technet"></a>Liens vers MSDN ou TechNet
-
-Quand vous devez créer un lien vers MSDN ou TechNet, utilisez le lien complet vers la rubrique, et supprimez les paramètres régionaux « en-us » du lien.
-
 ## <a name="links-to-azure-powershell-reference-content"></a>Liens vers le contenu de la référence Azure PowerShell
 
 Le contenu de la référence Azure PowerShell a subi plusieurs changements depuis novembre 2016. Utilisez les instructions suivantes pour faire un lien vers ce contenu depuis d'autres articles sur docs.microsoft.com.
@@ -174,18 +173,15 @@ La partie `<moniker-name>` est facultative. Si elle est omise, vous êtes dirig�
 
 Quand vous utilisez ces URL, vous êtes redirigé vers la dernière version du contenu. De cette façon, vous n’avez pas besoin de spécifier de version moniker. Vous n’avez pas non plus de liens vers du contenu conceptuel à mettre à jour quand la version change.
 
-Pour créer le lien approprié, trouvez la page vers laquelle vous voulez établir un lien dans votre navigateur et copiez l’URL.
-Ensuite, supprimez `https://docs.microsoft.com` et les informations sur les paramètres régionaux.
-
-Quand vous créez un lien depuis une table des matières, vous devez utiliser l’URL complète sans les informations de paramètres régionaux.
+Pour créer le bon lien, trouvez la page vers laquelle vous voulez créer un lien dans votre navigateur, copiez l’URL et supprimez le code régional, par exemple **en-us**.
 
 Exemple de Markdown :
 
 ```markdown
-[Get-AzureRmResourceGroup](/powershell/module/azurerm.resources/get-azurermresourcegroup)
-[Get-AzureRmResourceGroup](/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-4.1.0)
-[New-AzureVM](/powershell/module/azure/new-azurevm?view=azuresmps-4.0.0)
-[New-AzureRmVM](/powershell/module/azurerm.compute/new-azurermvm)
-[Install Azure PowerShell for Service Management](/powershell/azure/servicemanagement/install-azurerm-ps)
-[Install Azure PowerShell](/powershell/azure/install-azurerm-ps)
+[Get-AzureRmResourceGroup](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresourcegroup)
+[Get-AzureRmResourceGroup](https://docs.microsoft.com/powershell/module/azurerm.resources/get-azurermresourcegroup?view=azurermps-4.1.0)
+[New-AzureVM](https://docs.microsoft.com/powershell/module/azure/new-azurevm?view=azuresmps-4.0.0)
+[New-AzureRmVM](https://docs.microsoft.com/powershell/module/azurerm.compute/new-azurermvm)
+[Install Azure PowerShell for Service Management](https://docs.microsoft.com/powershell/azure/servicemanagement/install-azurerm-ps)
+[Install Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-azurerm-ps)
 ```
