@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 87c31979e60a957586ea623b22be190bfdaa41d9
-ms.sourcegitcommit: d357977935b432381f3df6297164417ed59ab434
+ms.openlocfilehash: 997f313e94e4858f37501736c1ec0be2fa8fd552
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/14/2019
-ms.locfileid: "72310296"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188242"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>Flux de travail de contribution à GitHub pour les changements majeurs ou à long terme
 
@@ -54,7 +54,55 @@ Isoler les changements liés dans une branche spécifique vous permet de contrô
 >[!TIP]
 >L’insertion de modifications dans la branche principale n’est *pas* une bonne pratique. Supposons que vous utilisez la branche principale pour introduire une série de changements pour une publication de fonctionnalité planifiée. Vous terminez les modifications et attendez de les publier. Entre-temps, vous recevez une demande urgente de correction. Vous apportez donc la modification à un fichier dans la branche principale et publiez la modification. Dans cet exemple, vous publiez par erreur à la fois le correctif *et* les modifications que vous attendiez de publier à une date précise.
 
-Créons maintenant une nouvelle branche de travail dans votre référentiel local pour capturer les modifications que vous proposez. Chaque client Git est différent : consultez l’aide du client choisi. Vous trouverez une vue d’ensemble du processus dans le Guide de GitHub sur [Flux GitHub](https://guides.github.com/introduction/flow/).
+Créons maintenant une nouvelle branche de travail dans votre référentiel local pour capturer les modifications que vous proposez. Si vous avez configuré Git Bash (voir [Installer les outils de création de contenu](get-started-setup-tools.md)), vous pouvez créer une branche et « extraire » cette branche avec une commande à partir de votre dépôt cloné :
+
+````
+git checkout -b "branchname"
+````
+
+Chaque client Git est différent : consultez l’aide du client choisi. Vous trouverez une vue d’ensemble du processus dans le Guide de GitHub sur [Flux GitHub](https://guides.github.com/introduction/flow/).
+
+## <a name="making-your-changes"></a>Apporter vos changements
+
+Maintenant que vous avez une copie (« clone ») du dépôt Microsoft et que vous avez créé une branche, vous pouvez désormais apporter les changements qui, selon vous, seraient utiles à la communauté en utilisant n’importe quel éditeur de texte ou Markdown, comme indiqué dans la page [Installer les outils de création de contenu](get-started-setup-tools.md).  Vous pouvez enregistrer vos changements localement sans avoir à les envoyer à Microsoft tant que vous n’êtes pas prêt.
+
+## <a name="saving-changes-to-your-repository"></a>Enregistrement des changements dans votre dépôt
+
+Avant d’envoyer vos changements à l’auteur, vous devez d’abord les enregistrer dans votre dépôt Github.  Là encore, même si tous les outils sont différents, si vous utilisez la ligne de commande Git Bash, cette opération peut être effectuée en quelques étapes simples.
+
+Tout d’abord, dans le dépôt, vous devez _indexer_ tous vos changements à commiter.  Vous pouvez le faire en exécutant :
+
+````
+git add --all
+````
+
+Ensuite, vous devez commiter vos changements enregistrés dans votre dépôt local.  Vous pouvez le faire dans Git Bash en exécutant :
+
+````
+git commit -m "Short Description of Changes Made"
+````
+
+Enfin, étant donné que vous avez créé cette branche sur votre ordinateur local, vous devez le faire savoir à la duplication (fork) de votre compte GitHub.com.  Si vous utilisez Git Bash, vous pouvez procéder en exécutant :
+
+````
+git push --set-upstream origin <branchname>
+````
+
+Bravo !  Votre code est maintenant dans votre dépôt GitHub et prêt pour vous permettre de créer une demande de tirage.  
+
+>[!TIP]
+> Même si vos changements sont visibles dans votre compte GitHub personnel lorsque vous les envoyez (push), aucune règle n’est nécessaire pour envoyer tout de suite une demande de tirage.  Si vous voulez vous arrêter et revenir ultérieurement pour effectuer d’autres ajustements, aucun problème !
+
+Vous devez corriger quelque chose que vous avez envoyé ?  Aucun problème non plus !  Apportez simplement vos changements dans la même branche, puis commitez-les et envoyez-les à nouveau (inutile de définir le serveur en amont lors des pushs successifs de la même branche).
+
+Vous avez d’autres changements à apporter qui n’ont pas de rapport avec ceux-ci ?  Revenez à la branche master et extrayez une nouvelle branche. Avec Git Bash, c’est aussi simple que ça :
+
+````
+git checkout master
+git checkout -b "branchname"
+````
+
+Vous êtes maintenant dans une nouvelle branche et vous voilà très bien parti pour devenir un super contributeur.
 
 [!INCLUDE[contribute-how-to-write-workflows-pull-request-processing](includes/contribute-how-to-write-workflows-pull-request-processing.md)]
 

@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: billwagner
 ms.author: wiwagn
 ms.date: 03/29/2019
-ms.openlocfilehash: 63192315c66eb05750c5a59751c339f671985314
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 862bf048b30584a5dc51c1b0758ffc7d41a406f5
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288269"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188364"
 ---
 # <a name="additional-git-and-github-resources"></a>Ressources Git et GitHub supplémentaires
 
@@ -25,7 +25,7 @@ Si vous ne connaissez pas encore Git ou GitHub, ces ressources peuvent vous aide
 - [Livre électronique Git Pro (PDF)](https://progit2.s3.amazonaws.com/en/2016-03-22-f3531/progit-en.1084.pdf) : même chose que le lien précédent, au format PDF.
 - [Cours Apprendre Git de Codecademy](https://www.codecademy.com/learn/learn-git) : Tutoriel Git de Codecademy.
 - [Cours Try Git (Essayer Git) de Code School sur Pluralsight](https://www.pluralsight.com/courses/code-school-git-real) : Tutoriel Git de Code School sur Pluralsight.
-- [Cours Git et Github d’Udacity](https://www.udacity.com/course/how-to-use-git-and-github--ud775) : Tutoriel Git et Github d’Udacity
+- [Cours Git et Github d’Udacity](https://www.udacity.com/course/how-to-use-git-and-github--ud775) : Tutoriel Git et Github d’Udacity.
 
 ## <a name="github-resources"></a>Ressources GitHub
 

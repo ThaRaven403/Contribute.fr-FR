@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: ffc44f07929890ef17b3878ba389dfeea82691a6
-ms.sourcegitcommit: 254c804bb0b451c262745fe8d87e2e8f9196440c
+ms.openlocfilehash: 1f43cecb450c988e4f546aa5ecc5907061521f34
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/05/2019
-ms.locfileid: "73592461"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188286"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 
@@ -196,7 +196,7 @@ Les blocs de code cloisonnés sont un moyen facile de permettre le surlignage de
     ...
     ```
 
-L’alias après les trois caractères accent grave (`) initiaux définit le surlignage de syntaxe à utiliser. Vous trouverez ci-après une liste de langages de programmation couramment utilisés dans le contenu Docs et l’étiquette correspondante :
+L’alias après les trois caractères accent grave (\`) initiaux définit le surlignage de syntaxe à utiliser. Vous trouverez ci-après une liste de langages de programmation couramment utilisés dans le contenu Docs et l’étiquette correspondante :
 
 Ces langages prennent en charge les noms conviviaux, et pour la plupart d’entre eux, la mise en surbrillance de la syntaxe.
 
@@ -230,6 +230,7 @@ Ces langages prennent en charge les noms conviviaux, et pour la plupart d’entr
 |Objective-C|objc|
 |OData|odata|
 |PHP|php|
+|protobuf|protobuf|
 |PowerApps (séparateur décimal point)|powerapps-dot|
 |PowerApps (séparateur décimal virgule)|powerapps-comma|
 |PowerShell|powershell|

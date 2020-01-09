@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: meganbradley
 ms.author: mbradley
 ms.date: 10/22/2018
-ms.openlocfilehash: 11f18ce4f769b478108d399b780937f927e0e12d
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 1552ecc3e17e52439a7faa72973813099ce4d253
+ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288334"
+ms.lasthandoff: 12/18/2019
+ms.locfileid: "75188307"
 ---
 # <a name="docs-authoring-pack-for-vs-code"></a>Docs Authoring Pack pour VS Code
 
@@ -32,7 +32,7 @@ Certaines syntaxes Markdown prises en charge par l’extension, comme les alerte
 
 ## <a name="how-to-use-the-docs-markdown-extension"></a>Comment utiliser l’extension Docs Markdown
 
-Pour accéder au menu Docs Markdown, tapez `ALT+M`. Vous pouvez cliquer sur la fonction voulue ou utiliser les flèches haut/bas pour la sélectionner, ou encore taper son nom pour lancer le filtrage. Quand la fonction que vous voulez utiliser est en surbrillance dans le menu, appuyez sur `ENTER`. Les éléments suivants sont disponibles :
+Pour accéder au menu Docs Markdown, appuyez sur `ALT+M`. Vous pouvez cliquer sur la fonction voulue ou utiliser les flèches haut/bas pour la sélectionner, ou encore taper son nom pour lancer le filtrage. Quand la fonction que vous voulez utiliser est en surbrillance dans le menu, appuyez sur `ENTER`. Les éléments suivants sont disponibles :
 
 |Fonction     |Description           |
 |-------------|----------------------|
