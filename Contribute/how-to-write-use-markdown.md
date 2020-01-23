@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 03/26/2019
-ms.openlocfilehash: 1f43cecb450c988e4f546aa5ecc5907061521f34
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 086972acaef9647709fbe43f07c07abde71c7d9f
+ms.sourcegitcommit: fd92198ec2d0ce2d6687b6f1521a82b3fefc60e0
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188286"
+ms.lasthandoff: 01/16/2020
+ms.locfileid: "76111072"
 ---
 # <a name="how-to-use-markdown-for-writing-docs"></a>Guide pratique pour utiliser Markdown pour écrire du contenu Docs
 
@@ -389,10 +389,312 @@ Vous pouvez obtenir un exemple de sélecteurs en action dans la [Documentation A
 
 ### <a name="code-include-references"></a>Références include de code
 
-Markdig prend en charge l’inclusion avancée de code dans un article, via son extension d’extraits de code. Elle fournit un rendu avancé qui se base sur les fonctionnalités de GFM comme la sélection du langage de programmation et la coloration de la syntaxe, plus des fonctionnalités intéressantes comme :
+L’extension Markdown Docs Code Snippet vous permet d’incorporer des exemples de code dans vos articles et de les afficher avec une coloration de syntaxe spécifique au langage. Vous pouvez inclure du code à partir du dépôt actuel ou d’un autre dépôt. Les instructions ci-dessous vous donnent une vue d’ensemble de l’utilisation de la fonctionnalité avec le pack de création pour docs.microsoft.com ([Docs Authoring Pack](https://marketplace.visualstudio.com/items?itemName=docsmsft.docs-authoring-pack)). Dans Visual Studio Code, vous pouvez afficher un aperçu des extraits de code en ouvrant **Aperçu**. La mise en surbrillance et l’interactivité ne sont pas disponibles dans l’aperçu.
 
-- l’inclusion d’exemples/extraits de code centralisés depuis un dépôt externe ;
-- une interface à onglets pour présenter différentes versions des exemples de code dans différents langages.
+> [!NOTE]
+> L’extension ne prend pas en charge l’inclusion de contenu de code inline. Vous devez pour cela utiliser la convention Markdown standard, à savoir trois accents graves.
+
+#### <a name="code-from-current-repository"></a>Code du dépôt actuel
+
+1. Dans Visual Studio Code, cliquez sur **Alt + M** ou sur **Option + M** et sélectionnez Snippet (Extrait).
+2. Une fois Snippet sélectionné, vous êtes invité à choisir entre Full Search (Recherche complète), Scoped Search (Recherche délimitée) et Cross-Repository Reference (Référence interdépôts). Pour effectuer une recherche locale, sélectionnez Full Local Search (Recherche locale complète).
+3. Entrez un terme de recherche pour rechercher le fichier. Une fois le fichier trouvé, sélectionnez-le.
+4. Ensuite, sélectionnez une option pour déterminer la ou les lignes de code à inclure dans l’extrait. Les options disponibles sont : **ID**, **Range** (Plage) et **None** (Aucune).
+5. En fonction de votre sélection à l’étape 4, indiquez une valeur si nécessaire.
+
+Afficher la totalité du fichier de code :
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs":::
+```
+
+Afficher une partie du fichier de code en spécifiant les numéros de ligne :
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+Afficher une partie d’un fichier de code en fonction d’un nom d’extrait :
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" id="snippet_Create":::
+```
+
+#### <a name="code-from-another-repository"></a>Code d’un autre dépôt
+
+1. Dans Visual Studio Code, cliquez sur **Alt + M** ou sur **Option + M** et sélectionnez Snippet (Extrait).
+2. Une fois Snippet sélectionné, vous êtes invité à choisir entre Full Search (Recherche complète), Scoped Search (Recherche délimitée) et Cross-Repository Reference (Référence interdépôts). Pour effectuer une recherche dans plusieurs dépôts, sélectionnez Cross-Repository Reference.
+3. Une sélection de dépôts figurant dans *.openpublishing.publish.config.json* s’affiche. Sélectionnez un dépôt.
+3. Entrez un terme de recherche pour rechercher le fichier. Une fois le fichier trouvé, sélectionnez-le.
+4. Ensuite, sélectionnez une option pour déterminer la ou les lignes de code à inclure dans l’extrait. Les options disponibles sont : **ID**, **Range** (Plage) et **None** (Aucune).
+5. En fonction de votre sélection à l’étape 5, indiquez une valeur si nécessaire.
+
+Votre référence à l’extrait se présente ainsi :
+
+```markdown
+:::code language="csharp" source="~/samples-durable-functions/samples/csx/shared/Location.csx" highlight="2,5":::
+```
+
+#### <a name="path-to-code-file"></a>Chemin d’accès au fichier de code
+
+Exemple :
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+L’exemple est issu du référentiel de documents ASP.NET, le fichier de l’article [aspnetcore/data/ef-mvc/crud.md](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/crud.md). La référence au fichier de code est un chemin d’accès relatif à [aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs](https://github.com/aspnet/Docs/blob/master/aspnetcore/data/ef-mvc/intro/samples/cu/Controllers/StudentsController.cs) dans le même référentiel.
+
+#### <a name="selected-line-numbers"></a>Numéros de ligne sélectionnés
+
+Exemple :
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26":::
+```
+
+Cet exemple affiche uniquement les lignes 2-24 et 26 du fichier de code *StudentController.cs*.
+
+Préférez les extraits de code aux numéros de ligne codés en dur, comme l’explique la section suivante.
+
+#### <a name="named-snippet"></a>Extrait de code nommé
+
+Exemple :
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" id="snippet_Create":::
+```
+
+Utilisez uniquement des lettres et des traits de soulignement dans le nom.
+
+L’exemple affiche la section `snippet_Create` du fichier de code. Le fichier de code de cet exemple comporte une région C# nommée `snippet_Create` :
+
+```cs
+// code excluded from the snippet
+// <snippet_Create>
+// code included in the snippet
+// </snippet_Create>
+// code excluded from the snippet
+```
+
+Dans la mesure du possible, faites référence à une section nommée au lieu de spécifier les numéros de ligne. Les références aux numéros de ligne sont fragiles, car les fichiers de code évoluent inévitablement, ce qui modifie les numéros de ligne.
+Ces modifications ne font pas forcément l’objet de notifications. Votre article finit par ne plus afficher les bonnes lignes, sans que vous en ayez connaissance.
+
+#### <a name="highlighting-selected-lines"></a>Mise en surbrillance des lignes sélectionnées
+
+Exemple :
+
+```markdown
+:::code language="csharp" source="intro/samples/cu/Controllers/StudentsController.cs" range="2-24,26" highlight="2,5":::
+```
+
+L’exemple met en surbrillance les lignes 2 et 5, à partir du début de l’extrait de code affiché. (Les numéros de ligne à mettre en surbrillance ne sont pas comptés pas à partir du début du fichier de code.) En d’autres termes, les lignes 3 et 6 du fichier de code sont mises en surbrillance.
+
+#### <a name="interactive-code-snippets"></a>Extraits de code interactif
+
+Il est possible d’activer le mode interactif pour les extraits de code inclus par référence. Voici quelques exemples :
+
+```markdown
+:::code language="powershell" source="PowerShell.ps1" interactive="cloudshell-powershell":::
+```
+
+```markdown
+:::code language="bash" source="Bash.sh" interactive="cloudshell-bash":::
+```
+
+Pour activer cette fonctionnalité pour un bloc de code donné, utilisez l’attribut `interactive`. Les valeurs d’attribut disponibles sont les suivantes :
+
+- `cloudshell-powershell` : active Azure PowerShell Cloud Shell, comme dans l’exemple précédent
+- `cloudshell-bash` : active Azure Cloud Shell
+- `try-dotnet` : active Try .NET
+- `try-dotnet-class` : active Try .NET avec génération de modèles automatique de classe
+- `try-dotnet-method` : active Try .NET avec génération de modèles automatique de méthode
+
+Certaines paires `language` et `interactive` sont compatibles. Par exemple, si `interactive` est `try-dotnet`, le langage doit être `csharp`. De même, `cloudshell-powershell` ne fonctionne qu’avec `powershell` et `cloudshell-bash` ne fonctionne qu’avec `bash` comme langage.
+
+Avec Azure Cloud Shell et PowerShell Cloud Shell, les utilisateurs ne peuvent exécuter des commandes que sur leur propre compte Azure.
+
+[Try .NET](https://github.com/dotnet/try) permet l’exécution interactive de code .NET (C#) dans le navigateur. Pour Try .NET, trois options d’interactivité sont disponibles : `try-dotnet`, `try-dotnet-class` et `try-dotnet-method`. L’utilisation de ces options ne nécessite aucune configuration supplémentaire dans l’extrait de code. Les espaces de noms actuellement disponibles par défaut sont les suivants :
+
+- System
+- System.Linq
+- System.Collections.Generic
+- System.Text
+- System.Globalization
+- System.Text.RegularExpressions
+
+La valeur d’attribut `try-dotnet` permet aux utilisateurs d’exécuter du code C# dans le navigateur sans avoir à wrapper le code dans du code personnalisé.
+
+Exemple :
+
+```md
+:::code language="csharp" source="relative/path/source.cs" interactive="try-dotnet":::
+```
+
+La valeur `try-dotnet-class` applique la génération de modèles automatique au niveau de la classe au code passé au composant interactif.
+
+```md
+:::code language="csharp" source="relative/path/source.cs" id="snippet-tag" interactive="try-dotnet-class":::
+```
+
+Exemple :
+
+Extrait de code sans génération de modèles automatique de classe appliquée
+
+```md
+public static void Main()
+    {  
+        // Specify the data source.  
+        int[] scores = new int[] { 97, 92, 81, 60 };        // Define the query expression.
+
+        IEnumerable<int> scoreQuery =
+            from score in scores  
+            where score > 80  
+            select score;
+
+        // Execute the query.  
+        foreach (int i in scoreQuery)
+        {  
+            Console.Write(i + " ");
+        }
+    }  
+}
+```
+
+Extrait de code avec génération de modèles automatique de classe appliquée
+
+```md
+class NameOfClass {
+
+   public static void Main()
+    {
+        // Specify the data source.
+        int[] scores = new int[] { 97, 92, 81, 60 };
+
+        // Define the query expression.
+        IEnumerable<int> scoreQuery =
+            from score in scores
+            where score > 80
+            select score;
+
+        // Execute the query.
+        foreach (int i in scoreQuery)
+        {
+            Console.Write(i + " ");
+        }
+    }  
+}
+```
+
+La valeur `try-dotnet-method` applique la génération de modèles automatique au niveau de la méthode au code passé au composant interactif.
+
+```md
+:::code language="csharp" source="relative/path/source.cs" id="snippet-tag" interactive="try-dotnet-method":::
+```
+
+Exemple :
+
+Extrait de code sans génération de modèles automatique de méthode appliquée
+
+```md
+/*Print some string in C#*/
+
+Console.WriteLine("Hello C#.);
+```
+
+Extrait de code avec génération de modèles automatique de méthode appliquée
+
+```md
+public static void Main(string args[]) {
+
+/*Print some string in C#*/
+
+Console.WriteLine("Hello C#.);
+}
+```
+
+#### <a name="snippet-syntax-reference"></a>Informations de référence sur la syntaxe des extraits
+
+Vous pouvez référencer des extraits de code stockés dans votre dépôt en utilisant le langage du code spécifié. Le contenu du chemin de code spécifié est développé et inclus dans votre fichier.
+
+La structure des dossiers des extraits de code n’est soumise à aucune restriction. Vous pouvez gérer les extraits de code comme du code source normal.
+
+Syntaxe :
+
+```md
+:::code language="<language>" source="<path>" <attribute>="<attribute-value>":::
+```
+
+> [!IMPORTANT]
+> Cette syntaxe est une extension de bloc Markdown. Elle doit être utilisée seule, sur sa propre ligne.
+
+- `<language>` (*facultatif*)
+  - Langage de l’extrait de code. Pour plus d’informations, consultez la section [Langages pris en charge](#supported-languages) plus loin dans cet article.
+
+- `<path>` (*obligatoire*)
+  - Chemin relatif dans le système de fichiers qui indique le fichier d’extrait de code à référencer.
+
+- `<attribute>` et `<attribute-value>` (*facultatif*)
+  - Utilisés ensemble pour spécifier la manière dont le code doit être récupéré à partir du fichier :
+    - `range` : `1,3-5` plage de lignes. Cet exemple inclut les lignes 1, 3, 4 et 5.
+    - `id` : `snippet_Create` ID de l’extrait à insérer à partir du fichier de code. Cette valeur ne peut pas coexister avec la plage.
+    - `highlight` : `2-4,6` Plage et/ou nombres de lignes à mettre en surbrillance dans l’extrait de code généré. La numérotation est relative à l’extrait de code proprement dit, pas à la plage importée.
+    - `interactive`: `cloudshell-powershell`, `cloudshell-bash`, `try-dotnet`, `try-dotnet-class`, `try-dotnet-method` Valeur de chaîne qui détermine les types d’interactivité activés.
+
+#### <a name="supported-languages"></a>Langages pris en charge
+
+|Name|Étiquette Markdown|
+|-----|-------|
+|CLI .NET Core|`dotnetcli`|
+|ASP.NET avec C#|`aspx-csharp`|
+|ASP.NET avec VB|`aspx-vb`|
+|Azure CLI|`azurecli`|
+|Azure CLI dans le navigateur|`azurecli-interactive`|
+|Azure PowerShell dans le navigateur|`azurepowershell-interactive`|
+|AzCopy|`azcopy`|
+|Bash|`bash`|
+|C++|`cpp`|
+|C#|`csharp`|
+|C# dans le navigateur|`csharp-interactive`|
+|Console|`console`|
+|CSHTML|`cshtml`|
+|DAX|`dax`|
+|Docker|`Dockerfile`|
+|F#|`fsharp`|
+|HTML|`html`|
+|Java|`java`|
+|JavaScript|`javascript`|
+|JSON|`json`|
+|Langage de requête Kusto|`kusto`|
+|Markdown|`md`|
+|Objective-C|`objc`|
+|PHP|`php`|
+|PowerShell|`powershell`|
+|Power Query M|`powerquery-m`|
+|protobuf|`protobuf`|
+|Python|`python`|
+|Ruby|`ruby`|
+|SQL|`sql`|
+|Swift|`swift`|
+|VB|`vb`|
+|XAML|`xaml`|
+|XML|`xml`|
+|YAML|`yml`|
+
+#### <a name="code-extensions"></a>Extensions de code
+
+|Name|Étiquette Markdown|Extension de fichier|
+|-----|-------|-----|
+|C#|csharp|.cs, .csx|
+|C++|cpp|.cpp, .h|
+|F#|fsharp|.fs|
+|Java|java|.java|
+|JavaScript|javascript|.js|
+|Python|python|.py|
+|SQL|sql|.sql|
+|VB|vb|.vb|
+|XAML|xaml|.xaml|
+|XML|xml|.xml|
 
 ## <a name="gotchas-and-troubleshooting"></a>Pièges et résolution des problèmes
 
