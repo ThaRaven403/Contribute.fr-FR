@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: e54ade313f026b5ea512c0f783d3f8ad83979390
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 161f831bf3f31428f78d3a828b12b4c9ecaffb0e
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288358"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331761"
 ---
 # <a name="process-for-contributing-to-net-docs"></a>Processus de contribution à la documentation .NET
 
@@ -169,7 +169,7 @@ Sauf indication contraire, tous les exemples de code doivent pouvoir être gén�
 
 ## <a name="the-c-interactive-experience"></a>Expérience interactive C#
 
-Tous les exemples de code inclus dans un article utilisent une [balise de langage](how-to-write-use-markdown.md#code-snippets) pour indiquer le langage source. Les exemples de code courts en C# peuvent utiliser la balise de langage `csharp-interactive` pour spécifier un exemple C# qui s’exécute dans le navigateur. (Les exemples de code inline utilisent la balise `csharp-interactive` ; pour les extraits inclus à partir de la source, utilisez la balise `code-csharp-interactive`.) Ces exemples de code affichent une fenêtre de code et une fenêtre de sortie dans l’article. La fenêtre de sortie affiche toute sortie d’exécution du code interactif une fois que l’utilisateur a exécuté l’exemple de code.
+Tous les exemples de code inclus dans un article utilisent une [balise de langage](code-in-docs.md) pour indiquer le langage source. Les exemples de code courts en C# peuvent utiliser la balise de langage `csharp-interactive` pour spécifier un exemple C# qui s’exécute dans le navigateur. (Les exemples de code inline utilisent la balise `csharp-interactive` ; pour les extraits inclus à partir de la source, utilisez la balise `code-csharp-interactive`.) Ces exemples de code affichent une fenêtre de code et une fenêtre de sortie dans l’article. La fenêtre de sortie affiche toute sortie d’exécution du code interactif une fois que l’utilisateur a exécuté l’exemple de code.
 
 L’expérience interactive C# change la façon dont nous travaillons avec nos exemples de code. Les visiteurs peuvent exécuter l’exemple pour voir les résultats. Plusieurs facteurs contribuent à déterminer si l’exemple ou le texte correspondant doit inclure des informations sur la sortie.
 
