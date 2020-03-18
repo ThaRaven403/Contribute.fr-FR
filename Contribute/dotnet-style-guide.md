@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 11/07/2018
-ms.openlocfilehash: 998ebf90c8a162451dd4ca2e7c8a55833ed9d408
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 8d4d8c572435b9261038017c04dcad78ec83fe67
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288364"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331743"
 ---
 # <a name="metadata-and-markdown-template-for-net-docs"></a>Modèle de métadonnées et de Markdown pour la documentation .NET
 
@@ -43,7 +43,7 @@ D’autres métadonnées sont attachées à chaque article, mais nous appliquons
 
 ## <a name="basic-markdown-gfm-and-special-characters"></a>Markdown de base, GFM et caractères spéciaux
 
-Pour découvrir les principes de base de Markdown, de GFM (GitHub Flavored Markdown) et des extensions propres à OPS, consultez les articles généraux sur [Markdown](how-to-write-use-markdown.md) et la [référence Markdown](markdown-reference.md).
+Pour découvrir les principes de base de Markdown, de GFM (GitHub Flavored Markdown) et des extensions propres à OPS, consultez l’article [Informations de référence sur Markdown](markdown-reference.md).
 
 Markdown utilise des caractères spéciaux tels que \*, \` et \# pour la mise en forme. Si vous souhaitez inclure l’un de ces caractères dans votre contenu, vous devez effectuer l’une des deux opérations suivantes :
 
@@ -126,7 +126,7 @@ Pour établir une liaison à un type générique, tel que [System.Collections.Ge
 
 ## <a name="code"></a>Code
 
-Le meilleur moyen d’inclure du code consiste à inclure des extraits à partir d’un exemple opérationnel. Créez votre exemple en suivant les instructions fournies dans l’article [Contribution à .NET](dotnet-contribute-process.md#contributing-to-samples). Les règles de base pour l’inclusion de code figurent dans les instructions générales concernant le [code](how-to-write-use-markdown.md#code-snippets).
+Le meilleur moyen d’inclure du code consiste à inclure des extraits à partir d’un exemple opérationnel. Créez votre exemple en suivant les instructions fournies dans l’article [Contribution à .NET](dotnet-contribute-process.md#contributing-to-samples). Les règles de base pour l’inclusion de code figurent dans les instructions générales concernant le [code](code-in-docs.md).
 
 Vous pouvez inclure le code à l’aide de la syntaxe suivante :
 

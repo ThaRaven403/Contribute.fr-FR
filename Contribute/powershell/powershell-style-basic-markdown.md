@@ -7,12 +7,12 @@ ms.custom: external-contributor-guide
 author: sdwheeler
 ms.author: sewhee
 ms.date: 10/09/2019
-ms.openlocfilehash: e7ee9295794adfde78a2d500f0de3309dd3c821a
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: 073a44240b1aa4baa9e655dab069097d21cdd66d
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72290354"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331926"
 ---
 # <a name="markdown-style-guide-for-powershell-docs"></a>Guide de style Markdown pour PowerShell-Docs
 
@@ -59,7 +59,7 @@ En général, les références à « Windows PowerShell » dans la documentati
 
 ## <a name="basic-markdown-gfm-and-special-characters"></a>Markdown de base, GFM et caractères spéciaux
 
-Pour découvrir les principes de base de Markdown, de GFM (GitHub Flavored Markdown) et des extensions propres à OPS, consultez les articles généraux sur [Markdown](../how-to-write-use-markdown.md) et la [référence Markdown](../markdown-reference.md).
+Pour découvrir les principes de base de Markdown, de GFM (GitHub Flavored Markdown) et des extensions propres à OPS, consultez l’article [Informations de référence sur Markdown](../markdown-reference.md).
 
 Markdown utilise des caractères spéciaux tels que \*, \` et \# pour la mise en forme. Si vous souhaitez inclure l’un de ces caractères dans votre contenu, vous devez effectuer l’une des deux opérations suivantes :
 

@@ -14,18 +14,40 @@
       href: how-to-write-workflows-major.md
 - name: Éléments principaux sur l’écriture
   items:
-    - name: Markdown
-      href: how-to-write-use-markdown.md
     - name: Informations de référence sur Markdown
       href: markdown-reference.md
+      displayName: alerts notes tips important caution warnings apostrophes quotation marks quotes blockquotes bold italic code snippets columns headings html images includes links lists bullets bulleted checklist numbered next steps button localize non-localized section selector superscript subscript table tables tabs tabbed videos icons
     - name: Démarrage rapide pour le style et le ton
       href: style-quick-start.md
     - name: Guide de style
       href: /style-guide/
+    - name: Ajouter du code aux articles
+      href: code-in-docs.md
+      displayName: 'backtick, code blocks, inline code blocks, repo snippet reference, !code-, interactive code snippets, programming languages, languages, code extensions, extensions'
+    - name: Mettre en forme du texte
+      href: text-formatting-guidelines.md
     - name: Liens
       href: how-to-write-links.md
-    - name: Docs Authoring Pack
-      href: how-to-write-docs-auth-pack.md
+    - name: Docs Authoring pack
+      items:
+        - name: Vue d’ensemble
+          href: how-to-write-docs-auth-pack.md
+        - name: Fonctionnalités
+          items:
+            - name: Complétion des langages de développement
+              href: docs-authoring/dev-lang-completion.md
+            - name: Compression d’image
+              href: docs-authoring/image-compression.md
+            - name: Mises à jour des métadonnées
+              href: docs-authoring/metadata-updates.md
+            - name: Modifier la mise en forme des tableaux Markdown
+              href: docs-authoring/reformat-table.md
+            - name: Remplacement des guillemets courbes
+              href: docs-authoring/smart-quote-replacement.md
+            - name: Trier les redirections
+              href: docs-authoring/sort-redirects.md
+            - name: Trier la sélection
+              href: docs-authoring/sort-selection.md
 - name: Instructions propres aux jeux de documentation
   items:
     - name: Documentation .NET

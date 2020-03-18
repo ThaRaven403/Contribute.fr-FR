@@ -5,12 +5,12 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 08/30/2017
-ms.openlocfilehash: 997f313e94e4858f37501736c1ec0be2fa8fd552
-ms.sourcegitcommit: a812d716b31084926b886b93923f9b84c9b23429
+ms.openlocfilehash: 5231b68f04caa94d3ff2ff26afc38e3218ca06b8
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/18/2019
-ms.locfileid: "75188242"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331903"
 ---
 # <a name="github-contribution-workflow-for-major-or-long-running-changes"></a>Flux de travail de contribution à GitHub pour les changements majeurs ou à long terme
 
@@ -19,7 +19,7 @@ ms.locfileid: "75188242"
 >
 > Les corrections mineures ou les clarifications pour la documentation, ainsi que les exemples de code dans les référentiels publics, sont couverts par les [Conditions d’utilisation du site web docs.microsoft.com](https://docs.microsoft.com/legal/termsofuse). Les nouveautés ou modifications significatives génèrent un commentaire dans la demande de tirage qui vous invite à signer un contrat de licence de contribution en ligne si vous n’êtes pas un employé de Microsoft. Vous devrez remplir le formulaire en ligne pour que nous puissions accepter votre requête de tirage (pull request).
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 Ce flux de travail convient pour un contributeur qui a besoin de faire un changement majeur ou qui sera un contributeur fréquent d’un dépôt. Les contributeurs fréquents ont généralement des changements continus (à long terme) qui peuvent passer par plusieurs cycles de création/validation/préproduction ou être répartis sur plusieurs jours avant la validation et la fusion de la demande de tirage.
 
@@ -110,4 +110,4 @@ Vous êtes maintenant dans une nouvelle branche et vous voilà très bien parti 
 
 Et voilà ! Vous avez apporté une contribution au contenu de docs.microsoft.com !
 
-- Pour plus d’informations sur des sujets comme Markdown et la syntaxe des extensions Markdown, lisez l’article [Éléments de base pour l’écriture](how-to-write-use-markdown.md).
+- Pour plus d’informations sur des sujets comme Markdown et la syntaxe des extensions Markdown, lisez l’article [Informations de référence sur Markdown](markdown-reference.md).

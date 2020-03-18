@@ -5,16 +5,16 @@ ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
 ms.date: 06/30/2017
-ms.openlocfilehash: 5154b80102069f1d5526b744637f8ba854f1fe3f
-ms.sourcegitcommit: ca84e542b081e145052f38967e826f6ef25da1b2
+ms.openlocfilehash: c099a458718ade11840c314542c530dd6669402d
+ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 10/12/2019
-ms.locfileid: "72288445"
+ms.lasthandoff: 03/05/2020
+ms.locfileid: "78331880"
 ---
 # <a name="git-and-github-essentials-for-docs"></a>Bases de Git et GitHub pour le contenu Docs
 
-## <a name="overview"></a>Vue d'ensemble
+## <a name="overview"></a>Vue d’ensemble
 
 En tant que contributeur au contenu de Docs, vous interagissez avec divers outils et processus. Vous travaillez en parallèle avec d’autres contributeurs sur le même projet, peut-être exactement le même contenu, voire en même temps. Tout cela est possible avec les logiciels Git et GitHub.
 
@@ -61,7 +61,7 @@ Chaque répertoire d’articles contient un sous-répertoire `/media` pour les f
 
 Chaque fois que du contenu réutilisable est partagé entre plusieurs articles, il est placé dans un sous-répertoire `/includes` du répertoire `articles` principal. Dans un fichier Markdown qui utilise le fichier include, une extension Markdown include correspondante est placée là où le fichier include doit être référencé.
 
-Voir [Guide d'utilisation de Markdown : Includes](how-to-write-use-markdown.md#include-files) pour plus de conseils.
+Consultez [Informations de référence sur Markdown : Includes](markdown-reference.md#included-markdown-files) pour plus de conseils.
 
 ### <a name="markdown-file-template"></a>Modèle de fichier Markdown
 
