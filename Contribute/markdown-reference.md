@@ -7,12 +7,12 @@ ms.date: 01/30/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: 14cc9f0912149eb342c97d0dd7d2776bd54c84e7
-ms.sourcegitcommit: 804a99b89785e5c8f056a9da3f0fbde9f0a56a51
+ms.openlocfilehash: c1568264c687ebaf26048f5432fdea7d5132c012
+ms.sourcegitcommit: 216ef77ca2cd1eeb31c6c89d96778b178fc0d540
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2020
-ms.locfileid: "78331957"
+ms.lasthandoff: 03/21/2020
+ms.locfileid: "80070077"
 ---
 # <a name="docs-markdown-reference"></a>Informations de référence sur Docs Markdown
 
@@ -627,6 +627,19 @@ Cela s’affiche ainsi :
 ### <a name="line-breaks-within-words-in-second-column-table-cells"></a>Sauts de ligne dans les mots au sein des cellules de la deuxième colonne d’un tableau
 
 Vous souhaiterez peut-être insérer automatiquement des sauts de ligne dans les mots de la deuxième colonne d’un tableau uniquement. Pour limiter les arrêts à la deuxième colonne, appliquez la classe `mx-tdCol2BreakAll` à l’aide de la syntaxe de wrapper `div`, comme indiqué plus haut.
+
+### <a name="data-matrix-tables"></a>Tables de matrices de données
+
+Une table de matrice de données contient une en-tête et une première colonne pondérée. Une matrice avec une cellule vide est créée en haut à gauche. Docs contient Markdown personnalisé pour les tables de la matrice de données :
+
+```md
+|                  |Header 1 |Header 2|
+|------------------|---------|--------|
+|**First column A**|Cell 1A  |Cell 2A |
+|**First column B**|Cell 1B  |Cell 2B |
+```
+
+Chaque entrée de la première colonne doit avoir le style gras (`**bold**`) ; sinon, les tables ne sont pas accessibles pour les lecteurs d’écran ou ne sont pas valides pour Docs.
 
 ### <a name="html-tables"></a>Tableaux HTML
 
