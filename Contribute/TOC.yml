@@ -53,28 +53,16 @@
     - name: Documentation .NET
       items:
         - name: Guide pratique pour contribuer à la documentation .NET
-          href: dotnet-contribute.md
-        - name: Contribuer à la documentation .NET
-          href: dotnet-contribute-process.md
+          href: dotnet/dotnet-contribute.md
+        - name: Feuille de route pour les étiquettes et les projets
+          href: dotnet/labels-projects.md
         - name: Conventions de style de la documentation .NET
-          href: dotnet-style-guide.md
+          href: dotnet/dotnet-style-guide.md
         - name: Guide de style
-          href: dotnet-voice-tone.md
+          href: dotnet/dotnet-voice-tone.md
         - name: Processus de révision des demandes de tirage (pull request)
-          href: dotnet-pr-review.md
-    - name: Documentation PowerShell
-      items:
-        - name: Guide pratique pour contribuer à la documentation PowerShell
-          href: powershell\powershell-contribute.md
-        - name: Processus de contribution pour PowerShell
-          href: powershell\powershell-contribute-process.md
-        - name: Démarrage rapide pour l’écriture d’articles PowerShell
-          href: powershell\powershell-style-basic-markdown.md
-        - name: Guide de style pour les exemples de script PowerShell
-          href: powershell\powershell-style-code.md
-        - name: Guide de style pour les informations de référence sur les applets de commande PowerShell
-          href: powershell\powershell-style-reference.md
-        - name: Envoi d’une demande de tirage (pull request) pour PowerShell
-          href: powershell\powershell-pull-requests.md
+          href: dotnet/dotnet-pr-review.md
+    - name: PowerShell-Docs
+      href: powershell-overview.md
 - name: Ressources supplémentaires
   href: additional-resources.md
