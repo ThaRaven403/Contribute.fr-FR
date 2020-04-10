@@ -3,16 +3,16 @@ title: Informations de référence sur Markdown pour docs.microsoft.com
 description: Découvrez la syntaxe et les fonctionnalités Markdown utilisées dans la plateforme Microsoft Docs.
 author: meganbradley
 ms.author: mbradley
-ms.date: 01/30/2020
+ms.date: 03/31/2020
 ms.topic: contributor-guide
 ms.prod: non-product-specific
 ms.custom: external-contributor-guide
-ms.openlocfilehash: c1568264c687ebaf26048f5432fdea7d5132c012
-ms.sourcegitcommit: 216ef77ca2cd1eeb31c6c89d96778b178fc0d540
+ms.openlocfilehash: f0aed4ebb57ee1ce34f55d9085bab718fd4511cb
+ms.sourcegitcommit: 5ef2dc72e2ff8bddf873415a3f4b816eb16029dd
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2020
-ms.locfileid: "80070077"
+ms.lasthandoff: 04/03/2020
+ms.locfileid: "80624726"
 ---
 # <a name="docs-markdown-reference"></a>Informations de référence sur Docs Markdown
 
@@ -70,7 +70,7 @@ Les crochets pointus n’ont pas besoin d’être placés dans une séquence d�
 
 ## <a name="apostrophes-and-quotation-marks"></a>Apostrophes et guillemets
 
-Si vous copiez de Word dans un éditeur Markdown, le texte peut contenir des apostrophes ou guillemets courbes. Vous devez les encoder ou les changer en apostrophes/guillemets de base. Sinon, vous verrez des choses semblables à ceci une fois le fichier publié : Itâ€™s
+Si vous copiez de Word dans un éditeur Markdown, le texte peut contenir des apostrophes ou guillemets courbes. Vous devez les encoder ou les changer en apostrophes/guillemets de base. Sinon, vous verrez des choses semblables à ceci une fois le fichier publié : Itâ&euro;&trade;s
 
 Voici les encodages pour les versions courbes de ces signes de ponctuation :
 
@@ -187,11 +187,11 @@ Docs prend en charge six niveaux de titres Markdown :
 - Le titre H1 doit être le premier contenu du fichier après le bloc de métadonnées YML.
 - Les titres H2 apparaissent automatiquement dans le menu de navigation de droite du fichier publié. Les titres de niveau inférieur n’apparaissant pas, privilégiez l’utilisation de titres H2 pour aider les lecteurs à parcourir votre contenu.
 - Les titres HTML, comme `<h1>`, ne sont pas recommandés. En effet, dans certains cas, ils entraînent l’affichage d’avertissements de génération.
-- Vous pouvez créer un lien vers des titres spécifiques dans un fichier par le biais de [liens de signet](how-to-write-links.md#links-to-anchors).
+- Vous pouvez créer un lien vers des titres spécifiques dans un fichier par le biais de [liens de signet](how-to-write-links.md#explicit-anchor-links).
 
 ## <a name="html"></a>HTML
 
-Bien que Markdown prenne en charge la syntaxe HTML inline, HTML n’est pas recommandé pour une publication sur Docs, car, sauf pour un ensemble limité de valeurs, il entraîne des avertissements ou des erreurs de génération. 
+Bien que Markdown prenne en charge la syntaxe HTML inline, HTML n’est pas recommandé pour une publication sur Docs, car, sauf pour un ensemble limité de valeurs, il entraîne des avertissements ou des erreurs de génération.
 
 ## <a name="images"></a>Images
 
