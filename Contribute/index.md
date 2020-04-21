@@ -35,7 +35,7 @@ L’expérience utilisateur sur [docs.microsoft.com](https://docs.microsoft.com)
 
 Les modifications rapides permettent de rationaliser le processus de signalement et de correction de petites erreurs et omissions dans des documents. Malgré tous nos efforts, les documents que nous publions _peuvent_ contenir de petites fautes de grammaire et d’orthographe. Même si vous pouvez signaler des problèmes et nous faire part d’erreurs, il est plus rapide et plus facile de créer une demande de tirage (pull request) pour résoudre un problème lorsque l’option est disponible.
 
-1. Certaines pages de documents vous permettent de modifier le contenu directement dans le navigateur. Dans ce cas, un bouton **Edit (Édition)** comme celui illustré ci-dessous s’affiche. En cliquant sur le bouton **Edit (Édition)** , vous accédez au fichier source sur GitHub. Si le bouton **Édition** (icône crayon sans texte) est absent, cela signifie que la page de documentation ne peut pas être modifiée.
+1. Certaines pages de documents vous permettent de modifier le contenu directement dans le navigateur. Dans ce cas, un bouton **Edit (Édition) comme celui illustré ci-dessous s’affiche. En cliquant sur le bouton **Edit (Édition)**, vous accédez au fichier source sur GitHub. Si le bouton **Édition** (icône crayon sans texte) est absent, cela signifie que la page de documentation ne peut pas être modifiée.
 
    ![Emplacement du lien de modification](./media/index/edit-article.png)
 
